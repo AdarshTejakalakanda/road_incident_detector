@@ -1,0 +1,1707 @@
+[
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 1,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      2,
+      5
+    ],
+    "ground_distance_m": 661.2558929759041,
+    "bbox_iou": 0.11772486902064108,
+    "convergence": {
+      "is_converging": false,
+      "tca_sec": 5.765960865592797,
+      "dca_m": 447.9466021282643,
+      "is_closing": true,
+      "distance_delta_m": -2.0735830263020034
+    },
+    "acceleration": {
+      "track_1_ms2": 5355.958160094976,
+      "track_2_ms2": 3799.532213029751
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        1774.595635986328,
+        781.5506286621094
+      ],
+      "ground_pos_2": [
+        1173.884033203125,
+        505.13621826171874
+      ],
+      "velocity_1": [
+        -165.23891225388238,
+        -68.12915134470197
+      ],
+      "velocity_2": [
+        -84.9769393045866,
+        -94.10399043387275
+      ],
+      "speed_1_kmh": 643.4387405494872,
+      "speed_2_kmh": 456.45730395058126
+    }
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 15,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      12,
+      3
+    ],
+    "ground_distance_m": 517.7357341051336,
+    "bbox_iou": 0.046977272201358285,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 1.3617172259663775,
+      "dca_m": 3.662786122523387,
+      "is_closing": true,
+      "distance_delta_m": -25.4024085207011
+    },
+    "acceleration": {
+      "track_1_ms2": 292.44657573660504,
+      "track_2_ms2": -215.4488734607229
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        874.7476574957275,
+        605.934572434082
+      ],
+      "ground_pos_2": [
+        421.4892576102201,
+        355.7204375363687
+      ],
+      "velocity_1": [
+        -458.1205537851892,
+        -250.67510602766623
+      ],
+      "velocity_2": [
+        -123.97934418969902,
+        -69.29012097290719
+      ],
+      "speed_1_kmh": 1879.987595583624,
+      "speed_2_kmh": 511.30138128692516
+    }
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 179,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      28,
+      20
+    ],
+    "ground_distance_m": 838.098221526397,
+    "bbox_iou": 0.46512359245604895,
+    "convergence": {
+      "is_converging": false,
+      "tca_sec": 1.2146288299157828,
+      "dca_m": 60.03256048591924,
+      "is_closing": true,
+      "distance_delta_m": -45.872281869325775
+    },
+    "acceleration": {
+      "track_1_ms2": 8971.309149948074,
+      "track_2_ms2": 107.68760505954123
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        946.751153869629,
+        645.210454711914
+      ],
+      "ground_pos_2": [
+        219.52283595904584,
+        228.62000528387756
+      ],
+      "velocity_1": [
+        -634.1273100058954,
+        -305.4533780202681
+      ],
+      "velocity_2": [
+        -13.970300822380766,
+        -7.011742499877321
+      ],
+      "speed_1_kmh": 2533.8967974748703,
+      "speed_2_kmh": 56.27225373008518
+    }
+  },
+  {
+    "video_id": "F0NHENn-HS4_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 39,
+    "trigger_frame": 1,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      1,
+      4
+    ],
+    "ground_distance_m": 138.47449601675785,
+    "bbox_iou": 0.743752727373995,
+    "convergence": {
+      "is_converging": false,
+      "tca_sec": 4.037518600730178,
+      "dca_m": 64.22843689795978,
+      "is_closing": true,
+      "distance_delta_m": -1.791989198144364
+    },
+    "acceleration": {
+      "track_1_ms2": 988.7814568487228,
+      "track_2_ms2": 552.8385882897807
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        1093.0748657226563,
+        652.27998046875
+      ],
+      "ground_pos_2": [
+        1168.5923461914062,
+        768.3502014160156
+      ],
+      "velocity_1": [
+        48.61006751816395,
+        44.21311329785583
+      ],
+      "velocity_2": [
+        22.11702689960952,
+        29.335713678515894
+      ],
+      "speed_1_kmh": 236.5541907235191,
+      "speed_2_kmh": 132.2600499309624
+    }
+  },
+  {
+    "video_id": "maJsgJsapH4_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 69,
+    "trigger_frame": 8,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      6,
+      3
+    ],
+    "ground_distance_m": 4.289657195988545,
+    "bbox_iou": 0.5958372993270253,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.5681139256360191,
+      "dca_m": 3.0135979629500627,
+      "is_closing": false,
+      "distance_delta_m": 0.0
+    },
+    "acceleration": {
+      "track_1_ms2": 0.0,
+      "track_2_ms2": 27.487501120869798
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        296.5303268432617,
+        664.004150390625
+      ],
+      "ground_pos_2": [
+        293.8428750797266,
+        660.6606848415624
+      ],
+      "velocity_1": [
+        0.0,
+        0.0
+      ],
+      "velocity_2": [
+        5.338138392328872,
+        0.6155560278547841
+      ],
+      "speed_1_kmh": 0.0,
+      "speed_2_kmh": 19.344643034166502
+    }
+  },
+  {
+    "video_id": "iA_u73BG4ZM_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 116,
+    "trigger_frame": 688,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      44,
+      29
+    ],
+    "ground_distance_m": 371.62182830968425,
+    "bbox_iou": 0.0,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 1.593591176741154,
+      "dca_m": 4.058288990589902,
+      "is_closing": true,
+      "distance_delta_m": -7.772339721511969
+    },
+    "acceleration": {
+      "track_1_ms2": -2083.910828545116,
+      "track_2_ms2": -200.00980499607175
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        1142.7972159746496,
+        499.36071175265675
+      ],
+      "ground_pos_2": [
+        796.1106744154882,
+        365.5278862651094
+      ],
+      "velocity_1": [
+        -220.01345424027113,
+        -84.99486624124955
+      ],
+      "velocity_2": [
+        -1.571840411905958,
+        -3.3985892392983112
+      ],
+      "speed_1_kmh": 849.0968221881325,
+      "speed_2_kmh": 13.480109073362705
+    }
+  },
+  {
+    "video_id": "maJGw3hQs_s_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "TP",
+    "gt_frame": 31,
+    "trigger_frame": 3,
+    "lead_time_frames": 28,
+    "lead_time_sec": 2.8,
+    "track_ids": [
+      2,
+      3
+    ],
+    "ground_distance_m": 137.1066836865268,
+    "bbox_iou": 0.23987054358316467,
+    "convergence": {
+      "is_converging": false,
+      "tca_sec": Infinity,
+      "dca_m": 137.1066836865268,
+      "is_closing": false,
+      "distance_delta_m": 2.6938701011956994
+    },
+    "acceleration": {
+      "track_1_ms2": 46.002825445711586,
+      "track_2_ms2": -52.34197488438376
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        132.68523721313477,
+        233.79544824218752
+      ],
+      "ground_pos_2": [
+        269.77055432128907,
+        236.21589135742187
+      ],
+      "velocity_1": [
+        1.5437339141266102,
+        -4.186955775087423
+      ],
+      "velocity_2": [
+        28.482997012973865,
+        -5.988079700360134
+      ],
+      "speed_1_kmh": 16.064922074498437,
+      "speed_2_kmh": 104.78030013658437
+    }
+  },
+  {
+    "video_id": "maJGw3hQs_s_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 31,
+    "trigger_frame": 57,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      2,
+      19
+    ],
+    "ground_distance_m": 98.24988293481222,
+    "bbox_iou": 0.484487683103818,
+    "convergence": {
+      "is_converging": false,
+      "tca_sec": 13.64033766948713,
+      "dca_m": 61.72361786266025,
+      "is_closing": false,
+      "distance_delta_m": 0.0
+    },
+    "acceleration": {
+      "track_1_ms2": -81.08888361052294,
+      "track_2_ms2": 0.0
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        226.2073720067155,
+        233.01584470710975
+      ],
+      "ground_pos_2": [
+        324.0340270996094,
+        242.12545776367188
+      ],
+      "velocity_1": [
+        4.014886144518387,
+        3.909731237984344
+      ],
+      "velocity_2": [
+        0.0,
+        0.0
+      ],
+      "speed_1_kmh": 20.174558384833194,
+      "speed_2_kmh": 0.0
+    }
+  },
+  {
+    "video_id": "aPsS_HaokoU_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 80,
+    "trigger_frame": 41,
+    "fp_category": "calibration_artifact",
+    "track_ids": [
+      1,
+      7
+    ],
+    "ground_distance_m": 0.6563488992750487,
+    "bbox_iou": 0.9797301512038261,
+    "convergence": {
+      "is_converging": false,
+      "tca_sec": Infinity,
+      "dca_m": 0.6563488992750487,
+      "is_closing": false,
+      "distance_delta_m": 0.0
+    },
+    "acceleration": {
+      "track_1_ms2": -18.911517902285027,
+      "track_2_ms2": 0.0
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        984.8712185135504,
+        552.8319339042412
+      ],
+      "ground_pos_2": [
+        984.8670654296875,
+        552.1755981445312
+      ],
+      "velocity_1": [
+        1.9520483340657986,
+        0.2583123564986829
+      ],
+      "velocity_2": [
+        0.0,
+        0.0
+      ],
+      "speed_1_kmh": 7.088634912150192,
+      "speed_2_kmh": 0.0
+    }
+  },
+  {
+    "video_id": "aPsS_HaokoU_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 80,
+    "trigger_frame": 175,
+    "fp_category": "calibration_artifact",
+    "track_ids": [
+      11,
+      9
+    ],
+    "ground_distance_m": 317.90816570741976,
+    "bbox_iou": 0.0,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 1.9750907976016532,
+      "dca_m": 1.3587710485194842,
+      "is_closing": true,
+      "distance_delta_m": -14.523882187254173
+    },
+    "acceleration": {
+      "track_1_ms2": 23.47691317109092,
+      "track_2_ms2": -8.34674524122664
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        630.1872660032852,
+        578.0163327935509
+      ],
+      "ground_pos_2": [
+        364.69682924357164,
+        403.1437225522876
+      ],
+      "velocity_1": [
+        -134.42053000082186,
+        -87.96872375463604
+      ],
+      "velocity_2": [
+        0.3747934277823221,
+        -0.005834259093778051
+      ],
+      "speed_1_kmh": 578.3282659282601,
+      "speed_2_kmh": 1.3494198053461453
+    }
+  },
+  {
+    "video_id": "aF2Hbp8C23A_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 45,
+    "trigger_frame": 8,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      8,
+      9
+    ],
+    "ground_distance_m": 343.545545696872,
+    "bbox_iou": 0.7785367129351196,
+    "convergence": {
+      "is_converging": false,
+      "tca_sec": Infinity,
+      "dca_m": 343.545545696872,
+      "is_closing": false,
+      "distance_delta_m": 14.667380867395195
+    },
+    "acceleration": {
+      "track_1_ms2": 250.00612580688355,
+      "track_2_ms2": -174.31717225428417
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        120.24405025365951,
+        523.1066188495288
+      ],
+      "ground_pos_2": [
+        423.1364338881714,
+        360.99632952659516
+      ],
+      "velocity_1": [
+        -317.0751608540982,
+        170.57636967673864
+      ],
+      "velocity_2": [
+        -126.93115074729967,
+        62.36996586742287
+      ],
+      "speed_1_kmh": 1296.1647671398919,
+      "speed_2_kmh": 509.1363516323404
+    }
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "5_dist_conv_accel_persistence_id",
+    "status": "TP",
+    "gt_frame": 197,
+    "trigger_frame": 201,
+    "lead_time_frames": -4,
+    "lead_time_sec": -0.13,
+    "track_ids": [
+      27,
+      19
+    ],
+    "ground_distance_m": 7.520888685574263,
+    "bbox_iou": 0.17340322745454875,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.09436482443125001,
+      "dca_m": 0.022218556280041955,
+      "is_closing": true,
+      "distance_delta_m": -2.659642545129758
+    },
+    "acceleration": {
+      "track_1_ms2": -2529.4283141053584,
+      "track_2_ms2": -3771.412129887964
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        1193.3187342211913,
+        1078.8829622839355
+      ],
+      "ground_pos_2": [
+        1200.8396229056084,
+        1078.883094217276
+      ],
+      "velocity_1": [
+        -166.35217068842405,
+        1.4137185038457774
+      ],
+      "velocity_2": [
+        -246.05160001392107,
+        1.1768676259557922
+      ],
+      "speed_1_kmh": 598.8894397751162,
+      "speed_2_kmh": 885.7958921406118
+    }
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "5_dist_conv_accel_persistence_id",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 251,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      29,
+      30
+    ],
+    "ground_distance_m": 0.3469419031802563,
+    "bbox_iou": 0.7782297419738495,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.02410826887077352,
+      "dca_m": 0.11487295649803095,
+      "is_closing": true,
+      "distance_delta_m": -0.4419907584078231
+    },
+    "acceleration": {
+      "track_1_ms2": 261.41691911798733,
+      "track_2_ms2": -311.6168120282526
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        1214.5784773147343,
+        1078.94731383606
+      ],
+      "ground_pos_2": [
+        1214.9241997295312,
+        1078.976377491875
+      ],
+      "velocity_1": [
+        16.253074207818155,
+        -2.685302724303231
+      ],
+      "velocity_2": [
+        3.108134566110351,
+        0.7216240512569996
+      ],
+      "speed_1_kmh": 59.30427981318789,
+      "speed_2_kmh": 11.486900935898115
+    }
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "5_dist_conv_accel_persistence_id",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 452,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      41,
+      29
+    ],
+    "ground_distance_m": 0.6188333663754889,
+    "bbox_iou": 0.8959599946354267,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.10312803716350633,
+      "dca_m": 0.14000596772265575,
+      "is_closing": true,
+      "distance_delta_m": -0.19119957449134006
+    },
+    "acceleration": {
+      "track_1_ms2": 20.92274318730299,
+      "track_2_ms2": -271.1208708324123
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        1212.3317260742188,
+        1079.2509033203125
+      ],
+      "ground_pos_2": [
+        1212.8883192567664,
+        1078.98042455131
+      ],
+      "velocity_1": [
+        0.6145423204566641,
+        -0.3314138942449097
+      ],
+      "velocity_2": [
+        -5.08430258989292,
+        0.9676960644841438
+      ],
+      "speed_1_kmh": 2.513556589930621,
+      "speed_2_kmh": 18.63206718924599
+    }
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "5_dist_conv_accel_persistence_id",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 645,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      29,
+      49
+    ],
+    "ground_distance_m": 0.4475306526304393,
+    "bbox_iou": 0.9050229447843852,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.21096519905234526,
+      "dca_m": 0.24336204842686715,
+      "is_closing": false,
+      "distance_delta_m": -0.05090591415995305
+    },
+    "acceleration": {
+      "track_1_ms2": 25.376307162343803,
+      "track_2_ms2": -7.778925840829293
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        1213.858242873575,
+        1079.2180424082578
+      ],
+      "ground_pos_2": [
+        1214.2622001,
+        1079.0254229796874
+      ],
+      "velocity_1": [
+        -2.1521360969349934,
+        0.26774616609236473
+      ],
+      "velocity_2": [
+        -3.9173957375118884,
+        0.036954571846068755
+      ],
+      "speed_1_kmh": 7.807418020566929,
+      "speed_2_kmh": 14.103252137728731
+    }
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "5_dist_conv_accel_persistence_id",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 812,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      29,
+      58
+    ],
+    "ground_distance_m": 0.08908883791449798,
+    "bbox_iou": 0.913520649475806,
+    "convergence": {
+      "is_converging": false,
+      "tca_sec": Infinity,
+      "dca_m": 0.08908883791449798,
+      "is_closing": true,
+      "distance_delta_m": -0.24580985408558417
+    },
+    "acceleration": {
+      "track_1_ms2": -479.5456239818803,
+      "track_2_ms2": -273.3354122342212
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        1211.9964267447754,
+        1078.943654681572
+      ],
+      "ground_pos_2": [
+        1212.0550274375,
+        1079.0107574375002
+      ],
+      "velocity_1": [
+        -1.260513505005432,
+        -11.02016576584768
+      ],
+      "velocity_2": [
+        -3.9713961681969545,
+        -0.022633418072483834
+      ],
+      "speed_1_kmh": 39.93127851105806,
+      "speed_2_kmh": 14.297258386177575
+    }
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "5_dist_conv_accel_persistence_id",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 866,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      68,
+      65
+    ],
+    "ground_distance_m": 1.7697027035551411,
+    "bbox_iou": 0.33081620124177197,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.07388308004143417,
+      "dca_m": 0.14754871806823885,
+      "is_closing": true,
+      "distance_delta_m": -0.7946277387076053
+    },
+    "acceleration": {
+      "track_1_ms2": 709.1146788140152,
+      "track_2_ms2": -152.41358448389727
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        725.8080627441407,
+        323.39794921875
+      ],
+      "ground_pos_2": [
+        724.63388622792,
+        322.07388080370254
+      ],
+      "velocity_1": [
+        17.951220139340847,
+        15.418427861457376
+      ],
+      "velocity_2": [
+        35.222076200679126,
+        31.894573350625222
+      ],
+      "speed_1_kmh": 85.18958809527217,
+      "speed_2_kmh": 171.06094135108395
+    }
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "5_dist_conv_accel_persistence_id",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 254,
+    "fp_category": "calibration_artifact",
+    "track_ids": [
+      13,
+      37
+    ],
+    "ground_distance_m": 3.134714324727428,
+    "bbox_iou": 0.6875697163131254,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 1.2436147110102946,
+      "dca_m": 0.24152844518569572,
+      "is_closing": true,
+      "distance_delta_m": -0.16744294102040014
+    },
+    "acceleration": {
+      "track_1_ms2": -12.772937544395013,
+      "track_2_ms2": 17.471361061502876
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        819.3341508094513,
+        349.9593348459431
+      ],
+      "ground_pos_2": [
+        816.2087175292969,
+        350.2003757324219
+      ],
+      "velocity_1": [
+        -0.3045039694564413,
+        0.22507260036630042
+      ],
+      "velocity_2": [
+        2.208650285238651,
+        0.2254646476488978
+      ],
+      "speed_1_kmh": 1.3631614883574488,
+      "speed_2_kmh": 7.992462464855362
+    }
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "5_dist_conv_accel_persistence_id",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 371,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      13,
+      37
+    ],
+    "ground_distance_m": 3.3084511990964973,
+    "bbox_iou": 0.6875697163131254,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 1.9634395092095986,
+      "dca_m": 1.3888604462328407,
+      "is_closing": false,
+      "distance_delta_m": -0.09301553376012084
+    },
+    "acceleration": {
+      "track_1_ms2": -27.49950446933885,
+      "track_2_ms2": -31.308886457664197
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        819.3388921036769,
+        349.4407156346389
+      ],
+      "ground_pos_2": [
+        816.0312844115726,
+        349.3660116057273
+      ],
+      "velocity_1": [
+        -0.33969358329335925,
+        0.6759596347561174
+      ],
+      "velocity_2": [
+        1.06253312053782,
+        0.06545064504167027
+      ],
+      "speed_1_kmh": 2.7234497484293643,
+      "speed_2_kmh": 3.832369375793995
+    }
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "5_dist_conv_accel_persistence_id",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 421,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      37,
+      13
+    ],
+    "ground_distance_m": 1.4813017786246547,
+    "bbox_iou": 0.6875697163131254,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.43137284907210516,
+      "dca_m": 0.08050550550542013,
+      "is_closing": true,
+      "distance_delta_m": -0.22880580058057198
+    },
+    "acceleration": {
+      "track_1_ms2": -18.92966274057622,
+      "track_2_ms2": -92.23767169410701
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        814.0118466711459,
+        350.6271950762091
+      ],
+      "ground_pos_2": [
+        815.4826168029297,
+        350.8035191494645
+      ],
+      "velocity_1": [
+        -3.7532166652215566,
+        0.7194247602207332
+      ],
+      "velocity_2": [
+        -7.174838143040259,
+        0.4969066528435958
+      ],
+      "speed_1_kmh": 13.757562534454737,
+      "speed_2_kmh": 25.891288748573995
+    }
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "5_dist_conv_accel_persistence_id",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 448,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      13,
+      37
+    ],
+    "ground_distance_m": 2.507560502545582,
+    "bbox_iou": 0.6875697163131254,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.2666353585260659,
+      "dca_m": 2.2558419558023033,
+      "is_closing": true,
+      "distance_delta_m": -0.13139298034572544
+    },
+    "acceleration": {
+      "track_1_ms2": -104.62782380878932,
+      "track_2_ms2": -53.41863756892326
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        814.1797865768222,
+        351.48187488215007
+      ],
+      "ground_pos_2": [
+        811.8209909869536,
+        350.63102645901984
+      ],
+      "velocity_1": [
+        -2.670080100272985,
+        0.5500988962466475
+      ],
+      "velocity_2": [
+        0.27046285220122956,
+        -2.3167148953260126
+      ],
+      "speed_1_kmh": 9.814168203486807,
+      "speed_2_kmh": 8.396816186268179
+    }
+  },
+  {
+    "video_id": "maJsgJsapH4_00",
+    "split_type": "split_geo_aware",
+    "mode": "5_dist_conv_accel_persistence_id",
+    "status": "FP",
+    "gt_frame": 69,
+    "trigger_frame": 11,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      6,
+      3
+    ],
+    "ground_distance_m": 0.941193675293927,
+    "bbox_iou": 0.5958372993270253,
+    "convergence": {
+      "is_converging": false,
+      "tca_sec": Infinity,
+      "dca_m": 0.941193675293927,
+      "is_closing": true,
+      "distance_delta_m": -0.47818463830274416
+    },
+    "acceleration": {
+      "track_1_ms2": -73.24045563418831,
+      "track_2_ms2": -238.65155378723878
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        295.835444519043,
+        663.7409897460938
+      ],
+      "ground_pos_2": [
+        296.5320252428955,
+        663.108043595485
+      ],
+      "velocity_1": [
+        -3.362935714072884,
+        -1.2317472529274176
+      ],
+      "velocity_2": [
+        5.6390064573687635,
+        6.445790910209311
+      ],
+      "speed_1_kmh": 12.893096266629346,
+      "speed_2_kmh": 30.831349648135923
+    }
+  },
+  {
+    "video_id": "maJsgJsapH4_00",
+    "split_type": "split_geo_aware",
+    "mode": "5_dist_conv_accel_persistence_id",
+    "status": "FP",
+    "gt_frame": 69,
+    "trigger_frame": 110,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      18,
+      11
+    ],
+    "ground_distance_m": 1.1700692849457708,
+    "bbox_iou": 0.7706469958594094,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.0704080167670233,
+      "dca_m": 0.5919001113376011,
+      "is_closing": true,
+      "distance_delta_m": -1.3496466611199347
+    },
+    "acceleration": {
+      "track_1_ms2": 92.2975231622197,
+      "track_2_ms2": -86.62439849584293
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        1066.2878547415,
+        829.9270615706876
+      ],
+      "ground_pos_2": [
+        1067.2541852511522,
+        829.2673135296227
+      ],
+      "velocity_1": [
+        1.8400774239506654,
+        -6.49242481308842
+      ],
+      "velocity_2": [
+        -4.283547924456333,
+        6.46905306169106
+      ],
+      "speed_1_kmh": 24.293323050612468,
+      "speed_2_kmh": 27.931321077881528
+    }
+  },
+  {
+    "video_id": "maJsgJsapH4_00",
+    "split_type": "split_geo_aware",
+    "mode": "5_dist_conv_accel_persistence_id",
+    "status": "FP",
+    "gt_frame": 69,
+    "trigger_frame": 261,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      35,
+      18
+    ],
+    "ground_distance_m": 0.7467530690935961,
+    "bbox_iou": 0.7678644750934338,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.00597052267760415,
+      "dca_m": 0.746283411369603,
+      "is_closing": true,
+      "distance_delta_m": -0.13625121821512953
+    },
+    "acceleration": {
+      "track_1_ms2": -80.51631551196753,
+      "track_2_ms2": 67.88014409912063
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        1065.5809622408422,
+        827.960435519125
+      ],
+      "ground_pos_2": [
+        1065.7980162331096,
+        828.6749477378039
+      ],
+      "velocity_1": [
+        -2.7061599093928557,
+        -7.431973506232238
+      ],
+      "velocity_2": [
+        1.4891719037249214,
+        -8.87080106615334
+      ],
+      "speed_1_kmh": 28.47359496475564,
+      "speed_2_kmh": 32.38174375945307
+    }
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "6_spatial_track_switch_robustness",
+    "status": "TP",
+    "gt_frame": 197,
+    "trigger_frame": 201,
+    "lead_time_frames": -4,
+    "lead_time_sec": -0.13,
+    "track_ids": [
+      27,
+      19
+    ],
+    "ground_distance_m": 7.520888685574263,
+    "bbox_iou": 0.17340322745454875,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.09436482443125001,
+      "dca_m": 0.022218556280041955,
+      "is_closing": true,
+      "distance_delta_m": -2.659642545129758
+    },
+    "acceleration": {
+      "track_1_ms2": -2529.4283141053584,
+      "track_2_ms2": -3771.412129887964
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        1193.3187342211913,
+        1078.8829622839355
+      ],
+      "ground_pos_2": [
+        1200.8396229056084,
+        1078.883094217276
+      ],
+      "velocity_1": [
+        -166.35217068842405,
+        1.4137185038457774
+      ],
+      "velocity_2": [
+        -246.05160001392107,
+        1.1768676259557922
+      ],
+      "speed_1_kmh": 598.8894397751162,
+      "speed_2_kmh": 885.7958921406118
+    }
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "6_spatial_track_switch_robustness",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 251,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      29,
+      30
+    ],
+    "ground_distance_m": 0.3469419031802563,
+    "bbox_iou": 0.7782297419738495,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.02410826887077352,
+      "dca_m": 0.11487295649803095,
+      "is_closing": true,
+      "distance_delta_m": -0.4419907584078231
+    },
+    "acceleration": {
+      "track_1_ms2": 261.41691911798733,
+      "track_2_ms2": -311.6168120282526
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        1214.5784773147343,
+        1078.94731383606
+      ],
+      "ground_pos_2": [
+        1214.9241997295312,
+        1078.976377491875
+      ],
+      "velocity_1": [
+        16.253074207818155,
+        -2.685302724303231
+      ],
+      "velocity_2": [
+        3.108134566110351,
+        0.7216240512569996
+      ],
+      "speed_1_kmh": 59.30427981318789,
+      "speed_2_kmh": 11.486900935898115
+    }
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "6_spatial_track_switch_robustness",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 452,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      41,
+      29
+    ],
+    "ground_distance_m": 0.6188333663754889,
+    "bbox_iou": 0.8959599946354267,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.10312803716350633,
+      "dca_m": 0.14000596772265575,
+      "is_closing": true,
+      "distance_delta_m": -0.19119957449134006
+    },
+    "acceleration": {
+      "track_1_ms2": 20.92274318730299,
+      "track_2_ms2": -271.1208708324123
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        1212.3317260742188,
+        1079.2509033203125
+      ],
+      "ground_pos_2": [
+        1212.8883192567664,
+        1078.98042455131
+      ],
+      "velocity_1": [
+        0.6145423204566641,
+        -0.3314138942449097
+      ],
+      "velocity_2": [
+        -5.08430258989292,
+        0.9676960644841438
+      ],
+      "speed_1_kmh": 2.513556589930621,
+      "speed_2_kmh": 18.63206718924599
+    }
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "6_spatial_track_switch_robustness",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 645,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      29,
+      49
+    ],
+    "ground_distance_m": 0.4475306526304393,
+    "bbox_iou": 0.9050229447843852,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.21096519905234526,
+      "dca_m": 0.24336204842686715,
+      "is_closing": false,
+      "distance_delta_m": -0.05090591415995305
+    },
+    "acceleration": {
+      "track_1_ms2": 25.376307162343803,
+      "track_2_ms2": -7.778925840829293
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        1213.858242873575,
+        1079.2180424082578
+      ],
+      "ground_pos_2": [
+        1214.2622001,
+        1079.0254229796874
+      ],
+      "velocity_1": [
+        -2.1521360969349934,
+        0.26774616609236473
+      ],
+      "velocity_2": [
+        -3.9173957375118884,
+        0.036954571846068755
+      ],
+      "speed_1_kmh": 7.807418020566929,
+      "speed_2_kmh": 14.103252137728731
+    }
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "6_spatial_track_switch_robustness",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 795,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      29,
+      56
+    ],
+    "ground_distance_m": 0.3645409170137822,
+    "bbox_iou": 0.8934028153841818,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.23112018980161977,
+      "dca_m": 0.3077226426127939,
+      "is_closing": false,
+      "distance_delta_m": -0.015875561772087265
+    },
+    "acceleration": {
+      "track_1_ms2": -274.5793138963333,
+      "track_2_ms2": -208.1195501466873
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        1214.2913096426391,
+        1079.0069641373957
+      ],
+      "ground_pos_2": [
+        1214.0167360351563,
+        1079.2467544921874
+      ],
+      "velocity_1": [
+        2.724789606100493,
+        -0.16488507110062814
+      ],
+      "velocity_2": [
+        3.5358043574513665,
+        0.07455276264542668
+      ],
+      "speed_1_kmh": 9.827185999819044,
+      "speed_2_kmh": 12.73172488584827
+    }
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "6_spatial_track_switch_robustness",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 866,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      68,
+      65
+    ],
+    "ground_distance_m": 1.7697027035551411,
+    "bbox_iou": 0.33081620124177197,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.07388308004143417,
+      "dca_m": 0.14754871806823885,
+      "is_closing": true,
+      "distance_delta_m": -0.7946277387076053
+    },
+    "acceleration": {
+      "track_1_ms2": 709.1146788140152,
+      "track_2_ms2": -152.41358448389727
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        725.8080627441407,
+        323.39794921875
+      ],
+      "ground_pos_2": [
+        724.63388622792,
+        322.07388080370254
+      ],
+      "velocity_1": [
+        17.951220139340847,
+        15.418427861457376
+      ],
+      "velocity_2": [
+        35.222076200679126,
+        31.894573350625222
+      ],
+      "speed_1_kmh": 85.18958809527217,
+      "speed_2_kmh": 171.06094135108395
+    }
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "6_spatial_track_switch_robustness",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 254,
+    "fp_category": "calibration_artifact",
+    "track_ids": [
+      13,
+      37
+    ],
+    "ground_distance_m": 3.134714324727428,
+    "bbox_iou": 0.6875697163131254,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 1.2436147110102946,
+      "dca_m": 0.24152844518569572,
+      "is_closing": true,
+      "distance_delta_m": -0.16744294102040014
+    },
+    "acceleration": {
+      "track_1_ms2": -12.772937544395013,
+      "track_2_ms2": 17.471361061502876
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        819.3341508094513,
+        349.9593348459431
+      ],
+      "ground_pos_2": [
+        816.2087175292969,
+        350.2003757324219
+      ],
+      "velocity_1": [
+        -0.3045039694564413,
+        0.22507260036630042
+      ],
+      "velocity_2": [
+        2.208650285238651,
+        0.2254646476488978
+      ],
+      "speed_1_kmh": 1.3631614883574488,
+      "speed_2_kmh": 7.992462464855362
+    }
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "6_spatial_track_switch_robustness",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 371,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      13,
+      37
+    ],
+    "ground_distance_m": 3.3084511990964973,
+    "bbox_iou": 0.6875697163131254,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 1.9634395092095986,
+      "dca_m": 1.3888604462328407,
+      "is_closing": false,
+      "distance_delta_m": -0.09301553376012084
+    },
+    "acceleration": {
+      "track_1_ms2": -27.49950446933885,
+      "track_2_ms2": -31.308886457664197
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        819.3388921036769,
+        349.4407156346389
+      ],
+      "ground_pos_2": [
+        816.0312844115726,
+        349.3660116057273
+      ],
+      "velocity_1": [
+        -0.33969358329335925,
+        0.6759596347561174
+      ],
+      "velocity_2": [
+        1.06253312053782,
+        0.06545064504167027
+      ],
+      "speed_1_kmh": 2.7234497484293643,
+      "speed_2_kmh": 3.832369375793995
+    }
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "6_spatial_track_switch_robustness",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 420,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      37,
+      13
+    ],
+    "ground_distance_m": 1.7101075792052267,
+    "bbox_iou": 0.6875697163131254,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.2005851989038173,
+      "dca_m": 0.15961581990917934,
+      "is_closing": true,
+      "distance_delta_m": -0.5652919662452982
+    },
+    "acceleration": {
+      "track_1_ms2": 35.82952890633501,
+      "track_2_ms2": -139.42548095386707
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        814.2626183868491,
+        350.57912660653835
+      ],
+      "ground_pos_2": [
+        815.9620046538084,
+        350.77031825940327
+      ],
+      "velocity_1": [
+        -4.8023319120957915,
+        1.4258568450724756
+      ],
+      "velocity_2": [
+        -13.289244010262111,
+        1.2683011968972713
+      ],
+      "speed_1_kmh": 18.034332690565364,
+      "speed_2_kmh": 48.05866438013843
+    }
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "6_spatial_track_switch_robustness",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 448,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      13,
+      37
+    ],
+    "ground_distance_m": 2.507560502545582,
+    "bbox_iou": 0.6875697163131254,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.2666353585260659,
+      "dca_m": 2.2558419558023033,
+      "is_closing": true,
+      "distance_delta_m": -0.13139298034572544
+    },
+    "acceleration": {
+      "track_1_ms2": -104.62782380878932,
+      "track_2_ms2": -53.41863756892326
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        814.1797865768222,
+        351.48187488215007
+      ],
+      "ground_pos_2": [
+        811.8209909869536,
+        350.63102645901984
+      ],
+      "velocity_1": [
+        -2.670080100272985,
+        0.5500988962466475
+      ],
+      "velocity_2": [
+        0.27046285220122956,
+        -2.3167148953260126
+      ],
+      "speed_1_kmh": 9.814168203486807,
+      "speed_2_kmh": 8.396816186268179
+    }
+  },
+  {
+    "video_id": "maJsgJsapH4_00",
+    "split_type": "split_geo_aware",
+    "mode": "6_spatial_track_switch_robustness",
+    "status": "FP",
+    "gt_frame": 69,
+    "trigger_frame": 11,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      6,
+      3
+    ],
+    "ground_distance_m": 0.941193675293927,
+    "bbox_iou": 0.5958372993270253,
+    "convergence": {
+      "is_converging": false,
+      "tca_sec": Infinity,
+      "dca_m": 0.941193675293927,
+      "is_closing": true,
+      "distance_delta_m": -0.47818463830274416
+    },
+    "acceleration": {
+      "track_1_ms2": -73.24045563418831,
+      "track_2_ms2": -238.65155378723878
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        295.835444519043,
+        663.7409897460938
+      ],
+      "ground_pos_2": [
+        296.5320252428955,
+        663.108043595485
+      ],
+      "velocity_1": [
+        -3.362935714072884,
+        -1.2317472529274176
+      ],
+      "velocity_2": [
+        5.6390064573687635,
+        6.445790910209311
+      ],
+      "speed_1_kmh": 12.893096266629346,
+      "speed_2_kmh": 30.831349648135923
+    }
+  },
+  {
+    "video_id": "maJsgJsapH4_00",
+    "split_type": "split_geo_aware",
+    "mode": "6_spatial_track_switch_robustness",
+    "status": "FP",
+    "gt_frame": 69,
+    "trigger_frame": 110,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      18,
+      11
+    ],
+    "ground_distance_m": 1.1700692849457708,
+    "bbox_iou": 0.7706469958594094,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.0704080167670233,
+      "dca_m": 0.5919001113376011,
+      "is_closing": true,
+      "distance_delta_m": -1.3496466611199347
+    },
+    "acceleration": {
+      "track_1_ms2": 92.2975231622197,
+      "track_2_ms2": -86.62439849584293
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        1066.2878547415,
+        829.9270615706876
+      ],
+      "ground_pos_2": [
+        1067.2541852511522,
+        829.2673135296227
+      ],
+      "velocity_1": [
+        1.8400774239506654,
+        -6.49242481308842
+      ],
+      "velocity_2": [
+        -4.283547924456333,
+        6.46905306169106
+      ],
+      "speed_1_kmh": 24.293323050612468,
+      "speed_2_kmh": 27.931321077881528
+    }
+  },
+  {
+    "video_id": "maJsgJsapH4_00",
+    "split_type": "split_geo_aware",
+    "mode": "6_spatial_track_switch_robustness",
+    "status": "FP",
+    "gt_frame": 69,
+    "trigger_frame": 261,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      35,
+      18
+    ],
+    "ground_distance_m": 0.7467530690935961,
+    "bbox_iou": 0.7678644750934338,
+    "convergence": {
+      "is_converging": true,
+      "tca_sec": 0.00597052267760415,
+      "dca_m": 0.746283411369603,
+      "is_closing": true,
+      "distance_delta_m": -0.13625121821512953
+    },
+    "acceleration": {
+      "track_1_ms2": -80.51631551196753,
+      "track_2_ms2": 67.88014409912063
+    },
+    "trajectory": {
+      "ground_pos_1": [
+        1065.5809622408422,
+        827.960435519125
+      ],
+      "ground_pos_2": [
+        1065.7980162331096,
+        828.6749477378039
+      ],
+      "velocity_1": [
+        -2.7061599093928557,
+        -7.431973506232238
+      ],
+      "velocity_2": [
+        1.4891719037249214,
+        -8.87080106615334
+      ],
+      "speed_1_kmh": 28.47359496475564,
+      "speed_2_kmh": 32.38174375945307
+    }
+  }
+]

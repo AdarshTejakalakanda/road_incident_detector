@@ -1,0 +1,92 @@
+[
+  {
+    "target": {
+      "episode_id": "ftk_fSc4haM_00_ep01_f127",
+      "video_id": "ftk_fSc4haM_00",
+      "frame_index": 127,
+      "incident_class": "Nocturnal Crossing T-Bone",
+      "weather": "normal",
+      "day_time": "night"
+    },
+    "strip_path": "artifacts/stage_t_strips/ftk_fSc4haM_00_f127_strip.jpg",
+    "f_pre": 102,
+    "f_imp": 127,
+    "f_post": 164,
+    "t_pre": 4.102793296000001,
+    "t_imp": 5.108379888,
+    "t_post": 6.596648044,
+    "fps": 24.86111111111111
+  },
+  {
+    "target": {
+      "episode_id": "BgdKGnFqz0I_00_ep01_f126",
+      "video_id": "BgdKGnFqz0I_00",
+      "frame_index": 126,
+      "incident_class": "Daylight Intersection T-Bone",
+      "weather": "normal",
+      "day_time": "day"
+    },
+    "strip_path": "artifacts/stage_t_strips/BgdKGnFqz0I_00_f126_strip.jpg",
+    "f_pre": 101,
+    "f_imp": 126,
+    "f_post": 163,
+    "t_pre": 4.065145228,
+    "t_imp": 5.071369294,
+    "t_post": 6.560580912000001,
+    "fps": 24.84536082474227
+  },
+  {
+    "target": {
+      "episode_id": "iA_u73BG4ZM_00_ep01_f133",
+      "video_id": "iA_u73BG4ZM_00",
+      "frame_index": 133,
+      "incident_class": "Parallel Rear-End Collision",
+      "weather": "normal",
+      "day_time": "day"
+    },
+    "strip_path": "artifacts/stage_t_strips/iA_u73BG4ZM_00_f133_strip.jpg",
+    "f_pre": 103,
+    "f_imp": 133,
+    "f_post": 178,
+    "t_pre": 3.433333333,
+    "t_imp": 4.433333333,
+    "t_post": 5.933333333,
+    "fps": 30.0
+  },
+  {
+    "target": {
+      "episode_id": "UarP8qU1S-c_01_ep01_f63",
+      "video_id": "UarP8qU1S-c_01",
+      "frame_index": 63,
+      "incident_class": "Nocturnal Guardrail / Multi-Vehicle Contact",
+      "weather": "normal",
+      "day_time": "night"
+    },
+    "strip_path": "artifacts/stage_t_strips/UarP8qU1S-c_01_f63_strip.jpg",
+    "f_pre": 48,
+    "f_imp": 63,
+    "f_post": 85,
+    "t_pre": 3.217204301,
+    "t_imp": 4.222580645,
+    "t_post": 5.697132616,
+    "fps": 14.919786096256685
+  },
+  {
+    "target": {
+      "episode_id": "vxZ47DoPNY8_00_ep01_f55",
+      "video_id": "vxZ47DoPNY8_00",
+      "frame_index": 55,
+      "incident_class": "Adverse Weather (Rain) Multi-Vehicle Impact",
+      "weather": "rain",
+      "day_time": "day"
+    },
+    "strip_path": "artifacts/stage_t_strips/vxZ47DoPNY8_00_f55_strip.jpg",
+    "f_pre": 37,
+    "f_imp": 55,
+    "f_post": 82,
+    "t_pre": 2.076258992,
+    "t_imp": 3.0863309350000003,
+    "t_post": 4.601438848,
+    "fps": 17.82051282051282
+  }
+]

@@ -1,0 +1,25 @@
+Total Nocturnal FPs in parsed data: 12
+ 1. Z4kg2Ev3vhk_00  @ F113 | Rule: multi_vehicle_contact_impulse
+    Telemetry: IoU=0.247, dist_m=0.959, norm_px=0.072, accel=-60.0, S_dissip=0.7
+ 2. Z4kg2Ev3vhk_00  @ F128 | Rule: stage_t_deterministic_bypass
+    Telemetry: IoU=0.311, dist_m=2.713, norm_px=0.43, accel=-60.0, S_dissip=0.7
+ 3. ftk_fSc4haM_00  @ F 27 | Rule: stage_t_deterministic_bypass
+    Telemetry: IoU=0.457, dist_m=7.618, norm_px=0.429, accel=-60.0, S_dissip=0.7
+ 4. ftk_fSc4haM_00  @ F 26 | Rule: multi_vehicle_high_iou_impulse
+    Telemetry: IoU=0.392, dist_m=1.72, norm_px=0.346, accel=60.0, S_dissip=0.7
+ 5. ftk_fSc4haM_00  @ F 34 | Rule: stage_t_deterministic_bypass
+    Telemetry: IoU=0.585, dist_m=4.934, norm_px=0.188, accel=-60.0, S_dissip=0.7
+ 6. ftk_fSc4haM_00  @ F 38 | Rule: stage_t_deterministic_bypass
+    Telemetry: IoU=0.61, dist_m=1.697, norm_px=0.225, accel=-60.0, S_dissip=0.7
+ 7. ftk_fSc4haM_00  @ F 60 | Rule: multi_vehicle_high_iou_impulse
+    Telemetry: IoU=0.395, dist_m=2.655, norm_px=1.173, accel=60.0, S_dissip=0.7
+ 8. ftk_fSc4haM_00  @ F170 | Rule: multi_vehicle_high_iou_impulse
+    Telemetry: IoU=0.594, dist_m=0.59, norm_px=0.257, accel=29.8, S_dissip=0.7
+ 9. ftk_fSc4haM_00  @ F249 | Rule: crossing_tbone_high_dissipation
+    Telemetry: IoU=0.217, dist_m=3.03, norm_px=0.871, accel=-23.4, S_dissip=0.9
+10. Z4kg2Ev3vhk_00  @ F113 | Rule: multi_vehicle_contact_impulse
+    Telemetry: IoU=0.247, dist_m=0.959, norm_px=0.072, accel=-60.0, S_dissip=0.7
+11. Z4kg2Ev3vhk_00  @ F128 | Rule: stage_t_deterministic_bypass
+    Telemetry: IoU=0.311, dist_m=2.713, norm_px=0.43, accel=0.0, S_dissip=0.7
+12. UarP8qU1S-c_00  @ F209 | Rule: stage_t_deterministic_bypass
+    Telemetry: IoU=0.339, dist_m=2.545, norm_px=0.567, accel=-60.0, S_dissip=0.8

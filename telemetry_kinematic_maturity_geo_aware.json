@@ -1,0 +1,771 @@
+[
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 1,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      2,
+      5
+    ],
+    "ground_distance_m": 661.2558929759041,
+    "bbox_iou": 0.11772486902064108,
+    "accel_1": 5355.958160094976,
+    "accel_2": 3799.532213029751
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 15,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      12,
+      3
+    ],
+    "ground_distance_m": 517.7357341051336,
+    "bbox_iou": 0.046977272201358285,
+    "accel_1": 292.44657573660504,
+    "accel_2": -215.4488734607229
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 179,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      28,
+      20
+    ],
+    "ground_distance_m": 838.098221526397,
+    "bbox_iou": 0.46512359245604895,
+    "accel_1": 8971.309149948074,
+    "accel_2": 107.68760505954123
+  },
+  {
+    "video_id": "F0NHENn-HS4_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 39,
+    "trigger_frame": 1,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      1,
+      4
+    ],
+    "ground_distance_m": 138.47449601675785,
+    "bbox_iou": 0.743752727373995,
+    "accel_1": 988.7814568487228,
+    "accel_2": 552.8385882897807
+  },
+  {
+    "video_id": "maJsgJsapH4_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 69,
+    "trigger_frame": 8,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      6,
+      3
+    ],
+    "ground_distance_m": 4.289657195988545,
+    "bbox_iou": 0.5958372993270253,
+    "accel_1": 0.0,
+    "accel_2": 27.487501120869798
+  },
+  {
+    "video_id": "iA_u73BG4ZM_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 116,
+    "trigger_frame": 688,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      44,
+      29
+    ],
+    "ground_distance_m": 371.62182830968425,
+    "bbox_iou": 0.0,
+    "accel_1": -2083.910828545116,
+    "accel_2": -200.00980499607175
+  },
+  {
+    "video_id": "maJGw3hQs_s_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "TP",
+    "gt_frame": 31,
+    "trigger_frame": 3,
+    "lead_time_frames": 28,
+    "lead_time_sec": 2.8,
+    "track_ids": [
+      2,
+      3
+    ],
+    "ground_distance_m": 137.1066836865268,
+    "bbox_iou": 0.23987054358316467,
+    "accel_1": 46.002825445711586,
+    "accel_2": -52.34197488438376
+  },
+  {
+    "video_id": "maJGw3hQs_s_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 31,
+    "trigger_frame": 57,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      2,
+      19
+    ],
+    "ground_distance_m": 98.24988293481222,
+    "bbox_iou": 0.484487683103818,
+    "accel_1": -81.08888361052294,
+    "accel_2": 0.0
+  },
+  {
+    "video_id": "aPsS_HaokoU_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 80,
+    "trigger_frame": 41,
+    "fp_category": "calibration_artifact",
+    "track_ids": [
+      1,
+      7
+    ],
+    "ground_distance_m": 0.6563488992750487,
+    "bbox_iou": 0.9797301512038261,
+    "accel_1": -18.911517902285027,
+    "accel_2": 0.0
+  },
+  {
+    "video_id": "aPsS_HaokoU_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 80,
+    "trigger_frame": 175,
+    "fp_category": "calibration_artifact",
+    "track_ids": [
+      11,
+      9
+    ],
+    "ground_distance_m": 317.90816570741976,
+    "bbox_iou": 0.0,
+    "accel_1": 23.47691317109092,
+    "accel_2": -8.34674524122664
+  },
+  {
+    "video_id": "aF2Hbp8C23A_00",
+    "split_type": "split_geo_aware",
+    "mode": "0_baseline",
+    "status": "FP",
+    "gt_frame": 45,
+    "trigger_frame": 8,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      8,
+      9
+    ],
+    "ground_distance_m": 343.545545696872,
+    "bbox_iou": 0.7785367129351196,
+    "accel_1": 250.00612580688355,
+    "accel_2": -174.31717225428417
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "1_stage6",
+    "status": "TP",
+    "gt_frame": 197,
+    "trigger_frame": 201,
+    "lead_time_frames": -4,
+    "lead_time_sec": -0.13,
+    "track_ids": [
+      27,
+      19
+    ],
+    "ground_distance_m": 7.520888685574263,
+    "bbox_iou": 0.17340322745454875,
+    "accel_1": -2529.4283141053584,
+    "accel_2": -3771.412129887964
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "1_stage6",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 251,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      29,
+      30
+    ],
+    "ground_distance_m": 0.3469419031802563,
+    "bbox_iou": 0.7782297419738495,
+    "accel_1": 261.41691911798733,
+    "accel_2": -311.6168120282526
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "1_stage6",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 452,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      41,
+      29
+    ],
+    "ground_distance_m": 0.6188333663754889,
+    "bbox_iou": 0.8959599946354267,
+    "accel_1": 20.92274318730299,
+    "accel_2": -271.1208708324123
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "1_stage6",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 645,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      29,
+      49
+    ],
+    "ground_distance_m": 0.4475306526304393,
+    "bbox_iou": 0.9050229447843852,
+    "accel_1": 25.376307162343803,
+    "accel_2": -7.778925840829293
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "1_stage6",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 795,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      29,
+      56
+    ],
+    "ground_distance_m": 0.3645409170137822,
+    "bbox_iou": 0.8934028153841818,
+    "accel_1": -274.5793138963333,
+    "accel_2": -208.1195501466873
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "1_stage6",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 866,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      68,
+      65
+    ],
+    "ground_distance_m": 1.7697027035551411,
+    "bbox_iou": 0.33081620124177197,
+    "accel_1": 709.1146788140152,
+    "accel_2": -152.41358448389727
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "1_stage6",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 254,
+    "fp_category": "calibration_artifact",
+    "track_ids": [
+      13,
+      37
+    ],
+    "ground_distance_m": 3.134714324727428,
+    "bbox_iou": 0.6875697163131254,
+    "accel_1": -12.772937544395013,
+    "accel_2": 17.471361061502876
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "1_stage6",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 371,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      13,
+      37
+    ],
+    "ground_distance_m": 3.3084511990964973,
+    "bbox_iou": 0.6875697163131254,
+    "accel_1": -27.49950446933885,
+    "accel_2": -31.308886457664197
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "1_stage6",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 420,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      37,
+      13
+    ],
+    "ground_distance_m": 1.7101075792052267,
+    "bbox_iou": 0.6875697163131254,
+    "accel_1": 35.82952890633501,
+    "accel_2": -139.42548095386707
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "1_stage6",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 448,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      13,
+      37
+    ],
+    "ground_distance_m": 2.507560502545582,
+    "bbox_iou": 0.6875697163131254,
+    "accel_1": -104.62782380878932,
+    "accel_2": -53.41863756892326
+  },
+  {
+    "video_id": "maJsgJsapH4_00",
+    "split_type": "split_geo_aware",
+    "mode": "1_stage6",
+    "status": "FP",
+    "gt_frame": 69,
+    "trigger_frame": 11,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      6,
+      3
+    ],
+    "ground_distance_m": 0.941193675293927,
+    "bbox_iou": 0.5958372993270253,
+    "accel_1": -73.24045563418831,
+    "accel_2": -238.65155378723878
+  },
+  {
+    "video_id": "maJsgJsapH4_00",
+    "split_type": "split_geo_aware",
+    "mode": "1_stage6",
+    "status": "FP",
+    "gt_frame": 69,
+    "trigger_frame": 110,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      18,
+      11
+    ],
+    "ground_distance_m": 1.1700692849457708,
+    "bbox_iou": 0.7706469958594094,
+    "accel_1": 92.2975231622197,
+    "accel_2": -86.62439849584293
+  },
+  {
+    "video_id": "maJsgJsapH4_00",
+    "split_type": "split_geo_aware",
+    "mode": "1_stage6",
+    "status": "FP",
+    "gt_frame": 69,
+    "trigger_frame": 261,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      35,
+      18
+    ],
+    "ground_distance_m": 0.7467530690935961,
+    "bbox_iou": 0.7678644750934338,
+    "accel_1": -80.51631551196753,
+    "accel_2": 67.88014409912063
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "2_stage6_maturity",
+    "status": "TP",
+    "gt_frame": 197,
+    "trigger_frame": 201,
+    "lead_time_frames": -4,
+    "lead_time_sec": -0.13,
+    "track_ids": [
+      27,
+      19
+    ],
+    "ground_distance_m": 7.520888685574263,
+    "bbox_iou": 0.17340322745454875,
+    "accel_1": -2529.4283141053584,
+    "accel_2": -3771.412129887964
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "2_stage6_maturity",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 251,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      29,
+      30
+    ],
+    "ground_distance_m": 0.3469419031802563,
+    "bbox_iou": 0.7782297419738495,
+    "accel_1": 261.41691911798733,
+    "accel_2": -311.6168120282526
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "2_stage6_maturity",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 452,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      41,
+      29
+    ],
+    "ground_distance_m": 0.6188333663754889,
+    "bbox_iou": 0.8959599946354267,
+    "accel_1": 20.92274318730299,
+    "accel_2": -271.1208708324123
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "2_stage6_maturity",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 645,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      29,
+      49
+    ],
+    "ground_distance_m": 0.4475306526304393,
+    "bbox_iou": 0.9050229447843852,
+    "accel_1": 25.376307162343803,
+    "accel_2": -7.778925840829293
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "2_stage6_maturity",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 795,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      29,
+      56
+    ],
+    "ground_distance_m": 0.3645409170137822,
+    "bbox_iou": 0.8934028153841818,
+    "accel_1": -274.5793138963333,
+    "accel_2": -208.1195501466873
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "2_stage6_maturity",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 866,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      68,
+      65
+    ],
+    "ground_distance_m": 1.7697027035551411,
+    "bbox_iou": 0.33081620124177197,
+    "accel_1": 709.1146788140152,
+    "accel_2": -152.41358448389727
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "2_stage6_maturity",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 254,
+    "fp_category": "calibration_artifact",
+    "track_ids": [
+      13,
+      37
+    ],
+    "ground_distance_m": 3.134714324727428,
+    "bbox_iou": 0.6875697163131254,
+    "accel_1": -12.772937544395013,
+    "accel_2": 17.471361061502876
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "2_stage6_maturity",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 371,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      13,
+      37
+    ],
+    "ground_distance_m": 3.3084511990964973,
+    "bbox_iou": 0.6875697163131254,
+    "accel_1": -27.49950446933885,
+    "accel_2": -31.308886457664197
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "2_stage6_maturity",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 420,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      37,
+      13
+    ],
+    "ground_distance_m": 1.7101075792052267,
+    "bbox_iou": 0.6875697163131254,
+    "accel_1": 35.82952890633501,
+    "accel_2": -139.42548095386707
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "2_stage6_maturity",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 448,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      13,
+      37
+    ],
+    "ground_distance_m": 2.507560502545582,
+    "bbox_iou": 0.6875697163131254,
+    "accel_1": -104.62782380878932,
+    "accel_2": -53.41863756892326
+  },
+  {
+    "video_id": "maJsgJsapH4_00",
+    "split_type": "split_geo_aware",
+    "mode": "2_stage6_maturity",
+    "status": "FP",
+    "gt_frame": 69,
+    "trigger_frame": 11,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      6,
+      3
+    ],
+    "ground_distance_m": 0.941193675293927,
+    "bbox_iou": 0.5958372993270253,
+    "accel_1": -73.24045563418831,
+    "accel_2": -238.65155378723878
+  },
+  {
+    "video_id": "maJsgJsapH4_00",
+    "split_type": "split_geo_aware",
+    "mode": "2_stage6_maturity",
+    "status": "FP",
+    "gt_frame": 69,
+    "trigger_frame": 110,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      18,
+      11
+    ],
+    "ground_distance_m": 1.1700692849457708,
+    "bbox_iou": 0.7706469958594094,
+    "accel_1": 92.2975231622197,
+    "accel_2": -86.62439849584293
+  },
+  {
+    "video_id": "maJsgJsapH4_00",
+    "split_type": "split_geo_aware",
+    "mode": "2_stage6_maturity",
+    "status": "FP",
+    "gt_frame": 69,
+    "trigger_frame": 261,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      35,
+      18
+    ],
+    "ground_distance_m": 0.7467530690935961,
+    "bbox_iou": 0.7678644750934338,
+    "accel_1": -80.51631551196753,
+    "accel_2": 67.88014409912063
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "3_stage6_maturity_validity",
+    "status": "TP",
+    "gt_frame": 197,
+    "trigger_frame": 201,
+    "lead_time_frames": -4,
+    "lead_time_sec": -0.13,
+    "track_ids": [
+      27,
+      19
+    ],
+    "ground_distance_m": 7.520888685574263,
+    "bbox_iou": 0.17340322745454875,
+    "accel_1": -2529.4283141053584,
+    "accel_2": -3771.412129887964
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "3_stage6_maturity_validity",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 251,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      29,
+      30
+    ],
+    "ground_distance_m": 0.3469419031802563,
+    "bbox_iou": 0.7782297419738495,
+    "accel_1": 261.41691911798733,
+    "accel_2": -311.6168120282526
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "3_stage6_maturity_validity",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 452,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      41,
+      29
+    ],
+    "ground_distance_m": 0.6188333663754889,
+    "bbox_iou": 0.8959599946354267,
+    "accel_1": 20.92274318730299,
+    "accel_2": -271.1208708324123
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "3_stage6_maturity_validity",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 795,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      29,
+      56
+    ],
+    "ground_distance_m": 0.3645409170137822,
+    "bbox_iou": 0.8934028153841818,
+    "accel_1": -274.5793138963333,
+    "accel_2": -208.1195501466873
+  },
+  {
+    "video_id": "kABWTDKgc9U_00",
+    "split_type": "split_geo_aware",
+    "mode": "3_stage6_maturity_validity",
+    "status": "FP",
+    "gt_frame": 197,
+    "trigger_frame": 866,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      68,
+      65
+    ],
+    "ground_distance_m": 1.7697027035551411,
+    "bbox_iou": 0.33081620124177197,
+    "accel_1": 709.1146788140152,
+    "accel_2": -152.41358448389727
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "3_stage6_maturity_validity",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 421,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      37,
+      13
+    ],
+    "ground_distance_m": 1.4813017786246547,
+    "bbox_iou": 0.6875697163131254,
+    "accel_1": -18.92966274057622,
+    "accel_2": -92.23767169410701
+  },
+  {
+    "video_id": "LiM5LPSZoow_00",
+    "split_type": "split_geo_aware",
+    "mode": "3_stage6_maturity_validity",
+    "status": "FP",
+    "gt_frame": 53,
+    "trigger_frame": 448,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      13,
+      37
+    ],
+    "ground_distance_m": 2.507560502545582,
+    "bbox_iou": 0.6875697163131254,
+    "accel_1": -104.62782380878932,
+    "accel_2": -53.41863756892326
+  },
+  {
+    "video_id": "maJsgJsapH4_00",
+    "split_type": "split_geo_aware",
+    "mode": "3_stage6_maturity_validity",
+    "status": "FP",
+    "gt_frame": 69,
+    "trigger_frame": 11,
+    "fp_category": "tracker_artifact",
+    "track_ids": [
+      6,
+      3
+    ],
+    "ground_distance_m": 0.941193675293927,
+    "bbox_iou": 0.5958372993270253,
+    "accel_1": -73.24045563418831,
+    "accel_2": -238.65155378723878
+  }
+]

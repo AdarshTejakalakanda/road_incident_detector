@@ -1,0 +1,984 @@
+{
+  "summary": {
+    "split_in_distribution": {
+      "tp": 7,
+      "fp": 8,
+      "fn": 8,
+      "precision": 0.4666666666666667,
+      "recall": 0.4666666666666667,
+      "f1": 0.4666666666666667,
+      "fp_per_video": 0.5333333333333333,
+      "raw_total_per_video": 1.0666666666666667,
+      "pre_impact_fp": 5,
+      "post_impact_fp": 3,
+      "repeated_fp": 1,
+      "med_lead_sec": 0.24,
+      "med_lead_frames": 4.0,
+      "med_abs_err_sec": 0.4005555555555556,
+      "med_abs_err_frames": 6.0
+    },
+    "split_geo_aware": {
+      "tp": 7,
+      "fp": 5,
+      "fn": 8,
+      "precision": 0.5833333333333334,
+      "recall": 0.4666666666666667,
+      "f1": 0.5185185185185186,
+      "fp_per_video": 0.3333333333333333,
+      "raw_total_per_video": 0.8666666666666667,
+      "pre_impact_fp": 2,
+      "post_impact_fp": 3,
+      "repeated_fp": 1,
+      "med_lead_sec": 0.4005555555555556,
+      "med_lead_frames": 4.0,
+      "med_abs_err_sec": 0.734966592427617,
+      "med_abs_err_frames": 11.0
+    }
+  },
+  "all_videos": [
+    {
+      "video_id": "Z4kg2Ev3vhk_00",
+      "split": "in_distribution",
+      "type": "rear-end",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "night",
+      "gt_frame": 170,
+      "cand_frame": null,
+      "diff_frames": null,
+      "lead_sec": null,
+      "status": "FN",
+      "primary_detector": "-",
+      "fp_episodes": 0,
+      "raw_alarms": 0,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": "UPSTREAM_DETECTOR_DROPOUT (Full Detection Miss / Misclassified as Clock/Person)",
+      "candidates": []
+    },
+    {
+      "video_id": "unS0-TLF1ao_00",
+      "split": "in_distribution",
+      "type": "t-bone",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "night",
+      "gt_frame": 64,
+      "cand_frame": 58,
+      "diff_frames": -6,
+      "lead_sec": 0.24,
+      "status": "TP",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 0,
+      "raw_alarms": 1,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": null,
+      "candidates": [
+        {
+          "f": 58,
+          "tids": [
+            2
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "nAXTthLfgtI_00",
+      "split": "in_distribution",
+      "type": "single",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "night",
+      "gt_frame": 62,
+      "cand_frame": null,
+      "diff_frames": null,
+      "lead_sec": null,
+      "status": "FN",
+      "primary_detector": "-",
+      "fp_episodes": 0,
+      "raw_alarms": 0,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": "UPSTREAM_DETECTOR_DROPOUT (Full Detection Miss / Misclassified as Clock/Person)",
+      "candidates": []
+    },
+    {
+      "video_id": "fzWY0vLAXzI_00",
+      "split": "in_distribution",
+      "type": "t-bone",
+      "rollover": 1,
+      "weather": "snow",
+      "day_time": "day",
+      "gt_frame": 88,
+      "cand_frame": null,
+      "diff_frames": null,
+      "lead_sec": null,
+      "status": "FN",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 1,
+      "raw_alarms": 1,
+      "fp_breakdown": {
+        "pre_impact": 1,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": "UPSTREAM_DETECTOR_DROPOUT (Impacted Vehicle Conf < 0.20 Prior to Rest)",
+      "candidates": [
+        {
+          "f": 46,
+          "tids": [
+            6
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "vxZ47DoPNY8_00",
+      "split": "in_distribution",
+      "type": "single",
+      "rollover": 1,
+      "weather": "rain",
+      "day_time": "day",
+      "gt_frame": 50,
+      "cand_frame": 56,
+      "diff_frames": 6,
+      "lead_sec": -0.3366906474820144,
+      "status": "TP",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 0,
+      "raw_alarms": 1,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": null,
+      "candidates": [
+        {
+          "f": 56,
+          "tids": [
+            4
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "OXVXsdDT9QQ_00",
+      "split": "in_distribution",
+      "type": "t-bone",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "night",
+      "gt_frame": 17,
+      "cand_frame": 33,
+      "diff_frames": 16,
+      "lead_sec": -0.9588014981273408,
+      "status": "TP",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 0,
+      "raw_alarms": 1,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": null,
+      "candidates": [
+        {
+          "f": 33,
+          "tids": [
+            2
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "VozrseCzhQc_00",
+      "split": "in_distribution",
+      "type": "single",
+      "rollover": 0,
+      "weather": "rain",
+      "day_time": "day",
+      "gt_frame": 84,
+      "cand_frame": null,
+      "diff_frames": null,
+      "lead_sec": null,
+      "status": "FN",
+      "primary_detector": "-",
+      "fp_episodes": 0,
+      "raw_alarms": 0,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": "UPSTREAM_DETECTOR_DROPOUT (Full Detection Miss / Misclassified as Clock/Person)",
+      "candidates": []
+    },
+    {
+      "video_id": "kABWTDKgc9U_00",
+      "split": "in_distribution",
+      "type": "t-bone",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "day",
+      "gt_frame": 197,
+      "cand_frame": null,
+      "diff_frames": null,
+      "lead_sec": null,
+      "status": "FN",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 1,
+      "raw_alarms": 1,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 1
+      },
+      "fn_failure_mode": "OTHER",
+      "candidates": [
+        {
+          "f": 29,
+          "tids": [
+            8
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "ftk_fSc4haM_00",
+      "split": "in_distribution",
+      "type": "t-bone",
+      "rollover": 1,
+      "weather": "normal",
+      "day_time": "night",
+      "gt_frame": 130,
+      "cand_frame": null,
+      "diff_frames": null,
+      "lead_sec": null,
+      "status": "FN",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 1,
+      "raw_alarms": 1,
+      "fp_breakdown": {
+        "pre_impact": 1,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": "ANNOTATION_TIMING_DISCREPANCY (GT Marks Lane Encroachment; Physical Impact +40..+47f Later)",
+      "candidates": [
+        {
+          "f": 34,
+          "tids": [
+            14
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "BgdKGnFqz0I_00",
+      "split": "in_distribution",
+      "type": "t-bone",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "day",
+      "gt_frame": 125,
+      "cand_frame": null,
+      "diff_frames": null,
+      "lead_sec": null,
+      "status": "FN",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 1,
+      "raw_alarms": 2,
+      "fp_breakdown": {
+        "pre_impact": 1,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": "ANNOTATION_TIMING_DISCREPANCY (GT Marks Lane Encroachment; Physical Impact +40..+47f Later)",
+      "candidates": [
+        {
+          "f": 24,
+          "tids": [
+            2
+          ],
+          "det": "single_vehicle"
+        },
+        {
+          "f": 25,
+          "tids": [
+            3
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "LiM5LPSZoow_00",
+      "split": "in_distribution",
+      "type": "t-bone",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "day",
+      "gt_frame": 53,
+      "cand_frame": 42,
+      "diff_frames": -11,
+      "lead_sec": 0.734966592427617,
+      "status": "TP",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 1,
+      "raw_alarms": 2,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": null,
+      "candidates": [
+        {
+          "f": 42,
+          "tids": [
+            15
+          ],
+          "det": "single_vehicle"
+        },
+        {
+          "f": 68,
+          "tids": [
+            8
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "iA_u73BG4ZM_00",
+      "split": "in_distribution",
+      "type": "rear-end",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "day",
+      "gt_frame": 116,
+      "cand_frame": 82,
+      "diff_frames": -34,
+      "lead_sec": 1.1333333333333333,
+      "status": "TP",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 1,
+      "raw_alarms": 2,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 1,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": null,
+      "candidates": [
+        {
+          "f": 82,
+          "tids": [
+            7
+          ],
+          "det": "single_vehicle"
+        },
+        {
+          "f": 635,
+          "tids": [
+            42
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "maJGw3hQs_s_00",
+      "split": "in_distribution",
+      "type": "t-bone",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "day",
+      "gt_frame": 31,
+      "cand_frame": 27,
+      "diff_frames": -4,
+      "lead_sec": 0.4005555555555556,
+      "status": "TP",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 1,
+      "raw_alarms": 2,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": null,
+      "candidates": [
+        {
+          "f": 27,
+          "tids": [
+            8
+          ],
+          "det": "single_vehicle"
+        },
+        {
+          "f": 65,
+          "tids": [
+            20
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "aPsS_HaokoU_00",
+      "split": "in_distribution",
+      "type": "t-bone",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "day",
+      "gt_frame": 80,
+      "cand_frame": null,
+      "diff_frames": null,
+      "lead_sec": null,
+      "status": "FN",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 1,
+      "raw_alarms": 1,
+      "fp_breakdown": {
+        "pre_impact": 1,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": "ANNOTATION_TIMING_DISCREPANCY (GT Marks Lane Encroachment; Physical Impact +40..+47f Later)",
+      "candidates": [
+        {
+          "f": 44,
+          "tids": [
+            4
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "aF2Hbp8C23A_00",
+      "split": "in_distribution",
+      "type": "rear-end",
+      "rollover": 1,
+      "weather": "normal",
+      "day_time": "day",
+      "gt_frame": 45,
+      "cand_frame": 44,
+      "diff_frames": -1,
+      "lead_sec": 0.0670662100456621,
+      "status": "TP",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 0,
+      "raw_alarms": 1,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": null,
+      "candidates": [
+        {
+          "f": 44,
+          "tids": [
+            10
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "Z4kg2Ev3vhk_00",
+      "split": "geo_aware",
+      "type": "rear-end",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "night",
+      "gt_frame": 170,
+      "cand_frame": null,
+      "diff_frames": null,
+      "lead_sec": null,
+      "status": "FN",
+      "primary_detector": "-",
+      "fp_episodes": 0,
+      "raw_alarms": 0,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": "UPSTREAM_DETECTOR_DROPOUT (Full Detection Miss / Misclassified as Clock/Person)",
+      "candidates": []
+    },
+    {
+      "video_id": "UarP8qU1S-c_00",
+      "split": "geo_aware",
+      "type": "single",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "night",
+      "gt_frame": 130,
+      "cand_frame": null,
+      "diff_frames": null,
+      "lead_sec": null,
+      "status": "FN",
+      "primary_detector": "-",
+      "fp_episodes": 0,
+      "raw_alarms": 0,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": "OTHER",
+      "candidates": []
+    },
+    {
+      "video_id": "UarP8qU1S-c_01",
+      "split": "geo_aware",
+      "type": "single",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "night",
+      "gt_frame": 30,
+      "cand_frame": null,
+      "diff_frames": null,
+      "lead_sec": null,
+      "status": "FN",
+      "primary_detector": "-",
+      "fp_episodes": 0,
+      "raw_alarms": 0,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": "UPSTREAM_TRACKER_DROPOUT (Entrant Vehicle 0 Track Maturity at Impact Point)",
+      "candidates": []
+    },
+    {
+      "video_id": "nAXTthLfgtI_00",
+      "split": "geo_aware",
+      "type": "single",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "night",
+      "gt_frame": 62,
+      "cand_frame": null,
+      "diff_frames": null,
+      "lead_sec": null,
+      "status": "FN",
+      "primary_detector": "-",
+      "fp_episodes": 0,
+      "raw_alarms": 0,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": "UPSTREAM_DETECTOR_DROPOUT (Full Detection Miss / Misclassified as Clock/Person)",
+      "candidates": []
+    },
+    {
+      "video_id": "VozrseCzhQc_00",
+      "split": "geo_aware",
+      "type": "single",
+      "rollover": 0,
+      "weather": "rain",
+      "day_time": "day",
+      "gt_frame": 84,
+      "cand_frame": null,
+      "diff_frames": null,
+      "lead_sec": null,
+      "status": "FN",
+      "primary_detector": "-",
+      "fp_episodes": 0,
+      "raw_alarms": 0,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": "UPSTREAM_DETECTOR_DROPOUT (Full Detection Miss / Misclassified as Clock/Person)",
+      "candidates": []
+    },
+    {
+      "video_id": "kABWTDKgc9U_00",
+      "split": "geo_aware",
+      "type": "t-bone",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "day",
+      "gt_frame": 197,
+      "cand_frame": null,
+      "diff_frames": null,
+      "lead_sec": null,
+      "status": "FN",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 1,
+      "raw_alarms": 1,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 1
+      },
+      "fn_failure_mode": "OTHER",
+      "candidates": [
+        {
+          "f": 29,
+          "tids": [
+            8
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "LiM5LPSZoow_00",
+      "split": "geo_aware",
+      "type": "t-bone",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "day",
+      "gt_frame": 53,
+      "cand_frame": 42,
+      "diff_frames": -11,
+      "lead_sec": 0.734966592427617,
+      "status": "TP",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 1,
+      "raw_alarms": 2,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": null,
+      "candidates": [
+        {
+          "f": 42,
+          "tids": [
+            15
+          ],
+          "det": "single_vehicle"
+        },
+        {
+          "f": 68,
+          "tids": [
+            8
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "F0NHENn-HS4_00",
+      "split": "geo_aware",
+      "type": "rear-end",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "day",
+      "gt_frame": 39,
+      "cand_frame": 18,
+      "diff_frames": -21,
+      "lead_sec": 1.3955555555555557,
+      "status": "TP",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 0,
+      "raw_alarms": 2,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": null,
+      "candidates": [
+        {
+          "f": 18,
+          "tids": [
+            2
+          ],
+          "det": "single_vehicle"
+        },
+        {
+          "f": 18,
+          "tids": [
+            9
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "maJsgJsapH4_00",
+      "split": "geo_aware",
+      "type": "rear-end",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "day",
+      "gt_frame": 69,
+      "cand_frame": 72,
+      "diff_frames": 3,
+      "lead_sec": -0.30133333333333334,
+      "status": "TP",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 0,
+      "raw_alarms": 1,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": null,
+      "candidates": [
+        {
+          "f": 72,
+          "tids": [
+            11
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "iA_u73BG4ZM_00",
+      "split": "geo_aware",
+      "type": "rear-end",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "day",
+      "gt_frame": 116,
+      "cand_frame": 82,
+      "diff_frames": -34,
+      "lead_sec": 1.1333333333333333,
+      "status": "TP",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 1,
+      "raw_alarms": 2,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 1,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": null,
+      "candidates": [
+        {
+          "f": 82,
+          "tids": [
+            7
+          ],
+          "det": "single_vehicle"
+        },
+        {
+          "f": 635,
+          "tids": [
+            42
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "maJGw3hQs_s_00",
+      "split": "geo_aware",
+      "type": "t-bone",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "day",
+      "gt_frame": 31,
+      "cand_frame": 27,
+      "diff_frames": -4,
+      "lead_sec": 0.4005555555555556,
+      "status": "TP",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 1,
+      "raw_alarms": 2,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": null,
+      "candidates": [
+        {
+          "f": 27,
+          "tids": [
+            8
+          ],
+          "det": "single_vehicle"
+        },
+        {
+          "f": 65,
+          "tids": [
+            20
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "aPsS_HaokoU_00",
+      "split": "geo_aware",
+      "type": "t-bone",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "day",
+      "gt_frame": 80,
+      "cand_frame": null,
+      "diff_frames": null,
+      "lead_sec": null,
+      "status": "FN",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 1,
+      "raw_alarms": 1,
+      "fp_breakdown": {
+        "pre_impact": 1,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": "ANNOTATION_TIMING_DISCREPANCY (GT Marks Lane Encroachment; Physical Impact +40..+47f Later)",
+      "candidates": [
+        {
+          "f": 44,
+          "tids": [
+            4
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "aF2Hbp8C23A_00",
+      "split": "geo_aware",
+      "type": "rear-end",
+      "rollover": 1,
+      "weather": "normal",
+      "day_time": "day",
+      "gt_frame": 45,
+      "cand_frame": 44,
+      "diff_frames": -1,
+      "lead_sec": 0.0670662100456621,
+      "status": "TP",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 0,
+      "raw_alarms": 1,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": null,
+      "candidates": [
+        {
+          "f": 44,
+          "tids": [
+            10
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    },
+    {
+      "video_id": "82sQ7N-aHOw_00",
+      "split": "geo_aware",
+      "type": "t-bone",
+      "rollover": 0,
+      "weather": "normal",
+      "day_time": "day",
+      "gt_frame": 15,
+      "cand_frame": null,
+      "diff_frames": null,
+      "lead_sec": null,
+      "status": "FN",
+      "primary_detector": "-",
+      "fp_episodes": 0,
+      "raw_alarms": 0,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": "UPSTREAM_TRACKER_DROPOUT (Entrant Vehicle 0 Track Maturity at Impact Point)",
+      "candidates": []
+    },
+    {
+      "video_id": "bJMc3sNP2AU_00",
+      "split": "geo_aware",
+      "type": "t-bone",
+      "rollover": 1,
+      "weather": "rain",
+      "day_time": "night",
+      "gt_frame": 32,
+      "cand_frame": 56,
+      "diff_frames": 24,
+      "lead_sec": -1.5919999999999999,
+      "status": "TP",
+      "primary_detector": "single_vehicle",
+      "fp_episodes": 0,
+      "raw_alarms": 1,
+      "fp_breakdown": {
+        "pre_impact": 0,
+        "post_impact": 0,
+        "repeated": 0,
+        "ambiguous_conflict": 0
+      },
+      "fn_failure_mode": null,
+      "candidates": [
+        {
+          "f": 56,
+          "tids": [
+            1
+          ],
+          "det": "single_vehicle"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+ 215:         is_bypass, coll_type, bypass_tel, rationale = self._evaluate_deterministic_high_confidence_bypass(
+ 216:             telemetry=telemetry,
+ 217:             candidate_frame=candidate_frame,
+ 218:             video_id=video_id,
+ 219:         )
+ 220:         if is_bypass:
+ 221:             logger.info(f'DETERMINISTIC BYPASS ACTIVATED @ F{candidate_frame}: {rationale}')
+ 222:             result = {
+ 223:                 'verdict': 'CONFIRMED_INCIDENT',
+ 224:                 'is_collision': True,
+ 225:                 'collision_type': coll_type,
+ 226:                 'confidence': 0.95,
+ 227:                 'visual_cues': [
+ 228:                     'physical contact / high bounding box overlap',
+ 229:                     'severe acceleration impulse beyond friction limits',
+ 230:                     'post-event kinetic dissipation / trajectory arrest',
+ 231:                 ],
+ 232:                 'rationale': f'Deterministic high-confidence bypass confirmed incident at F{candidate_frame}: {rationale}',
+ 233:                 'source': 'deterministic_high_confidence_bypass',
+ 234:                 'suppressed': False,
+ 235:                 'bypass_telemetry': bypass_tel,
+ 236:             }
+ 237:             self._cached_results[cache_key] = result
+ 238:             return result
+ 239: 
+ 240:         # 2. Check for offline fallback (no API key and no mock VLM response)
+ 241:         if mock_vlm_response is None and not self.api_key:
+ 242:             if self.mock_fallback:
+ 243:                 logger.info(f'GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F{candidate_frame}.')
+ 244:                 return self._evaluate_and_dispatch_fallback(telemetry, candidate_frame, video_id)
+ 245:             else:
+ 246:                 raise ValueError('GROQ_API_KEY not configured and mock_fallback is False.')
+ 247: 
+ 248:         # 3. Stage T Corrected Tier 1 Admission (for candidates dispatched to VLM / mock)
+ 249:         passes_tier1, tier1_reason = passes_tier1_admission(telemetry)
+ 250:         if not passes_tier1:
+ 251:             logger.info(f'Tier 1 Admission rejected candidate @ F{candidate_frame}: {tier1_reason}')
+ 252:             cand_conf = float(telemetry.get('composite_score', telemetry.get('confidence', 0.50)))
+ 253:             result = {
+ 254:                 'verdict': 'CANDIDATE_UNCONFIRMED',
+ 255:                 'is_collision': False,
+ 256:                 'collision_type': str(telemetry.get('event_type', 'unconfirmed')),
+ 257:                 'confidence': round(cand_conf, 2),
+ 258:                 'visual_cues': [],
+ 259:                 'rationale': f'Quarantined: Candidate failed Tier 1 admission ({tier1_reason})',
+ 260:                 'source': 'tier1_admission_gate',
+ 261:                 'suppressed': True,
+ 262:                 'suppression_reason': tier1_reason,
+ 263:                 'bypass_telemetry': bypass_tel,
+ 264:             }
+ 265:             self._cached_results[cache_key] = result
+ 266:             return result
+ 267: 
+ 268:         vlm_data = None
+ 269:         vlm_source = 'mock_vlm'
+ 270:         if mock_vlm_response is not None:
+ 271:             vlm_data = mock_vlm_response
+ 272:             vlm_source = 'mock_vlm' 
+ 273:         else:
+ 274:             self._wait_for_cooldown()
+ 275:             try:
+ 276:                 import requests
+ 277:                 _, buffer = cv2.imencode('.jpg', evidence_strip, [int(cv2.IMWRITE_JPEG_QUALITY), 85])
+ 278:                 b64_img = base64.b64encode(buffer).decode('utf-8')
+ 279:                 event_type = str(telemetry.get('event_type', 'collision'))
+ 280:                 is_single = event_type in ('single_vehicle_anomaly', 'single', 'barrier_strike') or telemetry.get('is_single_vehicle', False)
+ 281:                 prompt = SINGLE_VEHICLE_PROMPT if is_single else MULTI_VEHICLE_PROMPT
+ 282:                 headers = {
+ 283:                     'Authorization': f'Bearer {self.api_key}',
+ 284:                     'Content-Type': 'application/json',
+ 285:                 }
+ 286:                 payload = {
+ 287:                     'model': self.model,
+ 288:                     'messages': [
+ 289:                         {
+ 290:                             'role': 'system',
+ 291:                             'content': ('You are an expert Traffic Incident Verification Specialist in an Intelligent Transportation System. Output ONLY valid JSON.'),
+ 292:                         },
+ 293:                         {
+ 294:                             'role': 'user',
+ 295:                             'content': [
+ 296:                                 {'type': 'text', 'text': prompt},
+ 297:                                 {
+ 298:                                     'type': 'image_url',
+ 299:                                     'image_url': {'url': f'data:image/jpeg;base64,{b64_img}'},
+ 300:                                 },
+ 301:                             ],
+ 302:                         },
+ 303:                     ],
+ 304:                     'response_format': {'type': 'json_object'},
+ 305:                     'temperature': 0.0,
+ 306:                     'max_tokens': 500,
+ 307:                 }
+ 308:                 resp = requests.post(self.GROQ_ENDPOINT, headers=headers, json=payload, timeout=30.0)
+ 309:                 self._last_call_timestamp = time.time()
+ 310:                 if resp.status_code == 200:
+ 311:                     resp_json = resp.json()
+ 312:                     content = resp_json['choices'][0]['message']['content']
+ 313:                     vlm_data = json.loads(content)
+ 314:                     vlm_source = 'groq_api'
+ 315:                 else:
+ 316:                     logger.warning(f'Groq API returned HTTP {resp.status_code}: {resp.text}')
+ 317:                     if self.mock_fallback:
+ 318:                         return self._evaluate_and_dispatch_fallback(telemetry, candidate_frame, video_id)
+ 319:                     raise RuntimeError(f'Groq API error: {resp.text}')
+ 320:             except Exception as e:
+ 321:                 logger.error(f'Groq arbitration failed: {e}')
+ 322:                 if self.mock_fallback:
+ 323:                     return self._evaluate_and_dispatch_fallback(telemetry, candidate_frame, video_id)
+ 324:                 raise
+ 325: 
+ 326:         # 4. Validate VLM schema
+ 327:         is_valid_schema, schema_err = validate_stage_t_vlm_output(vlm_data)
+ 328:         if not is_valid_schema:
+ 329:             logger.warning(f'Invalid Stage T VLM output schema: {schema_err}; quarantining candidate.')
+ 330:             cand_conf = float(telemetry.get('composite_score', telemetry.get('confidence', 0.50)))
+ 331:             result = {
+ 332:                 'verdict': 'CANDIDATE_UNCONFIRMED',
+ 333:                 'is_collision': False,
+ 334:                 'collision_type': str(telemetry.get('event_type', 'unconfirmed')),
+ 335:                 'confidence': round(cand_conf, 2),
+ 336:                 'visual_cues': [],
+ 337:                 'rationale': f'Quarantined: VLM output failed schema validation ({schema_err})',
+ 338:                 'source': f'{vlm_source}_schema_error',
+ 339:                 'suppressed': True,
+ 340:                 'suppression_reason': schema_err,
+ 341:                 'bypass_telemetry': bypass_tel,
+ 342:             }
+ 343:             self._cached_results[cache_key] = result
+ 344:             return result
+ 345: 
+ 346:         # 5. Section 5 & 6: Asymmetric Arbitration Logic
+ 347:         contact = bool(vlm_data.get('physical_contact_observed', False))
+ 348:         damage = bool(vlm_data.get('structural_damage_or_deformation', False))
+ 349:         displacement = bool(vlm_data.get('post_impact_displacement_or_rest', False))
+ 350:         benign_alt = str(vlm_data.get('benign_alternative', 'none')).lower()
+ 351: 
+ 352:         is_confirmed = contact and damage and displacement and (benign_alt == 'none')
+ 353:         is_rejected = (not contact) and (not damage) and (benign_alt in {'normal_turn', 'queue_stop', 'lane_change', 'camera_artifact'})
+ 354: 
+ 355:         if is_confirmed:
+ 356:             event_type = str(telemetry.get('event_type', 'collision'))
+ 357:             coll_type = str(vlm_data.get('collision_type', vlm_data.get('incident_type', event_type)))
+ 358:             result = {
+ 359:                 'verdict': 'CONFIRMED_INCIDENT',
+ 360:                 'is_collision': True,
+ 361:                 'collision_type': coll_type,
+ 362:                 'confidence': float(vlm_data.get('confidence', 0.90)),
+ 363:                 'visual_cues': [
+ 364:                     'physical contact observed',
+ 365:                     'structural damage or deformation verified',
+ 366:                     'post impact displacement or rest observed',
+ 367:                 ],
+ 368:                 'rationale': str(vlm_data.get('rationale', vlm_data.get('reasoning', 'VLM visual confirmation'))),
+ 369:                 'source': vlm_source,
+ 370:                 'suppressed': False,
+ 371:                 'vlm_evaluation': vlm_data,
+ 372:             }
+ 373:         elif is_rejected:
+ 374:             b_rat = vlm_data.get('rationale', vlm_data.get('reasoning', ''))
+ 375:             result = {
+ 376:                 'verdict': 'REJECTED_FALSE_ALARM',
+ 377:                 'is_collision': False,
+ 378:                 'collision_type': 'none',
+ 379:                 'confidence': float(vlm_data.get('confidence', 0.0)),
+ 380:                 'visual_cues': [],
+ 381:                 'rationale': f'VLM verified benign alternative: {benign_alt}. {b_rat}',
+ 382:                 'source': vlm_source,
+ 383:                 'suppressed': True,
+ 384:                 'suppression_reason': f'benign_alternative_{benign_alt}',
+ 385:                 'vlm_evaluation': vlm_data,
+ 386:             }
+ 387:         else:
+ 388:             cand_conf = float(telemetry.get('composite_score', telemetry.get('confidence', 0.50)))
+ 389:             ambiguous_reason = f'Ambiguous VLM assessment: contact={contact}, damage={damage}, displacement={displacement}, benign={benign_alt}'
+ 390:             logger.info(f'Candidate @ F{candidate_frame} quarantined: {ambiguous_reason}')
+ 391:             result = {
+ 392:                 'verdict': 'CANDIDATE_UNCONFIRMED',
+ 393:                 'is_collision': False,
+ 394:                 'collision_type': str(telemetry.get('event_type', 'unconfirmed')),
+ 395:                 'confidence': round(cand_conf, 2),
+ 396:                 'visual_cues': [],
+ 397:                 'rationale': f'Quarantined: {ambiguous_reason}',
+ 398:                 'source': f'{vlm_source}_quarantined',
+ 399:                 'suppressed': True,
+ 400:                 'suppression_reason': ambiguous_reason,
+ 401:                 'vlm_evaluation': vlm_data,
+ 402:                 'bypass_telemetry': bypass_tel,
+ 403:             }
+ 404:         self._cached_results[cache_key] = result
+ 405:         return result
+ 406: 
+ 407:     def _evaluate_deterministic_high_confidence_bypass(
+ 408:         self,
+ 409:         telemetry: Dict[str, Any],
+ 410:         candidate_frame: int,
+ 411:         video_id: str,
+ 412:     ) -> Tuple[bool, str, Dict[str, Any], str]:
+ 413:         event_type = str(telemetry.get('event_type', 'collision'))
+ 414:         accel = float(telemetry.get('accel_ms2', telemetry.get('a_long', telemetry.get('acceleration_mag', 0.0))))
+ 415:         abs_accel = abs(accel)
+ 416:         dist = float(telemetry.get('distance_m', telemetry.get('ground_distance_m', telemetry.get('dca_m', 99.0))))
+ 417:         iou = float(telemetry.get('bbox_iou', telemetry.get('iou', 0.0)))
+ 418:         max_spd = float(telemetry.get('max_recent_speed_kmh', telemetry.get('speed_kmh', telemetry.get('metric_speed_kmh', 0.0))))
+ 419:         curr_spd = float(telemetry.get('speed_kmh', telemetry.get('metric_speed_kmh', 0.0)))
+ 420:         speed_drop = max(0.0, max_spd - curr_spd)
+ 421:         post_rest = bool(telemetry.get('post_event_rest', False))
+ 422:         is_crossing = bool(telemetry.get('is_crossing_trajectory', False))
+ 423:         s_dissip = float(telemetry.get('S_dissip', 0.0))
+ 424:         yaw_delta = max(float(telemetry.get('yaw_delta_deg', 0.0)), float(telemetry.get('theta_deg', 0.0)))
+ 425:         d_edge_m = float(telemetry.get('d_edge_m', 99.0))
+ 426:         shoulder_admitted = bool(telemetry.get('shoulder_admitted', False))
+ 427:         v_dot_n = float(telemetry.get('v_dot_n', 0.0))
+ 428:         tau_rest = float(telemetry.get('tau_rest', telemetry.get('stationary_duration_sec', telemetry.get('rest_duration_s', 0.0))))
+ 429:         if tau_rest < 0.25 and (curr_spd <= 5.0 or post_rest):
+ 430:             tau_rest = 0.25
+ 431:         trajectory_arrest = bool(curr_spd <= 6.0 or post_rest or tau_rest >= 0.25)
+ 432:         norm_px = float(telemetry.get('norm_pixel_dist', 99.0))
+ 433:         is_closure_corridor = bool(telemetry.get('is_kinematic_closure_corridor', False))
+ 434:         bypass_tel = {
+ 435:             'candidate_frame': candidate_frame,
+ 436:             'event_type': event_type,
+ 437:             'contact_evidence': {
+ 438:                 'bbox_iou': round(iou, 3),
+ 439:                 'distance_m': round(dist, 3),
+ 440:                 'norm_pixel_dist': round(norm_px, 3),
+ 441:                 'is_crossing': is_crossing,
+ 442:                 'is_kinematic_closure_corridor': is_closure_corridor,
+ 443:                 'S_dissip': round(s_dissip, 3),
+ 444:             },
+ 445:             'impulse': {
+ 446:                 'accel_ms2': round(accel, 2),
+ 447:                 'abs_accel_ms2': round(abs_accel, 2),
+ 448:             },
+ 449:             'velocities': {
+ 450:                 'pre_speed_kmh': round(max_spd, 2),
+ 451:                 'curr_speed_kmh': round(curr_spd, 2),
+ 452:                 'speed_drop_kmh': round(speed_drop, 2),
+ 453:             },
+ 454:             'rest_and_arrest': {
+ 455:                 'post_event_rest': post_rest,
+ 456:                 'rest_duration_s': round(tau_rest, 2),
+ 457:                 'tau_rest': round(tau_rest, 2),
+ 458:                 'trajectory_arrest': trajectory_arrest,
+ 459:             },
+ 460:             'barrier_geometry': {
+ 461:                 'd_boundary_m': round(d_edge_m, 3),
+ 462:                 'v_dot_n': round(v_dot_n, 3),
+ 463:                 'shoulder_admitted': shoulder_admitted,
+ 464:             },
+ 465:             'bypass_passed': False,
+ 466:             'bypass_reason': '',
+ 467:         }
+ 468: 
+ 469:         # Stage T Section 7 Primary Deterministic Bypass Rule
+ 470:         if (iou >= 0.25) and (accel <= -12.0) and (tau_rest >= 0.25):
+ 471:             coll_type = 't_bone_collision' if is_crossing else 'rear_end_collision'
+ 472:             bypass_tel['bypass_passed'] = True
+ 473:             bypass_tel['bypass_reason'] = f'stage_t_deterministic_bypass (iou={iou:.2f}, a_long={accel:+.1f}, tau_rest={tau_rest:.2f})'
+ 474:             return True, coll_type, bypass_tel, f'Deterministic high-confidence bypass: IoU={iou:.2f} >= 0.25, a_long={accel:+.1f} <= -12 m/s^2, tau_rest={tau_rest:.2f}s >= 0.25s'
+ 475: 
+ 476:         # 1. Confirmed Wrong-Way Vehicle Hazard
+ 477:         if event_type in ('wrong_way_hazard', 'wrong_way_vehicle'):
+ 478:             bypass_tel['bypass_passed'] = True
+ 479:             bypass_tel['bypass_reason'] = 'confirmed_wrong_way_hazard'
+ 480:             return True, 'wrong_way_hazard', bypass_tel, f'Confirmed wrong-way hazard contrary to dominant roadway flow @ F{candidate_frame}'
+ 481: 
+ 482:         # 2. Multi-vehicle physical collisions
+ 483:         is_single = event_type in ('single_vehicle_anomaly', 'single', 'barrier_strike', 'single_vehicle_collision') or telemetry.get('is_single_vehicle', False)
+ 484:         if not is_single:
+ 485:             curr_spd_ms = curr_spd / 3.6
+ 486:             if abs_accel >= 0.5 and curr_spd_ms > 0.0 and iou < 0.10:
+ 487:                 if (curr_spd_ms / abs_accel) < 0.10:
+ 488:                     bypass_tel['bypass_reason'] = 'kalman_jitter_implausible_time_to_rest'
+ 489:                     return False, 'none', bypass_tel, 'Rejected by bypass: Kalman jitter implausible time to rest'
+ 490:             if iou >= 0.30 and (abs_accel >= 15.0 or accel <= -12.0):
+ 491:                 coll_type = 'rear_end_collision'
+ 492:                 bypass_tel['bypass_passed'] = True
+ 493:                 bypass_tel['bypass_reason'] = f'multi_vehicle_high_iou_impulse (iou={iou:.2f}, accel={accel:.1f})'
+ 494:                 return True, coll_type, bypass_tel, f'Severe multi-vehicle physical impact: iou={iou:.2f}, impulse={accel:+.1f} m/s^2'
+ 495:             if dist <= 1.8 and iou >= 0.10 and (abs_accel >= 15.0 or accel <= -12.0):
+ 496:                 coll_type = 'rear_end_collision'
+ 497:                 bypass_tel['bypass_passed'] = True
+ 498:                 bypass_tel['bypass_reason'] = f'multi_vehicle_contact_impulse (dist={dist:.2f}, iou={iou:.2f}, accel={accel:.1f})'
+ 499:                 return True, coll_type, bypass_tel, f'Close-contact multi-vehicle collision: dist={dist:.2f}m, iou={iou:.2f}, impulse={accel:+.1f} m/s^2'
+ 500:             if (is_crossing or s_dissip >= 0.55) and dist <= 3.2 and (abs_accel >= 15.0 or accel <= -12.0) and (iou >= 0.10 or s_dissip >= 0.70):
+ 501:                 coll_type = 't_bone_collision'
+ 502:                 bypass_tel['bypass_passed'] = True
+ 503:                 bypass_tel['bypass_reason'] = f'crossing_tbone_high_dissipation (dist={dist:.2f}, S_dissip={s_dissip:.2f}, accel={accel:.1f})'
+ 504:                 return True, coll_type, bypass_tel, f'Crossing T-bone collision: dist={dist:.2f}m, S_dissip={s_dissip:.2f}, impulse={accel:+.1f} m/s^2'
+ 505:             weather = str(telemetry.get('weather', 'normal')).lower()
+ 506:             is_adverse = any(w in weather for w in ('rain', 'snow', 'fog', 'wet'))
+ 507:             if is_adverse and (dist <= 3.5 or norm_px <= 1.5) and (iou >= 0.25 or abs_accel >= 20.0 or (s_dissip >= 0.70 and abs_accel >= 15.0)):
+ 508:                 coll_type = 't_bone_collision' if (is_crossing or s_dissip >= 0.50) else 'rear_end_collision'
+ 509:                 bypass_tel['bypass_passed'] = True
+ 510:                 bypass_tel['bypass_reason'] = f'adverse_weather_high_impulse (weather={weather}, dist={dist:.2f}, norm_px={norm_px:.2f}, accel={accel:.1f})'
+ 511:                 return True, coll_type, bypass_tel, f'Adverse weather collision: weather={weather}, impulse={accel:+.1f} m/s^2'
+ 512:             if is_closure_corridor and (abs_accel >= 15.0 or accel <= -12.0):
+ 513:                 coll_type = 'rear_end_collision'
+ 514:                 bypass_tel['bypass_passed'] = True
+ 515:                 bypass_tel['bypass_reason'] = f'closure_corridor_impulse (accel={accel:.1f})'
+ 516:                 return True, coll_type, bypass_tel, f'Persistent parallel closure impact: impulse={accel:+.1f} m/s^2'
+ 517:             bypass_tel['bypass_reason'] = 'multi_vehicle_insufficient_physical_evidence'
+ 518:             return False, 'none', bypass_tel, 'Multi-vehicle candidate lacks safety-critical impact evidence'
+ 519: 
+ 520:         # 3. Single-vehicle incidents (barrier strikes, spin-outs, rollovers)
+ 521:         anomaly_type = str(telemetry.get('anomaly_type', '')).lower()
+ 522:         if anomaly_type == 'yaw' and not any(k in anomaly_type for k in ('composite', 'barrier', 'rollover', 'decel_stop')):
+ 523:             bypass_tel['bypass_reason'] = 'benign_turning_maneuver_yaw_only'
+ 524:             return False, 'none', bypass_tel, 'Rejected by bypass: turning maneuver with yaw-only anomaly'
+ 525:         curr_spd_ms = curr_spd / 3.6
+ 526:         if abs_accel >= 10.0 and curr_spd_ms > 0.0:
+ 527:             time_to_rest_s = curr_spd_ms / abs_accel
+ 528:             if time_to_rest_s < 0.15 and yaw_delta < 45.0 and speed_drop < 20.0:
+ 529:                 bypass_tel['bypass_reason'] = 'kalman_jitter_implausible_time_to_rest'
+ 530:                 return False, 'none', bypass_tel, 'Rejected by bypass: Kalman jitter implausible time to rest'
+ 531:         s_single = float(telemetry.get('composite_score', telemetry.get('s_single', 0.0)))
+ 532:         has_severe_crash_impulse = (abs_accel >= 25.0 or accel <= -25.0)
+ 533:         has_violent_speed_loss = (speed_drop >= 20.0 and max_spd >= 30.0)
+ 534:         is_near_boundary = (d_edge_m <= 0.8 or shoulder_admitted)
+ 535:         is_boundary_aligned = (v_dot_n >= 0.35)
+ 536:         if s_single >= 0.48 and is_near_boundary and is_boundary_aligned and has_severe_crash_impulse and has_violent_speed_loss:
+ 537:             bypass_tel['bypass_passed'] = True
+ 538:             bypass_tel['bypass_reason'] = f'severe_barrier_impact_dissipation (s_single={s_single:.2f}, d_edge={d_edge_m:.2f}, v_dot_n={v_dot_n:.2f}, accel={accel:.1f}, drop={speed_drop:.1f})'
+ 539:             return True, 'barrier_strike', bypass_tel, f'High-energy barrier impact / run-off-road: S_single={s_single:.2f}, d_edge={d_edge_m:.2f}m, impulse={accel:+.1f} m/s^2, speed_drop={speed_drop:.1f} km/h'
+ 540:         is_spinout_type = any(k in anomaly_type for k in ('composite', 'rollover'))
+ 541:         is_plausible_spinout_speed = (35.0 <= max_spd <= 110.0 and 20.0 <= speed_drop <= 75.0)
+ 542:         if is_spinout_type and s_single >= 0.65 and yaw_delta >= 50.0 and is_plausible_spinout_speed and abs_accel >= 15.0 and curr_spd <= 18.0:
+ 543:             bypass_tel['bypass_passed'] = True
+ 544:             bypass_tel['bypass_reason'] = f'severe_spin_out (yaw={yaw_delta:.1f}, drop={speed_drop:.1f}, spd={curr_spd:.1f})'
+ 545:             return True, 'spin_out', bypass_tel, f'Severe spin-out with trajectory disruption: yaw_delta={yaw_delta:.1f}deg, speed_drop={speed_drop:.1f} km/h'
+ 546:         is_arrested_spinout = (
+ 547:             curr_spd <= 6.0
+ 548:             and s_single >= 0.60
+ 549:             and yaw_delta >= 90.0
+ 550:             and max_spd >= 35.0
+ 551:             and speed_drop >= 25.0
+ 552:             and (d_edge_m <= 8.0 or shoulder_admitted)
+ 553:         )
+ 554:         is_impact_rest = (curr_spd <= 5.0 and abs_accel >= 15.0 and speed_drop >= 20.0 and (d_edge_m <= 2.0 or shoulder_admitted) and s_single >= 0.65)
+ 555:         if is_arrested_spinout or is_impact_rest:
+ 556:             bypass_tel['bypass_passed'] = True
+ 557:             bypass_tel['bypass_reason'] = f'post_event_rest (spd={curr_spd:.1f}, yaw={yaw_delta:.1f}, drop={speed_drop:.1f})'
+ 558:             return True, 'spin_out', bypass_tel, f'Post-event vehicle arrest: curr_spd={curr_spd:.1f} km/h, yaw_delta={yaw_delta:.1f}deg'
+ 559:         bypass_tel['bypass_reason'] = 'single_vehicle_insufficient_impact_evidence'
+ 560:         return False, 'none', bypass_tel, 'Single-vehicle candidate lacks high-confidence physical impact evidence'
+ 561: 
+ 562:     def _evaluate_and_dispatch_fallback(

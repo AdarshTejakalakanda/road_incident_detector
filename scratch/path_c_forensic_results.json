@@ -1,0 +1,344 @@
+[
+  {
+    "rec_id": 1,
+    "frame": 21,
+    "tracks": [
+      4,
+      5
+    ],
+    "trigger_track": 4,
+    "planar_dist": 2.2115407664890645,
+    "delta_theta_inst": 9.132976543560005,
+    "yaw_rate_inst": 273.989290827014,
+    "delta_theta_3f": 10.362266186123577,
+    "delta_theta_5f": 1.2328849763827066,
+    "delta_theta_10f": 3.692116992321644,
+    "n_persist": 7,
+    "v_mps": 5.9173206061772925,
+    "a_lat": 28.29671731950878
+  },
+  {
+    "rec_id": 2,
+    "frame": 169,
+    "tracks": [
+      45,
+      50
+    ],
+    "trigger_track": 45,
+    "planar_dist": 7.625874916620919,
+    "delta_theta_inst": 2.4024761771045178,
+    "yaw_rate_inst": 72.0742860338787,
+    "delta_theta_3f": 0.6172432701656021,
+    "delta_theta_5f": 4.719759899536086,
+    "delta_theta_10f": 12.849608731001922,
+    "n_persist": 30,
+    "v_mps": 5.740364043467909,
+    "a_lat": 7.220996791099267
+  },
+  {
+    "rec_id": 3,
+    "frame": 197,
+    "tracks": [
+      49,
+      77
+    ],
+    "trigger_track": 49,
+    "planar_dist": 3.8558779014348574,
+    "delta_theta_inst": 16.386144577670052,
+    "yaw_rate_inst": 491.58434224594714,
+    "delta_theta_3f": 17.156139452768457,
+    "delta_theta_5f": 5.240573258639472,
+    "delta_theta_10f": 51.3276026252814,
+    "n_persist": 30,
+    "v_mps": 6.59232609058094,
+    "a_lat": 56.560610792791174
+  },
+  {
+    "rec_id": 4,
+    "frame": 291,
+    "tracks": [
+      71,
+      97
+    ],
+    "trigger_track": 71,
+    "planar_dist": 0.6919841029342478,
+    "delta_theta_inst": 9.173507160591726,
+    "yaw_rate_inst": 275.2052093136481,
+    "delta_theta_3f": 4.645428285952221,
+    "delta_theta_5f": 73.99245794026655,
+    "delta_theta_10f": 2.3232411437017504,
+    "n_persist": 30,
+    "v_mps": 4.969243425867851,
+    "a_lat": 23.86845399030092
+  },
+  {
+    "rec_id": 5,
+    "frame": 376,
+    "tracks": [
+      100,
+      109
+    ],
+    "trigger_track": 109,
+    "planar_dist": 7.694496330849686,
+    "delta_theta_inst": 1.4408692509309162,
+    "yaw_rate_inst": 43.22607796018615,
+    "delta_theta_3f": 0.8393032553973967,
+    "delta_theta_5f": 7.434652005602516,
+    "delta_theta_10f": 12.60711918431224,
+    "n_persist": 30,
+    "v_mps": 12.960555766218086,
+    "a_lat": 9.77792777616308
+  },
+  {
+    "rec_id": 6,
+    "frame": 418,
+    "tracks": [
+      136,
+      141
+    ],
+    "trigger_track": 136,
+    "planar_dist": 4.958282661768532,
+    "delta_theta_inst": 11.72305377388875,
+    "yaw_rate_inst": 351.69161673358025,
+    "delta_theta_3f": 10.693055250963255,
+    "delta_theta_5f": 13.944587568406462,
+    "delta_theta_10f": 21.177889008567945,
+    "n_persist": 15,
+    "v_mps": 11.483575757840079,
+    "a_lat": 70.48821673217967
+  },
+  {
+    "rec_id": 7,
+    "frame": 426,
+    "tracks": [
+      104,
+      130
+    ],
+    "trigger_track": 104,
+    "planar_dist": 6.178556582765835,
+    "delta_theta_inst": 3.2393602753350024,
+    "yaw_rate_inst": 97.18080631643413,
+    "delta_theta_3f": 14.084764862388852,
+    "delta_theta_5f": 12.858843788127103,
+    "delta_theta_10f": 1.913711479128608,
+    "n_persist": 17,
+    "v_mps": 4.526793316412035,
+    "a_lat": 7.678007494711199
+  },
+  {
+    "rec_id": 8,
+    "frame": 447,
+    "tracks": [
+      110,
+      117
+    ],
+    "trigger_track": 117,
+    "planar_dist": 7.435635724423367,
+    "delta_theta_inst": 5.491027412029666,
+    "yaw_rate_inst": 164.7308190662739,
+    "delta_theta_3f": 6.176905223696053,
+    "delta_theta_5f": 8.757570403335933,
+    "delta_theta_10f": 8.38541080952109,
+    "n_persist": 20,
+    "v_mps": 6.586819370818389,
+    "a_lat": 18.937732573282517
+  },
+  {
+    "rec_id": 9,
+    "frame": 512,
+    "tracks": [
+      163,
+      169
+    ],
+    "trigger_track": 163,
+    "planar_dist": 7.692916179374841,
+    "delta_theta_inst": 18.215274923660616,
+    "yaw_rate_inst": 546.4582531744325,
+    "delta_theta_3f": 7.790457427961144,
+    "delta_theta_5f": 14.480249293695636,
+    "delta_theta_10f": 17.245305999493837,
+    "n_persist": 4,
+    "v_mps": 15.625629974556356,
+    "a_lat": 149.02937935762733
+  },
+  {
+    "rec_id": 10,
+    "frame": 602,
+    "tracks": [
+      192,
+      196
+    ],
+    "trigger_track": 192,
+    "planar_dist": 7.239870713499896,
+    "delta_theta_inst": 9.946348698024337,
+    "yaw_rate_inst": 298.39046392465195,
+    "delta_theta_3f": 13.425907927311812,
+    "delta_theta_5f": 2.8672330767824974,
+    "delta_theta_10f": 15.757983980031725,
+    "n_persist": 21,
+    "v_mps": 12.31773881771785,
+    "a_lat": 64.14950335883464
+  },
+  {
+    "rec_id": 11,
+    "frame": 626,
+    "tracks": [
+      196,
+      201
+    ],
+    "trigger_track": 196,
+    "planar_dist": 4.96001956288056,
+    "delta_theta_inst": 5.266511264272424,
+    "yaw_rate_inst": 157.99533950813523,
+    "delta_theta_3f": 9.4687576883627,
+    "delta_theta_5f": 5.562507013696234,
+    "delta_theta_10f": 2.8028131868214246,
+    "n_persist": 3,
+    "v_mps": 9.735913432600977,
+    "a_lat": 26.84715979567714
+  },
+  {
+    "rec_id": 12,
+    "frame": 713,
+    "tracks": [
+      132,
+      208
+    ],
+    "trigger_track": 132,
+    "planar_dist": 7.340628894312008,
+    "delta_theta_inst": 43.724748311016725,
+    "yaw_rate_inst": 1311.7424624478622,
+    "delta_theta_3f": 1.2635767214995894,
+    "delta_theta_5f": 149.03156972101687,
+    "delta_theta_10f": 1.1501039432704943,
+    "n_persist": 3,
+    "v_mps": 4.53122456789128,
+    "a_lat": 103.7388743656557
+  },
+  {
+    "rec_id": 13,
+    "frame": 716,
+    "tracks": [
+      132,
+      197
+    ],
+    "trigger_track": 132,
+    "planar_dist": 6.923019883999417,
+    "delta_theta_inst": 172.8840508045592,
+    "yaw_rate_inst": 5186.521576002291,
+    "delta_theta_3f": 129.22679828248357,
+    "delta_theta_5f": 92.19228176801315,
+    "delta_theta_10f": 56.43904028940267,
+    "n_persist": 6,
+    "v_mps": 2.9037214463932215,
+    "a_lat": 262.8503191754347
+  },
+  {
+    "rec_id": 14,
+    "frame": 722,
+    "tracks": [
+      217,
+      232
+    ],
+    "trigger_track": 232,
+    "planar_dist": 6.040249011039472,
+    "delta_theta_inst": 8.655784981301224,
+    "yaw_rate_inst": 259.67355203575954,
+    "delta_theta_3f": 3.575667195294784,
+    "delta_theta_5f": 6.531282604875798,
+    "delta_theta_10f": 13.272984494492277,
+    "n_persist": 10,
+    "v_mps": 14.420896421448507,
+    "a_lat": 65.35778776589078
+  },
+  {
+    "rec_id": 15,
+    "frame": 728,
+    "tracks": [
+      157,
+      213
+    ],
+    "trigger_track": 213,
+    "planar_dist": 1.4982688309816452,
+    "delta_theta_inst": 27.2062030059449,
+    "yaw_rate_inst": 816.1860983401681,
+    "delta_theta_3f": 28.540231012165947,
+    "delta_theta_5f": 4.321873224847337,
+    "delta_theta_10f": 26.884727760732602,
+    "n_persist": 8,
+    "v_mps": 8.343887266183915,
+    "a_lat": 118.85979823735356
+  },
+  {
+    "rec_id": 16,
+    "frame": 779,
+    "tracks": [
+      247,
+      250
+    ],
+    "trigger_track": 247,
+    "planar_dist": 7.008266430538853,
+    "delta_theta_inst": 7.499142050283581,
+    "yaw_rate_inst": 224.97426375823906,
+    "delta_theta_3f": 13.41632608546115,
+    "delta_theta_5f": 25.970669490905323,
+    "delta_theta_10f": 3.871240905925333,
+    "n_persist": 7,
+    "v_mps": 14.867727618987585,
+    "a_lat": 58.378751511287824
+  },
+  {
+    "rec_id": 17,
+    "frame": 798,
+    "tracks": [
+      247,
+      257
+    ],
+    "trigger_track": 257,
+    "planar_dist": 6.882810411282885,
+    "delta_theta_inst": 6.330473641857111,
+    "yaw_rate_inst": 189.9142054574397,
+    "delta_theta_3f": 7.876073083400058,
+    "delta_theta_5f": 9.900315702381079,
+    "delta_theta_10f": 110.97641522557143,
+    "n_persist": 9,
+    "v_mps": 3.0244419817500026,
+    "a_lat": 10.024900626145195
+  },
+  {
+    "rec_id": 18,
+    "frame": 835,
+    "tracks": [
+      229,
+      246
+    ],
+    "trigger_track": 246,
+    "planar_dist": 6.605116829970598,
+    "delta_theta_inst": 2.151386606274855,
+    "yaw_rate_inst": 64.54159883365847,
+    "delta_theta_3f": 3.173634006765667,
+    "delta_theta_5f": 59.8837558272312,
+    "delta_theta_10f": 2.8188883410006724,
+    "n_persist": 6,
+    "v_mps": 8.804340626417373,
+    "a_lat": 9.917767513318568
+  },
+  {
+    "rec_id": 19,
+    "frame": 880,
+    "tracks": [
+      253,
+      259
+    ],
+    "trigger_track": 253,
+    "planar_dist": 7.75402726158391,
+    "delta_theta_inst": 7.813560922972897,
+    "yaw_rate_inst": 234.40683003324375,
+    "delta_theta_3f": 11.304182171685511,
+    "delta_theta_5f": 13.511975597758237,
+    "delta_theta_10f": 11.692093157545798,
+    "n_persist": 10,
+    "v_mps": 5.412228508091936,
+    "a_lat": 22.14235217286309
+  }
+]

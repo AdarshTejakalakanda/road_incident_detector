@@ -1,0 +1,625 @@
+{
+  "video_id": "UarP8qU1S-c_00",
+  "gt_frame": 130,
+  "window_min": 95,
+  "window_max": 165,
+  "fps": 14.638949671772428,
+  "active_tracks_at_gt": [
+    {
+      "track_id": 1,
+      "bbox": [
+        3108.106740869454,
+        402.258567605403,
+        94.3901893351094,
+        48.79334484980579
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 57,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 3,
+      "bbox": [
+        785.1098652727123,
+        951.8077599695744,
+        33.55552628779326,
+        17.07783587726859
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 39,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 4,
+      "bbox": [
+        427.097660743669,
+        942.7217791894965,
+        64.40636250151313,
+        49.86062600666273
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 36,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 5,
+      "bbox": [
+        1263.0999755859375,
+        712.0999755859375,
+        156.300048828125,
+        94.20001220703125
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 32,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 6,
+      "bbox": [
+        1156.0,
+        704.4000244140625,
+        259.0999755859375,
+        121.0999755859375
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 31,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 7,
+      "bbox": [
+        1056.0,
+        667.7999877929688,
+        185.4000244140625,
+        132.20001220703125
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 30,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 8,
+      "bbox": [
+        1043.9000244140625,
+        710.9000244140625,
+        133.199951171875,
+        134.39996337890625
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 29,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 9,
+      "bbox": [
+        884.0999755859375,
+        717.4000244140625,
+        167.9000244140625,
+        125.0999755859375
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 28,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 10,
+      "bbox": [
+        664.2000122070312,
+        768.5999755859375,
+        188.5999755859375,
+        127.20001220703125
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 26,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 11,
+      "bbox": [
+        1488.70692048454,
+        286.9869560401461,
+        1022.3379720224398,
+        548.6399082936343
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 14,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 12,
+      "bbox": [
+        2320.0,
+        373.0,
+        151.699951171875,
+        151.79998779296875
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 11,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 13,
+      "bbox": [
+        2648.10009765625,
+        538.7000122070312,
+        157.5,
+        100.29998779296875
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 11,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 14,
+      "bbox": [
+        1340.199951171875,
+        643.2999877929688,
+        122.10009765625,
+        129.79998779296875
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 4,
+      "cls": "vehicle"
+    }
+  ],
+  "total_raw_candidates": 8,
+  "window_candidates": [
+    {
+      "frame": 134,
+      "timestamp_s": 9.154,
+      "event_type": "barrier_strike",
+      "track_ids": [
+        9
+      ],
+      "confidence": 0.95,
+      "description": "Single-vehicle anomaly on track 9 (vehicle): type=severe_barrier_impact, S_single=0.38, accel=-15.7m/s^2, spd=3.4km/h",
+      "signals": {
+        "anomaly_type": "severe_barrier_impact",
+        "composite_score": 0.37910198923625843,
+        "s_theta": 0.0,
+        "s_decel": 1.0,
+        "s_bound": 0.194,
+        "s_ar": 0.0,
+        "theta_deg": 1.07,
+        "decel_mag": 60.0,
+        "d_edge_m": 2.11,
+        "delta_ar": 0.0,
+        "shoulder_admitted": false,
+        "v_dot_n": -0.111,
+        "metric_accel_ms2": -15.66541092460617,
+        "metric_speed_kmh": 3.4099792589632196,
+        "max_recent_speed_kmh": 19.018405263482677,
+        "heading_deg": 284.13619777538645,
+        "yaw_delta_deg": 1.0660799928898541,
+        "aspect_ratio": 1.5129221075696808,
+        "aspect_ratio_ratio": 1.6860329541676947e-06,
+        "kinematic_plausibility": {
+          "track_id": 9,
+          "frame_idx": 134,
+          "timestamp_s": 9.154,
+          "decel_onset_frame": 133,
+          "v_entry_kmh": 19.02,
+          "v_curr_kmh": 3.41,
+          "accel_mps2": -15.67,
+          "tau_rest_s": 0.337,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+          "rejection_reason": null
+        },
+        "v_entry_kmh": 19.02,
+        "decel_onset_frame": 133,
+        "tau_rest_s": 0.337,
+        "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+      }
+    },
+    {
+      "frame": 135,
+      "timestamp_s": 9.222,
+      "event_type": "single_vehicle_anomaly",
+      "track_ids": [
+        6
+      ],
+      "confidence": 0.75,
+      "description": "Single-vehicle anomaly on track 6 (vehicle): type=decel_stop, S_single=0.64, accel=-0.0m/s^2, spd=5.2km/h",
+      "signals": {
+        "anomaly_type": "decel_stop",
+        "composite_score": 0.6449868059341558,
+        "s_theta": 1.0,
+        "s_decel": 0.8428,
+        "s_bound": 0.0,
+        "s_ar": 0.0,
+        "theta_deg": 141.71,
+        "decel_mag": 5.45,
+        "d_edge_m": 6.48,
+        "delta_ar": 0.0,
+        "shoulder_admitted": false,
+        "v_dot_n": -0.232,
+        "metric_accel_ms2": -5.155977317291458e-13,
+        "metric_speed_kmh": 5.20955728294827,
+        "max_recent_speed_kmh": 67.75601230251065,
+        "heading_deg": 291.18648644348934,
+        "yaw_delta_deg": 1.324101592355646,
+        "aspect_ratio": 1.3269705901290132,
+        "aspect_ratio_ratio": 1.372582435028786e-06,
+        "kinematic_plausibility": {
+          "track_id": 6,
+          "frame_idx": 135,
+          "timestamp_s": 9.222,
+          "decel_onset_frame": 135,
+          "v_entry_kmh": 25.99,
+          "v_curr_kmh": 5.21,
+          "accel_mps2": -0.0,
+          "tau_rest_s": 7220517.642,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+          "rejection_reason": null
+        },
+        "v_entry_kmh": 25.99,
+        "decel_onset_frame": 135,
+        "tau_rest_s": 7220517.642,
+        "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+      }
+    },
+    {
+      "frame": 159,
+      "timestamp_s": 10.861,
+      "event_type": "barrier_strike",
+      "track_ids": [
+        16
+      ],
+      "confidence": 0.95,
+      "description": "Single-vehicle anomaly on track 16 (vehicle): type=severe_barrier_impact, S_single=0.50, accel=8.2m/s^2, spd=6.7km/h",
+      "signals": {
+        "anomaly_type": "severe_barrier_impact",
+        "composite_score": 0.5,
+        "s_theta": 1.0,
+        "s_decel": 0.0,
+        "s_bound": 1.0,
+        "s_ar": 0.0,
+        "theta_deg": 147.79,
+        "decel_mag": -60.0,
+        "d_edge_m": 0.5,
+        "delta_ar": 0.0769,
+        "shoulder_admitted": true,
+        "v_dot_n": 1.0,
+        "metric_accel_ms2": 8.150210727231055,
+        "metric_speed_kmh": 6.745039359884479,
+        "max_recent_speed_kmh": 9.373823755614756,
+        "heading_deg": 91.12842784163905,
+        "yaw_delta_deg": 49.27848609348166,
+        "aspect_ratio": 1.556491600777094,
+        "aspect_ratio_ratio": 0.05941200118079031,
+        "kinematic_plausibility": {
+          "track_id": 16,
+          "frame_idx": 159,
+          "timestamp_s": 10.861,
+          "decel_onset_frame": 159,
+          "v_entry_kmh": 6.75,
+          "v_curr_kmh": 6.75,
+          "accel_mps2": 8.15,
+          "tau_rest_s": 0.23,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+          "rejection_reason": null
+        },
+        "v_entry_kmh": 6.75,
+        "decel_onset_frame": 159,
+        "tau_rest_s": 0.23,
+        "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+      }
+    },
+    {
+      "frame": 164,
+      "timestamp_s": 11.203,
+      "event_type": "single_vehicle_anomaly",
+      "track_ids": [
+        16
+      ],
+      "confidence": 0.9,
+      "description": "Single-vehicle anomaly on track 16 (vehicle): type=decel_stop, S_single=0.80, accel=-18.7m/s^2, spd=2.6km/h",
+      "signals": {
+        "anomaly_type": "decel_stop",
+        "composite_score": 0.7988860457525607,
+        "s_theta": 1.0,
+        "s_decel": 1.0,
+        "s_bound": 0.0,
+        "s_ar": 0.6592,
+        "theta_deg": 133.91,
+        "decel_mag": 60.0,
+        "d_edge_m": 2.67,
+        "delta_ar": 0.3148,
+        "shoulder_admitted": false,
+        "v_dot_n": -0.82,
+        "metric_accel_ms2": -18.732778558985306,
+        "metric_speed_kmh": 2.5513824874234974,
+        "max_recent_speed_kmh": 30.872875273910566,
+        "heading_deg": 304.92505726093873,
+        "yaw_delta_deg": 22.502029502944026,
+        "aspect_ratio": 1.654672671318535,
+        "aspect_ratio_ratio": 0.314810076254268,
+        "kinematic_plausibility": {
+          "track_id": 16,
+          "frame_idx": 164,
+          "timestamp_s": 11.203,
+          "decel_onset_frame": 163,
+          "v_entry_kmh": 30.87,
+          "v_curr_kmh": 2.55,
+          "accel_mps2": -18.73,
+          "tau_rest_s": 0.458,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+          "rejection_reason": null
+        },
+        "v_entry_kmh": 30.87,
+        "decel_onset_frame": 163,
+        "tau_rest_s": 0.458,
+        "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+      }
+    }
+  ],
+  "in_window_episodes": [
+    {
+      "episode_id": "UarP8qU1S-c_00_ep01_f134",
+      "peak_frame": 134,
+      "peak_score": 92.86929245090627,
+      "start_frame": 134,
+      "end_frame": 134,
+      "involved_track_ids": [
+        9
+      ],
+      "peak_candidate": {
+        "frame": 134,
+        "timestamp_s": 9.154,
+        "event_type": "barrier_strike",
+        "track_ids": [
+          9
+        ],
+        "confidence": 0.95,
+        "description": "Single-vehicle anomaly on track 9 (vehicle): type=severe_barrier_impact, S_single=0.38, accel=-15.7m/s^2, spd=3.4km/h",
+        "signals": {
+          "anomaly_type": "severe_barrier_impact",
+          "composite_score": 0.37910198923625843,
+          "s_theta": 0.0,
+          "s_decel": 1.0,
+          "s_bound": 0.194,
+          "s_ar": 0.0,
+          "theta_deg": 1.07,
+          "decel_mag": 60.0,
+          "d_edge_m": 2.11,
+          "delta_ar": 0.0,
+          "shoulder_admitted": false,
+          "v_dot_n": -0.111,
+          "metric_accel_ms2": -15.66541092460617,
+          "metric_speed_kmh": 3.4099792589632196,
+          "max_recent_speed_kmh": 19.018405263482677,
+          "heading_deg": 284.13619777538645,
+          "yaw_delta_deg": 1.0660799928898541,
+          "aspect_ratio": 1.5129221075696808,
+          "aspect_ratio_ratio": 1.6860329541676947e-06,
+          "kinematic_plausibility": {
+            "track_id": 9,
+            "frame_idx": 134,
+            "timestamp_s": 9.154,
+            "decel_onset_frame": 133,
+            "v_entry_kmh": 19.02,
+            "v_curr_kmh": 3.41,
+            "accel_mps2": -15.67,
+            "tau_rest_s": 0.337,
+            "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+            "rejection_reason": null
+          },
+          "v_entry_kmh": 19.02,
+          "decel_onset_frame": 133,
+          "tau_rest_s": 0.337,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+        }
+      },
+      "raw_candidate_frames": [
+        134
+      ],
+      "raw_candidate_types": [
+        "barrier_strike"
+      ]
+    },
+    {
+      "episode_id": "UarP8qU1S-c_00_ep02_f135",
+      "peak_frame": 135,
+      "peak_score": 26.84960417802622,
+      "start_frame": 135,
+      "end_frame": 135,
+      "involved_track_ids": [
+        6
+      ],
+      "peak_candidate": {
+        "frame": 135,
+        "timestamp_s": 9.222,
+        "event_type": "single_vehicle_anomaly",
+        "track_ids": [
+          6
+        ],
+        "confidence": 0.75,
+        "description": "Single-vehicle anomaly on track 6 (vehicle): type=decel_stop, S_single=0.64, accel=-0.0m/s^2, spd=5.2km/h",
+        "signals": {
+          "anomaly_type": "decel_stop",
+          "composite_score": 0.6449868059341558,
+          "s_theta": 1.0,
+          "s_decel": 0.8428,
+          "s_bound": 0.0,
+          "s_ar": 0.0,
+          "theta_deg": 141.71,
+          "decel_mag": 5.45,
+          "d_edge_m": 6.48,
+          "delta_ar": 0.0,
+          "shoulder_admitted": false,
+          "v_dot_n": -0.232,
+          "metric_accel_ms2": -5.155977317291458e-13,
+          "metric_speed_kmh": 5.20955728294827,
+          "max_recent_speed_kmh": 67.75601230251065,
+          "heading_deg": 291.18648644348934,
+          "yaw_delta_deg": 1.324101592355646,
+          "aspect_ratio": 1.3269705901290132,
+          "aspect_ratio_ratio": 1.372582435028786e-06,
+          "kinematic_plausibility": {
+            "track_id": 6,
+            "frame_idx": 135,
+            "timestamp_s": 9.222,
+            "decel_onset_frame": 135,
+            "v_entry_kmh": 25.99,
+            "v_curr_kmh": 5.21,
+            "accel_mps2": -0.0,
+            "tau_rest_s": 7220517.642,
+            "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+            "rejection_reason": null
+          },
+          "v_entry_kmh": 25.99,
+          "decel_onset_frame": 135,
+          "tau_rest_s": 7220517.642,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+        }
+      },
+      "raw_candidate_frames": [
+        135
+      ],
+      "raw_candidate_types": [
+        "single_vehicle_anomaly"
+      ]
+    },
+    {
+      "episode_id": "UarP8qU1S-c_00_ep03_f159",
+      "peak_frame": 164,
+      "peak_score": 82.96658137257683,
+      "start_frame": 159,
+      "end_frame": 164,
+      "involved_track_ids": [
+        16
+      ],
+      "peak_candidate": {
+        "frame": 164,
+        "timestamp_s": 11.203,
+        "event_type": "single_vehicle_anomaly",
+        "track_ids": [
+          16
+        ],
+        "confidence": 0.9,
+        "description": "Single-vehicle anomaly on track 16 (vehicle): type=decel_stop, S_single=0.80, accel=-18.7m/s^2, spd=2.6km/h",
+        "signals": {
+          "anomaly_type": "decel_stop",
+          "composite_score": 0.7988860457525607,
+          "s_theta": 1.0,
+          "s_decel": 1.0,
+          "s_bound": 0.0,
+          "s_ar": 0.6592,
+          "theta_deg": 133.91,
+          "decel_mag": 60.0,
+          "d_edge_m": 2.67,
+          "delta_ar": 0.3148,
+          "shoulder_admitted": false,
+          "v_dot_n": -0.82,
+          "metric_accel_ms2": -18.732778558985306,
+          "metric_speed_kmh": 2.5513824874234974,
+          "max_recent_speed_kmh": 30.872875273910566,
+          "heading_deg": 304.92505726093873,
+          "yaw_delta_deg": 22.502029502944026,
+          "aspect_ratio": 1.654672671318535,
+          "aspect_ratio_ratio": 0.314810076254268,
+          "kinematic_plausibility": {
+            "track_id": 16,
+            "frame_idx": 164,
+            "timestamp_s": 11.203,
+            "decel_onset_frame": 163,
+            "v_entry_kmh": 30.87,
+            "v_curr_kmh": 2.55,
+            "accel_mps2": -18.73,
+            "tau_rest_s": 0.458,
+            "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+            "rejection_reason": null
+          },
+          "v_entry_kmh": 30.87,
+          "decel_onset_frame": 163,
+          "tau_rest_s": 0.458,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+        }
+      },
+      "raw_candidate_frames": [
+        159,
+        164
+      ],
+      "raw_candidate_types": [
+        "barrier_strike",
+        "single_vehicle_anomaly"
+      ]
+    },
+    {
+      "episode_id": "UarP8qU1S-c_00_ep04_f167",
+      "peak_frame": 167,
+      "peak_score": 95.4319877245506,
+      "start_frame": 167,
+      "end_frame": 167,
+      "involved_track_ids": [
+        18
+      ],
+      "peak_candidate": {
+        "frame": 167,
+        "timestamp_s": 11.408,
+        "event_type": "barrier_strike",
+        "track_ids": [
+          18
+        ],
+        "confidence": 0.95,
+        "description": "Single-vehicle anomaly on track 18 (vehicle): type=severe_barrier_impact, S_single=0.36, accel=-78.1m/s^2, spd=3.6km/h",
+        "signals": {
+          "anomaly_type": "severe_barrier_impact",
+          "composite_score": 0.36439959081835305,
+          "s_theta": 0.0,
+          "s_decel": 1.0,
+          "s_bound": 0.096,
+          "s_ar": 0.0,
+          "theta_deg": 0.37,
+          "decel_mag": 60.0,
+          "d_edge_m": 2.31,
+          "delta_ar": 0.0031,
+          "shoulder_admitted": false,
+          "v_dot_n": 0.951,
+          "metric_accel_ms2": -60.0,
+          "metric_speed_kmh": 3.5959729813619594,
+          "max_recent_speed_kmh": 22.610949978108298,
+          "heading_deg": 107.9727937160456,
+          "yaw_delta_deg": 0.36791045489081853,
+          "aspect_ratio": 2.4027979927051586,
+          "aspect_ratio_ratio": 0.002614187815193849,
+          "kinematic_plausibility": {
+            "track_id": 18,
+            "frame_idx": 167,
+            "timestamp_s": 11.408,
+            "decel_onset_frame": 167,
+            "v_entry_kmh": 22.61,
+            "v_curr_kmh": 3.6,
+            "accel_mps2": -60.0,
+            "tau_rest_s": 0.105,
+            "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+            "rejection_reason": null
+          },
+          "v_entry_kmh": 22.61,
+          "decel_onset_frame": 167,
+          "tau_rest_s": 0.105,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+        }
+      },
+      "raw_candidate_frames": [
+        167
+      ],
+      "raw_candidate_types": [
+        "barrier_strike"
+      ]
+    }
+  ]
+}

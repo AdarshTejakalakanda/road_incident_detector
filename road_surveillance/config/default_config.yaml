@@ -1,0 +1,131 @@
+dataset:
+  path: "C:/Users/KALAKA~1/Downloads/archive/real_videos"
+  recursive: false
+  extensions:
+    - ".mp4"
+    - ".avi"
+    - ".mov"
+
+playback:
+  display: false
+  save_processed_video: true
+  realtime: false
+  output_dir: "./output/videos"
+
+detection:
+  model_path: "yolo26n.pt"
+  confidence_threshold: 0.25
+  input_resolution: 640
+  device: "cpu"
+  frame_sampling_rate: 1
+
+tracking:
+  track_activation_threshold: 0.25
+  lost_track_buffer: 30
+  minimum_matching_threshold: 0.8
+  frame_rate: 30
+
+calibration:
+  default:
+    is_calibrated: false
+    source_resolution: [1280, 720]
+    # 4 reference points: source image pixels -> destination ground plane meters
+    source_points:
+      - [0.0, 720.0]
+      - [1280.0, 720.0]
+      - [850.0, 300.0]
+      - [430.0, 300.0]
+    destination_points:
+      - [-10.0, 0.0]
+      - [10.0, 0.0]
+      - [10.0, 50.0]
+      - [-10.0, 50.0]
+    lanes:
+      - lane_id: "lane_north"
+        name: "Northbound Active Carriageway"
+        is_active: true
+        permitted_direction: [0.0, 1.0]
+        polygon_ground:
+          - [-8.0, 0.0]
+          - [8.0, 0.0]
+          - [8.0, 50.0]
+          - [-8.0, 50.0]
+
+geometry:
+  smoothing_window: 5
+  stationary_speed_threshold_kmh: 3.0
+  min_stationary_duration_sec: 3.5
+  collision_tca_threshold_sec: 2.0
+  collision_distance_threshold_m: 4.0
+  collision_decel_threshold_ms2: -3.5
+
+events:
+  wrong_way:
+    enabled: true
+    min_speed_kmh: 8.0
+    cos_threshold: -0.60
+    min_consecutive_frames: 8
+  collision:
+    enabled: true
+    distance_decay_threshold_m: 1.5
+    tca_threshold_sec: 2.0
+    deceleration_threshold_ms2: -3.5
+    post_proximity_distance_m: 4.5
+    iou_overlap_threshold: 0.1
+  single_vehicle:
+    enabled: true
+    min_track_age: 8
+    video_warmup_frames: 15
+    deceleration_threshold_ms2: -4.0
+    severe_impact_decel_ms2: -14.0
+    yaw_rate_threshold_deg: 30.0
+    aspect_ratio_change_threshold: 0.35
+    min_persistence_frames: 2
+  distant_conflict:
+    enabled: true
+    min_track_age: 8
+    video_warmup_frames: 15
+    deceleration_threshold_ms2: -3.5
+    tca_max_sec: 2.0
+    dca_norm_max: 1.2
+    dist_norm_max: 3.5
+    min_closing_speed_kmh: 12.0
+    min_persistence_frames: 2
+  stalled_vehicle:
+    enabled: true
+    min_stationary_sec: 3.5
+    congestion_radius_m: 10.0
+    congestion_vehicle_threshold: 3
+  pedestrian_hazard:
+    enabled: true
+    min_consecutive_frames: 3
+  animal_hazard:
+    enabled: true
+    min_consecutive_frames: 3
+  debris_candidate:
+    enabled: true
+    min_stationary_sec: 4.0
+  heavy_vehicle:
+    enabled: true
+    min_stationary_sec: 3.5
+
+evidence:
+  output_dir: "./evidence"
+  pre_event_seconds: 3.0
+  post_event_seconds: 3.0
+  max_buffer_seconds: 10.0
+
+evaluation:
+  metadata_path: "C:/Users/KALAKA~1/Downloads/archive/metadata-real.csv"
+  split: "test"
+  split_type: "split_in_distribution"
+
+verification:
+  enabled: true
+  api_base: "http://localhost:8000/v1"
+  model: "Qwen/Qwen3.8-27B"
+  temperature: 0.0
+  timeout: 45.0
+  pre_offset_frames: 15
+  post_offset_frames: 15
+  uncertain_policy: "keep"

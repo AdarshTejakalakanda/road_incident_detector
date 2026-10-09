@@ -1,0 +1,46 @@
+Total parsed FPs: 71
+RULE: multi_vehicle_contact_impulse | N: 3
+  Videos: ['BgdKGnFqz0I_00', 'Z4kg2Ev3vhk_00']
+  IoU: [0.25, 0.26, 0.28]
+  accel: [-60.0, -20.0, 60.0]
+  dist_m: [0.85, 0.92, 0.96]
+RULE: stage_t_deterministic_bypass | N: 32
+  Videos: ['82sQ7N-aHOw_00', 'BgdKGnFqz0I_00', 'F0NHENn-HS4_00', 'LiM5LPSZoow_00', 'UarP8qU1S-c_00', 'Z4kg2Ev3vhk_00', 'aPsS_HaokoU_00', 'ftk_fSc4haM_00', 'iA_u73BG4ZM_00', 'kABWTDKgc9U_00', 'maJGw3hQs_s_00', 'maJsgJsapH4_00']
+  IoU: [0.28, 0.46, 0.67]
+  accel: [-60.0, -47.4, 0.0]
+  dist_m: [0.34, 2.65, 16.25]
+RULE: severe_spin_out | N: 2
+  Videos: ['kABWTDKgc9U_00']
+  IoU: [0.0, 0.0, 0.0]
+  accel: [-60.0, -60.0, -60.0]
+  dist_m: [5.0, 5.0, 5.0]
+RULE: multi_vehicle_high_iou_impulse | N: 19
+  Videos: ['82sQ7N-aHOw_00', 'BgdKGnFqz0I_00', 'F0NHENn-HS4_00', 'LiM5LPSZoow_00', 'aF2Hbp8C23A_00', 'ftk_fSc4haM_00', 'maJGw3hQs_s_00']
+  IoU: [0.38, 0.55, 0.69]
+  accel: [0.0, 47.1, 60.0]
+  dist_m: [0.14, 1.68, 4.54]
+RULE: crossing_tbone_high_dissipation | N: 6
+  Videos: ['aPsS_HaokoU_00', 'ftk_fSc4haM_00', 'iA_u73BG4ZM_00', 'maJsgJsapH4_00']
+  IoU: [0.0, 0.12, 0.27]
+  accel: [-60.0, -18.0, 60.0]
+  dist_m: [1.63, 2.13, 3.03]
+RULE: post_event_rest | N: 4
+  Videos: ['aPsS_HaokoU_00', 'maJGw3hQs_s_00']
+  IoU: [0.0, 0.0, 0.0]
+  accel: [-60.0, -39.0, -17.9]
+  dist_m: [5.0, 5.0, 5.0]
+RULE: closure_corridor_impulse | N: 3
+  Videos: ['F0NHENn-HS4_00', 'aF2Hbp8C23A_00']
+  IoU: [0.2, 0.22, 0.25]
+  accel: [-60.0, -20.0, 60.0]
+  dist_m: [5.09, 5.17, 5.33]
+RULE: confirmed_wrong_way_hazard | N: 1
+  Videos: ['maJsgJsapH4_00']
+  IoU: [0.0, 0.0, 0.0]
+  accel: [-1.0, -1.0, -1.0]
+  dist_m: [5.0, 5.0, 5.0]
+RULE: severe_barrier_impact_dissipation | N: 1
+  Videos: ['maJsgJsapH4_00']
+  IoU: [0.0, 0.0, 0.0]
+  accel: [-34.4, -34.4, -34.4]
+  dist_m: [5.0, 5.0, 5.0]

@@ -1,0 +1,3372 @@
+{
+  "split_in_distribution": {
+    "baseline": {
+      "name": "Baseline (Stage 6 + Kinematic Maturity + Restored Lifecycle)",
+      "tp": 3,
+      "fp": 8,
+      "fn": 12,
+      "precision": 0.2727272727272727,
+      "recall": 0.2,
+      "f1": 0.23076923076923075,
+      "fp_per_video": 0.5333333333333333,
+      "raw_fp_per_video": 0.8,
+      "raw_total_per_video": 1.1333333333333333,
+      "pre_impact_fp": 4,
+      "post_impact_fp": 4,
+      "repeated_fp": 4,
+      "med_lead_frames": 12.0,
+      "med_lead_sec": 0.6340465465465466,
+      "med_abs_err_frames": 19.0,
+      "med_abs_err_sec": 0.8017817371937639,
+      "diagnostics": [
+        {
+          "video_id": "Z4kg2Ev3vhk_00",
+          "status": "FN",
+          "gt_frame": 170,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "unS0-TLF1ao_00",
+          "status": "FN",
+          "gt_frame": 64,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "nAXTthLfgtI_00",
+          "status": "FN",
+          "gt_frame": 62,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "fzWY0vLAXzI_00",
+          "status": "FN",
+          "gt_frame": 88,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 1,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 24,
+              "tids": [
+                2,
+                1
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "vxZ47DoPNY8_00",
+          "status": "FN",
+          "gt_frame": 50,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "OXVXsdDT9QQ_00",
+          "status": "TP",
+          "gt_frame": 17,
+          "cand_frame": 37,
+          "diff_frames": 20,
+          "lead_sec": -1.198501872659176,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 37,
+              "tids": [
+                1,
+                6
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "VozrseCzhQc_00",
+          "status": "FN",
+          "gt_frame": 84,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "kABWTDKgc9U_00",
+          "status": "TP",
+          "gt_frame": 197,
+          "cand_frame": 178,
+          "diff_frames": -19,
+          "lead_sec": 0.6340465465465466,
+          "fp_episodes": 2,
+          "pre_fp": 1,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 5,
+          "candidates": [
+            {
+              "f": 18,
+              "tids": [
+                2,
+                6
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 19,
+              "tids": [
+                6,
+                7
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 178,
+              "tids": [
+                19,
+                25
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 238,
+              "tids": [
+                31,
+                24
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 251,
+              "tids": [
+                29,
+                30
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "ftk_fSc4haM_00",
+          "status": "FN",
+          "gt_frame": 130,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 1,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 2,
+          "candidates": [
+            {
+              "f": 28,
+              "tids": [
+                1,
+                16
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 33,
+              "tids": [
+                4,
+                2
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "BgdKGnFqz0I_00",
+          "status": "FN",
+          "gt_frame": 125,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 1,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 16,
+              "tids": [
+                3,
+                6
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "LiM5LPSZoow_00",
+          "status": "TP",
+          "gt_frame": 53,
+          "cand_frame": 41,
+          "diff_frames": -12,
+          "lead_sec": 0.8017817371937639,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 41,
+              "tids": [
+                16,
+                12
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 43,
+              "tids": [
+                6,
+                9
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 51,
+              "tids": [
+                8,
+                14
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "iA_u73BG4ZM_00",
+          "status": "FN",
+          "gt_frame": 116,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "maJGw3hQs_s_00",
+          "status": "FN",
+          "gt_frame": 31,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 2,
+          "pre_fp": 0,
+          "post_fp": 2,
+          "repeated_fp": 2,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 85,
+              "tids": [
+                18,
+                14
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 92,
+              "tids": [
+                4,
+                24
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 144,
+              "tids": [
+                30,
+                8
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "aPsS_HaokoU_00",
+          "status": "FN",
+          "gt_frame": 80,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "aF2Hbp8C23A_00",
+          "status": "FN",
+          "gt_frame": 45,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 0,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 141,
+              "tids": [
+                17,
+                23
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        }
+      ]
+    },
+    "iteration_b": {
+      "name": "Iteration B (Pairwise Collision + Selective Recovery + Restored Lifecycle)",
+      "tp": 3,
+      "fp": 8,
+      "fn": 12,
+      "precision": 0.2727272727272727,
+      "recall": 0.2,
+      "f1": 0.23076923076923075,
+      "fp_per_video": 0.5333333333333333,
+      "raw_fp_per_video": 0.7333333333333333,
+      "raw_total_per_video": 1.0666666666666667,
+      "pre_impact_fp": 5,
+      "post_impact_fp": 3,
+      "repeated_fp": 3,
+      "med_lead_frames": 9.0,
+      "med_lead_sec": 0.6035958904109588,
+      "med_abs_err_frames": 12.0,
+      "med_abs_err_sec": 0.8017817371937639,
+      "diagnostics": [
+        {
+          "video_id": "Z4kg2Ev3vhk_00",
+          "status": "FN",
+          "gt_frame": 170,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "unS0-TLF1ao_00",
+          "status": "FN",
+          "gt_frame": 64,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "nAXTthLfgtI_00",
+          "status": "FN",
+          "gt_frame": 62,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "fzWY0vLAXzI_00",
+          "status": "FN",
+          "gt_frame": 88,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 1,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 24,
+              "tids": [
+                2,
+                1
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "vxZ47DoPNY8_00",
+          "status": "FN",
+          "gt_frame": 50,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "OXVXsdDT9QQ_00",
+          "status": "TP",
+          "gt_frame": 17,
+          "cand_frame": 37,
+          "diff_frames": 20,
+          "lead_sec": -1.198501872659176,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 37,
+              "tids": [
+                1,
+                6
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "VozrseCzhQc_00",
+          "status": "FN",
+          "gt_frame": 84,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "kABWTDKgc9U_00",
+          "status": "FN",
+          "gt_frame": 197,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 3,
+          "pre_fp": 2,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 18,
+              "tids": [
+                6,
+                11
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 129,
+              "tids": [
+                18,
+                19
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 238,
+              "tids": [
+                31,
+                24
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "ftk_fSc4haM_00",
+          "status": "FN",
+          "gt_frame": 130,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 1,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 2,
+          "candidates": [
+            {
+              "f": 28,
+              "tids": [
+                1,
+                16
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 33,
+              "tids": [
+                4,
+                2
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "BgdKGnFqz0I_00",
+          "status": "FN",
+          "gt_frame": 125,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 2,
+          "pre_fp": 1,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 16,
+              "tids": [
+                3,
+                6
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 21,
+              "tids": [
+                1,
+                7
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 209,
+              "tids": [
+                26,
+                21
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "LiM5LPSZoow_00",
+          "status": "TP",
+          "gt_frame": 53,
+          "cand_frame": 41,
+          "diff_frames": -12,
+          "lead_sec": 0.8017817371937639,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 41,
+              "tids": [
+                16,
+                12
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 43,
+              "tids": [
+                6,
+                9
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 51,
+              "tids": [
+                8,
+                14
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "iA_u73BG4ZM_00",
+          "status": "FN",
+          "gt_frame": 116,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "maJGw3hQs_s_00",
+          "status": "FN",
+          "gt_frame": 31,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 0,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 2,
+          "candidates": [
+            {
+              "f": 76,
+              "tids": [
+                2,
+                19
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 85,
+              "tids": [
+                18,
+                14
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "aPsS_HaokoU_00",
+          "status": "FN",
+          "gt_frame": 80,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "aF2Hbp8C23A_00",
+          "status": "TP",
+          "gt_frame": 45,
+          "cand_frame": 36,
+          "diff_frames": -9,
+          "lead_sec": 0.6035958904109588,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 36,
+              "tids": [
+                4,
+                12
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        }
+      ]
+    },
+    "iteration_c_standalone": {
+      "name": "Iteration C Standalone (Single-Vehicle Anomaly Detector)",
+      "tp": 7,
+      "fp": 12,
+      "fn": 8,
+      "precision": 0.3684210526315789,
+      "recall": 0.4666666666666667,
+      "f1": 0.4117647058823529,
+      "fp_per_video": 0.8,
+      "raw_fp_per_video": 1.4666666666666666,
+      "raw_total_per_video": 2.1333333333333333,
+      "pre_impact_fp": 7,
+      "post_impact_fp": 5,
+      "repeated_fp": 4,
+      "med_lead_frames": -3.0,
+      "med_lead_sec": -0.1797752808988764,
+      "med_abs_err_frames": 11.0,
+      "med_abs_err_sec": 0.5199294532627866,
+      "diagnostics": [
+        {
+          "video_id": "Z4kg2Ev3vhk_00",
+          "status": "FN",
+          "gt_frame": 170,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "unS0-TLF1ao_00",
+          "status": "TP",
+          "gt_frame": 64,
+          "cand_frame": 40,
+          "diff_frames": -24,
+          "lead_sec": 0.96,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 40,
+              "tids": [
+                2
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "nAXTthLfgtI_00",
+          "status": "FN",
+          "gt_frame": 62,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "fzWY0vLAXzI_00",
+          "status": "TP",
+          "gt_frame": 88,
+          "cand_frame": 99,
+          "diff_frames": 11,
+          "lead_sec": -0.5199294532627866,
+          "fp_episodes": 1,
+          "pre_fp": 1,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 2,
+          "candidates": [
+            {
+              "f": 41,
+              "tids": [
+                6
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 99,
+              "tids": [
+                7
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "vxZ47DoPNY8_00",
+          "status": "TP",
+          "gt_frame": 50,
+          "cand_frame": 55,
+          "diff_frames": 5,
+          "lead_sec": -0.2805755395683453,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 2,
+          "candidates": [
+            {
+              "f": 55,
+              "tids": [
+                6
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 57,
+              "tids": [
+                4
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "OXVXsdDT9QQ_00",
+          "status": "TP",
+          "gt_frame": 17,
+          "cand_frame": 20,
+          "diff_frames": 3,
+          "lead_sec": -0.1797752808988764,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 20,
+              "tids": [
+                2
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "VozrseCzhQc_00",
+          "status": "FN",
+          "gt_frame": 84,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "kABWTDKgc9U_00",
+          "status": "FN",
+          "gt_frame": 197,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 2,
+          "pre_fp": 2,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 5,
+          "candidates": [
+            {
+              "f": 18,
+              "tids": [
+                4
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 18,
+              "tids": [
+                6
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 44,
+              "tids": [
+                9
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 60,
+              "tids": [
+                13
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 68,
+              "tids": [
+                11
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "ftk_fSc4haM_00",
+          "status": "FN",
+          "gt_frame": 130,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 2,
+          "pre_fp": 1,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 2,
+          "candidates": [
+            {
+              "f": 18,
+              "tids": [
+                1
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 205,
+              "tids": [
+                32
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "BgdKGnFqz0I_00",
+          "status": "FN",
+          "gt_frame": 125,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 1,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 6,
+          "candidates": [
+            {
+              "f": 19,
+              "tids": [
+                1
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 24,
+              "tids": [
+                5
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 38,
+              "tids": [
+                14
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 48,
+              "tids": [
+                8
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 52,
+              "tids": [
+                13
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 56,
+              "tids": [
+                2
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "LiM5LPSZoow_00",
+          "status": "TP",
+          "gt_frame": 53,
+          "cand_frame": 19,
+          "diff_frames": -34,
+          "lead_sec": 2.271714922048998,
+          "fp_episodes": 1,
+          "pre_fp": 0,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 4,
+          "candidates": [
+            {
+              "f": 19,
+              "tids": [
+                3
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 26,
+              "tids": [
+                4
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 49,
+              "tids": [
+                8
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 149,
+              "tids": [
+                27
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "iA_u73BG4ZM_00",
+          "status": "FN",
+          "gt_frame": 116,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 2,
+          "pre_fp": 1,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 19,
+              "tids": [
+                2
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 32,
+              "tids": [
+                3
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 513,
+              "tids": [
+                29
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "maJGw3hQs_s_00",
+          "status": "TP",
+          "gt_frame": 31,
+          "cand_frame": 36,
+          "diff_frames": 5,
+          "lead_sec": -0.5006944444444444,
+          "fp_episodes": 1,
+          "pre_fp": 0,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 36,
+              "tids": [
+                8
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 98,
+              "tids": [
+                24
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 103,
+              "tids": [
+                22
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "aPsS_HaokoU_00",
+          "status": "FN",
+          "gt_frame": 80,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 1,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 18,
+              "tids": [
+                2
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "aF2Hbp8C23A_00",
+          "status": "TP",
+          "gt_frame": 45,
+          "cand_frame": 25,
+          "diff_frames": -20,
+          "lead_sec": 1.341324200913242,
+          "fp_episodes": 1,
+          "pre_fp": 0,
+          "post_fp": 1,
+          "repeated_fp": 0,
+          "raw_count": 2,
+          "candidates": [
+            {
+              "f": 25,
+              "tids": [
+                13
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 80,
+              "tids": [
+                18
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        }
+      ]
+    },
+    "iteration_c_combined": {
+      "name": "Iteration B + C Combined (Pairwise Collision + Single-Vehicle Anomaly + Lifecycle)",
+      "tp": 6,
+      "fp": 9,
+      "fn": 9,
+      "precision": 0.4,
+      "recall": 0.4,
+      "f1": 0.4000000000000001,
+      "fp_per_video": 0.6,
+      "raw_fp_per_video": 0.8,
+      "raw_total_per_video": 1.4666666666666666,
+      "pre_impact_fp": 7,
+      "post_impact_fp": 2,
+      "repeated_fp": 2,
+      "med_lead_frames": 8.5,
+      "med_lead_sec": 0.3901123595505618,
+      "med_abs_err_frames": 12.5,
+      "med_abs_err_sec": 0.7303472222222223,
+      "diagnostics": [
+        {
+          "video_id": "Z4kg2Ev3vhk_00",
+          "status": "FN",
+          "gt_frame": 170,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "unS0-TLF1ao_00",
+          "status": "TP",
+          "gt_frame": 64,
+          "cand_frame": 40,
+          "diff_frames": -24,
+          "lead_sec": 0.96,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 40,
+              "tids": [
+                2
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "nAXTthLfgtI_00",
+          "status": "FN",
+          "gt_frame": 62,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "fzWY0vLAXzI_00",
+          "status": "FN",
+          "gt_frame": 88,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 1,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 24,
+              "tids": [
+                2,
+                1
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "vxZ47DoPNY8_00",
+          "status": "TP",
+          "gt_frame": 50,
+          "cand_frame": 55,
+          "diff_frames": 5,
+          "lead_sec": -0.2805755395683453,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 2,
+          "candidates": [
+            {
+              "f": 55,
+              "tids": [
+                6
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 57,
+              "tids": [
+                4
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "OXVXsdDT9QQ_00",
+          "status": "TP",
+          "gt_frame": 17,
+          "cand_frame": 20,
+          "diff_frames": 3,
+          "lead_sec": -0.1797752808988764,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 2,
+          "candidates": [
+            {
+              "f": 20,
+              "tids": [
+                2
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 37,
+              "tids": [
+                1,
+                6
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "VozrseCzhQc_00",
+          "status": "FN",
+          "gt_frame": 84,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "kABWTDKgc9U_00",
+          "status": "FN",
+          "gt_frame": 197,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 3,
+          "pre_fp": 2,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 18,
+              "tids": [
+                6,
+                11
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 129,
+              "tids": [
+                18,
+                19
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 238,
+              "tids": [
+                31,
+                24
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "ftk_fSc4haM_00",
+          "status": "FN",
+          "gt_frame": 130,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 1,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 2,
+          "candidates": [
+            {
+              "f": 18,
+              "tids": [
+                1
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 28,
+              "tids": [
+                4,
+                2
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "BgdKGnFqz0I_00",
+          "status": "FN",
+          "gt_frame": 125,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 2,
+          "pre_fp": 1,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 16,
+              "tids": [
+                3,
+                6
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 21,
+              "tids": [
+                1,
+                7
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 209,
+              "tids": [
+                26,
+                21
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "LiM5LPSZoow_00",
+          "status": "TP",
+          "gt_frame": 53,
+          "cand_frame": 19,
+          "diff_frames": -34,
+          "lead_sec": 2.271714922048998,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 19,
+              "tids": [
+                3
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 26,
+              "tids": [
+                4
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 51,
+              "tids": [
+                8,
+                14
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "iA_u73BG4ZM_00",
+          "status": "FN",
+          "gt_frame": 116,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 1,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 2,
+          "candidates": [
+            {
+              "f": 19,
+              "tids": [
+                2
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 32,
+              "tids": [
+                3
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "maJGw3hQs_s_00",
+          "status": "TP",
+          "gt_frame": 31,
+          "cand_frame": 36,
+          "diff_frames": 5,
+          "lead_sec": -0.5006944444444444,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 36,
+              "tids": [
+                8
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "aPsS_HaokoU_00",
+          "status": "FN",
+          "gt_frame": 80,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 1,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 18,
+              "tids": [
+                2
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "aF2Hbp8C23A_00",
+          "status": "TP",
+          "gt_frame": 45,
+          "cand_frame": 25,
+          "diff_frames": -20,
+          "lead_sec": 1.341324200913242,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 25,
+              "tids": [
+                13
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "split_geo_aware": {
+    "baseline": {
+      "name": "Baseline (Stage 6 + Kinematic Maturity + Restored Lifecycle)",
+      "tp": 4,
+      "fp": 8,
+      "fn": 11,
+      "precision": 0.3333333333333333,
+      "recall": 0.26666666666666666,
+      "f1": 0.2962962962962963,
+      "fp_per_video": 0.5333333333333333,
+      "raw_fp_per_video": 0.7333333333333333,
+      "raw_total_per_video": 1.6666666666666667,
+      "pre_impact_fp": 1,
+      "post_impact_fp": 7,
+      "repeated_fp": 7,
+      "med_lead_frames": 15.5,
+      "med_lead_sec": 0.7179141418701552,
+      "med_abs_err_frames": 15.5,
+      "med_abs_err_sec": 0.7179141418701552,
+      "diagnostics": [
+        {
+          "video_id": "Z4kg2Ev3vhk_00",
+          "status": "FN",
+          "gt_frame": 170,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "UarP8qU1S-c_00",
+          "status": "FN",
+          "gt_frame": 130,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "UarP8qU1S-c_01",
+          "status": "FN",
+          "gt_frame": 30,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "nAXTthLfgtI_00",
+          "status": "FN",
+          "gt_frame": 62,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "VozrseCzhQc_00",
+          "status": "FN",
+          "gt_frame": 84,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "kABWTDKgc9U_00",
+          "status": "TP",
+          "gt_frame": 197,
+          "cand_frame": 178,
+          "diff_frames": -19,
+          "lead_sec": 0.6340465465465466,
+          "fp_episodes": 2,
+          "pre_fp": 1,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 5,
+          "candidates": [
+            {
+              "f": 18,
+              "tids": [
+                2,
+                6
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 19,
+              "tids": [
+                6,
+                7
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 178,
+              "tids": [
+                19,
+                25
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 238,
+              "tids": [
+                31,
+                24
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 251,
+              "tids": [
+                29,
+                30
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "LiM5LPSZoow_00",
+          "status": "TP",
+          "gt_frame": 53,
+          "cand_frame": 41,
+          "diff_frames": -12,
+          "lead_sec": 0.8017817371937639,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 41,
+              "tids": [
+                16,
+                12
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 43,
+              "tids": [
+                6,
+                9
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 51,
+              "tids": [
+                8,
+                14
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "F0NHENn-HS4_00",
+          "status": "TP",
+          "gt_frame": 39,
+          "cand_frame": 17,
+          "diff_frames": -22,
+          "lead_sec": 1.462010582010582,
+          "fp_episodes": 1,
+          "pre_fp": 0,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 10,
+          "candidates": [
+            {
+              "f": 17,
+              "tids": [
+                7,
+                9
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 18,
+              "tids": [
+                2,
+                4
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 20,
+              "tids": [
+                16,
+                13
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 37,
+              "tids": [
+                10,
+                17
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 51,
+              "tids": [
+                1,
+                8
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 67,
+              "tids": [
+                6,
+                11
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 88,
+              "tids": [
+                21,
+                24
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 105,
+              "tids": [
+                18,
+                20
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 124,
+              "tids": [
+                28,
+                27
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 164,
+              "tids": [
+                23,
+                26
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "maJsgJsapH4_00",
+          "status": "TP",
+          "gt_frame": 69,
+          "cand_frame": 66,
+          "diff_frames": -3,
+          "lead_sec": 0.30133333333333334,
+          "fp_episodes": 2,
+          "pre_fp": 0,
+          "post_fp": 2,
+          "repeated_fp": 2,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 66,
+              "tids": [
+                11,
+                8
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 121,
+              "tids": [
+                20,
+                17
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 229,
+              "tids": [
+                30,
+                29
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "iA_u73BG4ZM_00",
+          "status": "FN",
+          "gt_frame": 116,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "maJGw3hQs_s_00",
+          "status": "FN",
+          "gt_frame": 31,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 2,
+          "pre_fp": 0,
+          "post_fp": 2,
+          "repeated_fp": 2,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 85,
+              "tids": [
+                18,
+                14
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 92,
+              "tids": [
+                4,
+                24
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 144,
+              "tids": [
+                30,
+                8
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "aPsS_HaokoU_00",
+          "status": "FN",
+          "gt_frame": 80,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "aF2Hbp8C23A_00",
+          "status": "FN",
+          "gt_frame": 45,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 0,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 141,
+              "tids": [
+                17,
+                23
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "82sQ7N-aHOw_00",
+          "status": "FN",
+          "gt_frame": 15,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "bJMc3sNP2AU_00",
+          "status": "FN",
+          "gt_frame": 32,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        }
+      ]
+    },
+    "iteration_b": {
+      "name": "Iteration B (Pairwise Collision + Selective Recovery + Restored Lifecycle)",
+      "tp": 4,
+      "fp": 9,
+      "fn": 11,
+      "precision": 0.3076923076923077,
+      "recall": 0.26666666666666666,
+      "f1": 0.28571428571428575,
+      "fp_per_video": 0.6,
+      "raw_fp_per_video": 0.7333333333333333,
+      "raw_total_per_video": 1.5333333333333334,
+      "pre_impact_fp": 2,
+      "post_impact_fp": 7,
+      "repeated_fp": 7,
+      "med_lead_frames": 10.5,
+      "med_lead_sec": 0.7026888138023614,
+      "med_abs_err_frames": 10.5,
+      "med_abs_err_sec": 0.7026888138023614,
+      "diagnostics": [
+        {
+          "video_id": "Z4kg2Ev3vhk_00",
+          "status": "FN",
+          "gt_frame": 170,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "UarP8qU1S-c_00",
+          "status": "FN",
+          "gt_frame": 130,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "UarP8qU1S-c_01",
+          "status": "FN",
+          "gt_frame": 30,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "nAXTthLfgtI_00",
+          "status": "FN",
+          "gt_frame": 62,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "VozrseCzhQc_00",
+          "status": "FN",
+          "gt_frame": 84,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "kABWTDKgc9U_00",
+          "status": "FN",
+          "gt_frame": 197,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 3,
+          "pre_fp": 2,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 18,
+              "tids": [
+                6,
+                11
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 129,
+              "tids": [
+                18,
+                19
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 238,
+              "tids": [
+                31,
+                24
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "LiM5LPSZoow_00",
+          "status": "TP",
+          "gt_frame": 53,
+          "cand_frame": 41,
+          "diff_frames": -12,
+          "lead_sec": 0.8017817371937639,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 41,
+              "tids": [
+                16,
+                12
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 43,
+              "tids": [
+                6,
+                9
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 51,
+              "tids": [
+                8,
+                14
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "F0NHENn-HS4_00",
+          "status": "TP",
+          "gt_frame": 39,
+          "cand_frame": 16,
+          "diff_frames": -23,
+          "lead_sec": 1.5284656084656085,
+          "fp_episodes": 3,
+          "pre_fp": 0,
+          "post_fp": 3,
+          "repeated_fp": 3,
+          "raw_count": 11,
+          "candidates": [
+            {
+              "f": 16,
+              "tids": [
+                7,
+                9
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 18,
+              "tids": [
+                2,
+                4
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 37,
+              "tids": [
+                10,
+                16
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 51,
+              "tids": [
+                1,
+                8
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 67,
+              "tids": [
+                6,
+                11
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 84,
+              "tids": [
+                15,
+                17
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 88,
+              "tids": [
+                20,
+                24
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 124,
+              "tids": [
+                19,
+                21
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 124,
+              "tids": [
+                28,
+                27
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 164,
+              "tids": [
+                22,
+                26
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 233,
+              "tids": [
+                34,
+                33
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "maJsgJsapH4_00",
+          "status": "TP",
+          "gt_frame": 69,
+          "cand_frame": 66,
+          "diff_frames": -3,
+          "lead_sec": 0.30133333333333334,
+          "fp_episodes": 2,
+          "pre_fp": 0,
+          "post_fp": 2,
+          "repeated_fp": 2,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 66,
+              "tids": [
+                11,
+                8
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 121,
+              "tids": [
+                19,
+                16
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 229,
+              "tids": [
+                30,
+                29
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "iA_u73BG4ZM_00",
+          "status": "FN",
+          "gt_frame": 116,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "maJGw3hQs_s_00",
+          "status": "FN",
+          "gt_frame": 31,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 0,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 2,
+          "candidates": [
+            {
+              "f": 76,
+              "tids": [
+                2,
+                19
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 85,
+              "tids": [
+                18,
+                14
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "aPsS_HaokoU_00",
+          "status": "FN",
+          "gt_frame": 80,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "aF2Hbp8C23A_00",
+          "status": "TP",
+          "gt_frame": 45,
+          "cand_frame": 36,
+          "diff_frames": -9,
+          "lead_sec": 0.6035958904109588,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 36,
+              "tids": [
+                4,
+                12
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "82sQ7N-aHOw_00",
+          "status": "FN",
+          "gt_frame": 15,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "bJMc3sNP2AU_00",
+          "status": "FN",
+          "gt_frame": 32,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        }
+      ]
+    },
+    "iteration_c_standalone": {
+      "name": "Iteration C Standalone (Single-Vehicle Anomaly Detector)",
+      "tp": 6,
+      "fp": 12,
+      "fn": 9,
+      "precision": 0.3333333333333333,
+      "recall": 0.4,
+      "f1": 0.3636363636363636,
+      "fp_per_video": 0.8,
+      "raw_fp_per_video": 1.1333333333333333,
+      "raw_total_per_video": 1.8,
+      "pre_impact_fp": 5,
+      "post_impact_fp": 7,
+      "repeated_fp": 6,
+      "med_lead_frames": 20.5,
+      "med_lead_sec": 1.368439878234399,
+      "med_abs_err_frames": 22.0,
+      "med_abs_err_sec": 1.4833532635774789,
+      "diagnostics": [
+        {
+          "video_id": "Z4kg2Ev3vhk_00",
+          "status": "FN",
+          "gt_frame": 170,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "UarP8qU1S-c_00",
+          "status": "TP",
+          "gt_frame": 130,
+          "cand_frame": 107,
+          "diff_frames": -23,
+          "lead_sec": 1.571150971599402,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 107,
+              "tids": [
+                2
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "UarP8qU1S-c_01",
+          "status": "FN",
+          "gt_frame": 30,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "nAXTthLfgtI_00",
+          "status": "FN",
+          "gt_frame": 62,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "VozrseCzhQc_00",
+          "status": "FN",
+          "gt_frame": 84,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "kABWTDKgc9U_00",
+          "status": "FN",
+          "gt_frame": 197,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 2,
+          "pre_fp": 2,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 5,
+          "candidates": [
+            {
+              "f": 18,
+              "tids": [
+                4
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 18,
+              "tids": [
+                6
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 44,
+              "tids": [
+                9
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 60,
+              "tids": [
+                13
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 68,
+              "tids": [
+                11
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "LiM5LPSZoow_00",
+          "status": "TP",
+          "gt_frame": 53,
+          "cand_frame": 19,
+          "diff_frames": -34,
+          "lead_sec": 2.271714922048998,
+          "fp_episodes": 1,
+          "pre_fp": 0,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 4,
+          "candidates": [
+            {
+              "f": 19,
+              "tids": [
+                3
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 26,
+              "tids": [
+                4
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 49,
+              "tids": [
+                8
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 149,
+              "tids": [
+                27
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "F0NHENn-HS4_00",
+          "status": "TP",
+          "gt_frame": 39,
+          "cand_frame": 18,
+          "diff_frames": -21,
+          "lead_sec": 1.3955555555555557,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 18,
+              "tids": [
+                1
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 18,
+              "tids": [
+                9
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 43,
+              "tids": [
+                18
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "maJsgJsapH4_00",
+          "status": "TP",
+          "gt_frame": 69,
+          "cand_frame": 99,
+          "diff_frames": 30,
+          "lead_sec": -3.013333333333333,
+          "fp_episodes": 2,
+          "pre_fp": 1,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 28,
+              "tids": [
+                2
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 99,
+              "tids": [
+                12
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 237,
+              "tids": [
+                30
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "iA_u73BG4ZM_00",
+          "status": "FN",
+          "gt_frame": 116,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 2,
+          "pre_fp": 1,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 19,
+              "tids": [
+                2
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 32,
+              "tids": [
+                3
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 513,
+              "tids": [
+                29
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "maJGw3hQs_s_00",
+          "status": "TP",
+          "gt_frame": 31,
+          "cand_frame": 36,
+          "diff_frames": 5,
+          "lead_sec": -0.5006944444444444,
+          "fp_episodes": 1,
+          "pre_fp": 0,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 36,
+              "tids": [
+                8
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 98,
+              "tids": [
+                24
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 103,
+              "tids": [
+                22
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "aPsS_HaokoU_00",
+          "status": "FN",
+          "gt_frame": 80,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 1,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 18,
+              "tids": [
+                2
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "aF2Hbp8C23A_00",
+          "status": "TP",
+          "gt_frame": 45,
+          "cand_frame": 25,
+          "diff_frames": -20,
+          "lead_sec": 1.341324200913242,
+          "fp_episodes": 1,
+          "pre_fp": 0,
+          "post_fp": 1,
+          "repeated_fp": 0,
+          "raw_count": 2,
+          "candidates": [
+            {
+              "f": 25,
+              "tids": [
+                13
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 80,
+              "tids": [
+                18
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "82sQ7N-aHOw_00",
+          "status": "FN",
+          "gt_frame": 15,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 2,
+          "pre_fp": 0,
+          "post_fp": 2,
+          "repeated_fp": 2,
+          "raw_count": 2,
+          "candidates": [
+            {
+              "f": 130,
+              "tids": [
+                6
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 165,
+              "tids": [
+                12
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "bJMc3sNP2AU_00",
+          "status": "FN",
+          "gt_frame": 32,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        }
+      ]
+    },
+    "iteration_c_combined": {
+      "name": "Iteration B + C Combined (Pairwise Collision + Single-Vehicle Anomaly + Lifecycle)",
+      "tp": 6,
+      "fp": 13,
+      "fn": 9,
+      "precision": 0.3157894736842105,
+      "recall": 0.4,
+      "f1": 0.35294117647058826,
+      "fp_per_video": 0.8666666666666667,
+      "raw_fp_per_video": 1.0,
+      "raw_total_per_video": 1.9333333333333333,
+      "pre_impact_fp": 5,
+      "post_impact_fp": 8,
+      "repeated_fp": 8,
+      "med_lead_frames": 21.5,
+      "med_lead_sec": 1.4348949046894253,
+      "med_abs_err_frames": 21.5,
+      "med_abs_err_sec": 1.4348949046894253,
+      "diagnostics": [
+        {
+          "video_id": "Z4kg2Ev3vhk_00",
+          "status": "FN",
+          "gt_frame": 170,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "UarP8qU1S-c_00",
+          "status": "TP",
+          "gt_frame": 130,
+          "cand_frame": 107,
+          "diff_frames": -23,
+          "lead_sec": 1.571150971599402,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 107,
+              "tids": [
+                2
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "UarP8qU1S-c_01",
+          "status": "FN",
+          "gt_frame": 30,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "nAXTthLfgtI_00",
+          "status": "FN",
+          "gt_frame": 62,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "VozrseCzhQc_00",
+          "status": "FN",
+          "gt_frame": 84,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        },
+        {
+          "video_id": "kABWTDKgc9U_00",
+          "status": "FN",
+          "gt_frame": 197,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 3,
+          "pre_fp": 2,
+          "post_fp": 1,
+          "repeated_fp": 1,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 18,
+              "tids": [
+                6,
+                11
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 129,
+              "tids": [
+                18,
+                19
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 238,
+              "tids": [
+                31,
+                24
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "LiM5LPSZoow_00",
+          "status": "TP",
+          "gt_frame": 53,
+          "cand_frame": 19,
+          "diff_frames": -34,
+          "lead_sec": 2.271714922048998,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 3,
+          "candidates": [
+            {
+              "f": 19,
+              "tids": [
+                3
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 26,
+              "tids": [
+                4
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 51,
+              "tids": [
+                8,
+                14
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "F0NHENn-HS4_00",
+          "status": "TP",
+          "gt_frame": 39,
+          "cand_frame": 16,
+          "diff_frames": -23,
+          "lead_sec": 1.5284656084656085,
+          "fp_episodes": 3,
+          "pre_fp": 0,
+          "post_fp": 3,
+          "repeated_fp": 3,
+          "raw_count": 11,
+          "candidates": [
+            {
+              "f": 16,
+              "tids": [
+                7,
+                9
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 18,
+              "tids": [
+                2,
+                4
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 37,
+              "tids": [
+                10,
+                16
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 51,
+              "tids": [
+                1,
+                8
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 67,
+              "tids": [
+                6,
+                11
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 84,
+              "tids": [
+                15,
+                17
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 88,
+              "tids": [
+                20,
+                24
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 124,
+              "tids": [
+                19,
+                21
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 124,
+              "tids": [
+                28,
+                27
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 164,
+              "tids": [
+                22,
+                26
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 233,
+              "tids": [
+                34,
+                33
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "maJsgJsapH4_00",
+          "status": "TP",
+          "gt_frame": 69,
+          "cand_frame": 66,
+          "diff_frames": -3,
+          "lead_sec": 0.30133333333333334,
+          "fp_episodes": 3,
+          "pre_fp": 1,
+          "post_fp": 2,
+          "repeated_fp": 2,
+          "raw_count": 4,
+          "candidates": [
+            {
+              "f": 28,
+              "tids": [
+                2
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 66,
+              "tids": [
+                11,
+                8
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 121,
+              "tids": [
+                19,
+                16
+              ],
+              "det": "pairwise_collision"
+            },
+            {
+              "f": 229,
+              "tids": [
+                30,
+                29
+              ],
+              "det": "pairwise_collision"
+            }
+          ]
+        },
+        {
+          "video_id": "iA_u73BG4ZM_00",
+          "status": "FN",
+          "gt_frame": 116,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 1,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 2,
+          "candidates": [
+            {
+              "f": 19,
+              "tids": [
+                2
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 32,
+              "tids": [
+                3
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "maJGw3hQs_s_00",
+          "status": "TP",
+          "gt_frame": 31,
+          "cand_frame": 36,
+          "diff_frames": 5,
+          "lead_sec": -0.5006944444444444,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 36,
+              "tids": [
+                8
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "aPsS_HaokoU_00",
+          "status": "FN",
+          "gt_frame": 80,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 1,
+          "pre_fp": 1,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 18,
+              "tids": [
+                2
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "aF2Hbp8C23A_00",
+          "status": "TP",
+          "gt_frame": 45,
+          "cand_frame": 25,
+          "diff_frames": -20,
+          "lead_sec": 1.341324200913242,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 1,
+          "candidates": [
+            {
+              "f": 25,
+              "tids": [
+                13
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "82sQ7N-aHOw_00",
+          "status": "FN",
+          "gt_frame": 15,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 2,
+          "pre_fp": 0,
+          "post_fp": 2,
+          "repeated_fp": 2,
+          "raw_count": 2,
+          "candidates": [
+            {
+              "f": 130,
+              "tids": [
+                6
+              ],
+              "det": "single_vehicle"
+            },
+            {
+              "f": 165,
+              "tids": [
+                12
+              ],
+              "det": "single_vehicle"
+            }
+          ]
+        },
+        {
+          "video_id": "bJMc3sNP2AU_00",
+          "status": "FN",
+          "gt_frame": 32,
+          "cand_frame": null,
+          "diff_frames": null,
+          "lead_sec": null,
+          "fp_episodes": 0,
+          "pre_fp": 0,
+          "post_fp": 0,
+          "repeated_fp": 0,
+          "raw_count": 0,
+          "candidates": []
+        }
+      ]
+    }
+  }
+}

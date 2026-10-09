@@ -1,0 +1,79 @@
+Evaluating 53 consolidated episodes with SceneEscalator (tau_aftermath=0.50)...
+[ESCALATED] Episode 5uh8-3q51uI_00_ep01_f24 @ F182 -> ESCALATED_PHYSICAL_INCIDENT (score=0.83, type=Type 3)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep02_f37 @ F037 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.47, type=Type 5)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep03_f44 @ F044 -> ESCALATED_PHYSICAL_INCIDENT (score=0.7629, type=Type 1)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep04_f48 @ F048 -> ESCALATED_PHYSICAL_INCIDENT (score=0.6023, type=Type 2)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep05_f50 @ F050 -> ESCALATED_PHYSICAL_INCIDENT (score=0.55, type=Type 2)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep06_f55 @ F055 -> ESCALATED_PHYSICAL_INCIDENT (score=0.6, type=Type 5)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep07_f64 @ F064 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.4, type=Type 5)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep08_f147 @ F147 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.42, type=Type 5)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep09_f160 @ F200 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.47, type=Type 5)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep10_f167 @ F218 -> ESCALATED_PHYSICAL_INCIDENT (score=0.7303, type=Type 3)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep11_f173 @ F173 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.4, type=Type 5)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep12_f180 @ F180 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.2811, type=Type 5)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep13_f205 @ F205 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.4, type=Type 5)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep14_f205 @ F230 -> ESCALATED_PHYSICAL_INCIDENT (score=0.6027, type=Type 3)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep15_f246 @ F246 -> ESCALATED_PHYSICAL_INCIDENT (score=0.55, type=Type 5)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep16_f254 @ F254 -> ESCALATED_PHYSICAL_INCIDENT (score=0.6714, type=Type 3)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep17_f265 @ F286 -> ESCALATED_PHYSICAL_INCIDENT (score=0.7675, type=Type 3)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep18_f268 @ F279 -> ESCALATED_PHYSICAL_INCIDENT (score=0.6423, type=Type 3)2026-10-08 13:06:34,326 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F182.
+2026-10-08 13:06:34,543 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F44.
+2026-10-08 13:06:34,738 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F48.
+2026-10-08 13:06:34,940 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F55.
+2026-10-08 13:06:35,370 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F218.
+2026-10-08 13:06:35,764 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F246.
+2026-10-08 13:06:36,195 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F254.
+2026-10-08 13:06:36,376 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F286.
+2026-10-08 13:06:36,580 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F279.
+2026-10-08 13:06:36,893 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F401.
+2026-10-08 13:06:37,197 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F403.
+2026-10-08 13:06:37,512 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F407.
+2026-10-08 13:06:37,871 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F446.
+2026-10-08 13:06:38,223 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F461.
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep19_f328 @ F328 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.41, type=Type 5)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep20_f401 @ F401 -> ESCALATED_PHYSICAL_INCIDENT (score=0.5742, type=Type 2)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep21_f403 @ F403 -> ESCALATED_PHYSICAL_INCIDENT (score=1.0, type=Type 5)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep22_f407 @ F407 -> ESCALATED_PHYSICAL_INCIDENT (score=0.61, type=Type 5)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep23_f433 @ F433 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.2641, type=Type 5)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep24_f446 @ F446 -> ESCALATED_PHYSICAL_INCIDENT (score=0.98, type=Type 1)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep25_f448 @ F448 -> ESCALATED_PHYSICAL_INCIDENT (score=0.98, type=Type 2)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep26_f461 @ F461 -> ESCALATED_PHYSICAL_INCIDENT (score=0.65, type=Type 5)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep27_f467 @ F467 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.4, type=Type 5)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep28_f471 @ F471 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.3668, type=Type 5)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep29_f474 @ F474 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.42, type=Type 5)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep30_f483 @ F483 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.4, type=Type 5)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep31_f493 @ F493 -> ESCALATED_PHYSICAL_INCIDENT (score=0.6037, type=Type 3)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep32_f506 @ F506 -> ESCALATED_PHYSICAL_INCIDENT (score=0.68, type=Type 5)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep33_f530 @ F556 -> ESCALATED_PHYSICAL_INCIDENT (score=0.6147, type=Type 3)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep34_f532 @ F532 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.4, type=Type 5)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep35_f570 @ F570 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.41, type=Type 5)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep36_f572 @ F572 -> ESCALATED_PHYSICAL_INCIDENT (score=0.7504, type=Type 3)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep37_f595 @ F595 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.4, type=Type 5)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep38_f609 @ F609 -> ESCALATED_PHYSICAL_INCIDENT (score=0.6331, type=Type 3)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep39_f609 @ F609 -> ESCALATED_PHYSICAL_INCIDENT (score=0.5, type=Type 5)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep40_f620 @ F620 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.4, type=Type 5)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep41_f625 @ F625 -> ESCALATED_PHYSICAL_INCIDENT (score=0.7, type=Type 1)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep42_f644 @ F644 -> ESCALATED_PHYSICAL_INCIDENT (score=0.5, type=Type 5)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep43_f681 @ F681 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.48, type=Type 5)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep44_f711 @ F711 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.4772, type=Type 5)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep45_f711 @ F711 -> ESCALATED_PHYSICAL_INCIDENT (score=0.7577, type=Type 1)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep46_f712 @ F712 -> ESCALATED_PHYSICAL_INCIDENT (score=0.5728, type=Type 2)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep47_f719 @ F725 -> ESCALATED_PHYSICAL_INCIDENT (score=0.7646, type=Type 3)
+[SUPPRESSED] Episode 5uh8-3q51uI_00_ep48_f720 @ F720 -> SUPPRESSED_BENIGN_AFTERMATH (score=0.367, type=Type 2)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep49_f763 @ F763 -> ESCALATED_PHYSICAL_INCIDENT (score=0.54, type=Type 5)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep50_f799 @ F799 -> ESCALATED_PHYSICAL_INCIDENT (score=0.8297, type=Type 3)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep51_f826 @ F834 -> ESCALATED_PHYSICAL_INCIDENT (score=0.6441, type=Type 3)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep52_f845 @ F845 -> ESCALATED_PHYSICAL_INCIDENT (score=0.7026, type=Type 5)
+[ESCALATED] Episode 5uh8-3q51uI_00_ep53_f888 @ F888 -> FALLBACK_INSUFFICIENT_AFTERMATH_WINDOW (score=None, type=Unknown)
+[17/33] Episode 5uh8-3q51uI_00_ep26_f461 @ F461 -> UNCONFIRMED FALLBACK (single_vehicle_insufficient_impact_evidence) (conf=0.15): VLM unavailable/offline; candidate does not qualify for deterministic_high_confidence_bypass (single_vehicle_insufficient_impact_evidence).2026-10-08 13:06:38,623 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F506.
+2026-10-08 13:06:38,813 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F556.
+2026-10-08 13:06:39,032 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F572.
+2026-10-08 13:06:39,280 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F609.
+2026-10-08 13:06:39,509 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F609.
+2026-10-08 13:06:39,748 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F625.
+2026-10-08 13:06:40,026 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F644.
+2026-10-08 13:06:40,409 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F711.
+2026-10-08 13:06:40,719 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F763.
+2026-10-08 13:06:40,917 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F799.
+2026-10-08 13:06:41,135 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F845.
+2026-10-08 13:06:41,389 [INFO] GROQ_API_KEY not found and no mock provided. Evaluating fallback @ F888.

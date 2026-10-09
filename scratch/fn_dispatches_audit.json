@@ -1,0 +1,912 @@
+[
+  {
+    "video_id": "Z4kg2Ev3vhk_00",
+    "split": "split_in_distribution",
+    "gt_frame": 170,
+    "total_vlm_calls": 7,
+    "in_window_episodes": 0,
+    "out_of_window_episodes": 7,
+    "episodes": [
+      {
+        "episode_id": "Z4kg2Ev3vhk_00_ep01_f62",
+        "peak_frame": 62,
+        "is_in_gt_window": false,
+        "delta_gt": -108,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          1,
+          3
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -8.967235655721074,
+        "iou": 0.28006717935646575,
+        "dist_m": 3.1545331605151987
+      },
+      {
+        "episode_id": "Z4kg2Ev3vhk_00_ep02_f65",
+        "peak_frame": 65,
+        "is_in_gt_window": false,
+        "delta_gt": -105,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          2,
+          3
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": null,
+        "iou": null,
+        "dist_m": 5.753735643538202
+      },
+      {
+        "episode_id": "Z4kg2Ev3vhk_00_ep03_f67",
+        "peak_frame": 67,
+        "is_in_gt_window": false,
+        "delta_gt": -103,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          1,
+          2
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": null,
+        "iou": null,
+        "dist_m": 7.430191592585703
+      },
+      {
+        "episode_id": "Z4kg2Ev3vhk_00_ep04_f113",
+        "peak_frame": 113,
+        "is_in_gt_window": false,
+        "delta_gt": -57,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          8,
+          9
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CONFIRMED_INCIDENT",
+        "vlm_source": "deterministic_high_confidence_bypass",
+        "accel": -60.0,
+        "iou": 0.24690171455947219,
+        "dist_m": 0.9590390726216346
+      },
+      {
+        "episode_id": "Z4kg2Ev3vhk_00_ep05_f124",
+        "peak_frame": 124,
+        "is_in_gt_window": false,
+        "delta_gt": -46,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          9,
+          10
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": null,
+        "iou": null,
+        "dist_m": 17.017506995227563
+      },
+      {
+        "episode_id": "Z4kg2Ev3vhk_00_ep06_f124",
+        "peak_frame": 124,
+        "is_in_gt_window": false,
+        "delta_gt": -46,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          10,
+          11
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": null,
+        "iou": null,
+        "dist_m": 9.75597560121813
+      },
+      {
+        "episode_id": "Z4kg2Ev3vhk_00_ep07_f126",
+        "peak_frame": 128,
+        "is_in_gt_window": false,
+        "delta_gt": -42,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          7,
+          14
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CONFIRMED_INCIDENT",
+        "vlm_source": "deterministic_high_confidence_bypass",
+        "accel": -60.0,
+        "iou": 0.31138621309814984,
+        "dist_m": 2.7125977042156255
+      }
+    ]
+  },
+  {
+    "video_id": "OXVXsdDT9QQ_00",
+    "split": "split_in_distribution",
+    "gt_frame": 17,
+    "total_vlm_calls": 2,
+    "in_window_episodes": 2,
+    "out_of_window_episodes": 0,
+    "episodes": [
+      {
+        "episode_id": "OXVXsdDT9QQ_00_ep01_f5",
+        "peak_frame": 44,
+        "is_in_gt_window": true,
+        "delta_gt": 27,
+        "event_type": "barrier_strike",
+        "track_ids": [
+          1
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": 60.0,
+        "iou": null,
+        "dist_m": null
+      },
+      {
+        "episode_id": "OXVXsdDT9QQ_00_ep02_f44",
+        "peak_frame": 54,
+        "is_in_gt_window": true,
+        "delta_gt": 37,
+        "event_type": "barrier_strike",
+        "track_ids": [
+          16
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -0.0002096355913145418,
+        "iou": null,
+        "dist_m": null
+      }
+    ]
+  },
+  {
+    "video_id": "aPsS_HaokoU_00",
+    "split": "split_in_distribution",
+    "gt_frame": 80,
+    "total_vlm_calls": 16,
+    "in_window_episodes": 2,
+    "out_of_window_episodes": 14,
+    "episodes": [
+      {
+        "episode_id": "aPsS_HaokoU_00_ep01_f2",
+        "peak_frame": 2,
+        "is_in_gt_window": false,
+        "delta_gt": -78,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          6,
+          10
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": 1.1947739714656438,
+        "iou": 1.0,
+        "dist_m": 0.13678620608614728
+      },
+      {
+        "episode_id": "aPsS_HaokoU_00_ep02_f12",
+        "peak_frame": 12,
+        "is_in_gt_window": false,
+        "delta_gt": -68,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          7,
+          12
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": 1.176964154402413,
+        "iou": 0.38451846701452447,
+        "dist_m": 1.272776529385236
+      },
+      {
+        "episode_id": "aPsS_HaokoU_00_ep03_f24",
+        "peak_frame": 24,
+        "is_in_gt_window": false,
+        "delta_gt": -56,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          4,
+          15
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": 2.26353056966324,
+        "iou": 0.6340832407000788,
+        "dist_m": 1.854131665534695
+      },
+      {
+        "episode_id": "aPsS_HaokoU_00_ep04_f69",
+        "peak_frame": 69,
+        "is_in_gt_window": true,
+        "delta_gt": -11,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          1,
+          15
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -0.47820466523258454,
+        "iou": 0.12773013061034855,
+        "dist_m": 7.310991217550551
+      },
+      {
+        "episode_id": "aPsS_HaokoU_00_ep05_f92",
+        "peak_frame": 92,
+        "is_in_gt_window": true,
+        "delta_gt": 12,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          6,
+          7
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -1.0034422667866887,
+        "iou": 0.0,
+        "dist_m": 1.8817531539133108
+      },
+      {
+        "episode_id": "aPsS_HaokoU_00_ep06_f125",
+        "peak_frame": 125,
+        "is_in_gt_window": false,
+        "delta_gt": 45,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          6,
+          10
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": 2.426758022564053,
+        "iou": 0.5073054549685445,
+        "dist_m": 0.49317086479538813
+      },
+      {
+        "episode_id": "aPsS_HaokoU_00_ep07_f126",
+        "peak_frame": 126,
+        "is_in_gt_window": false,
+        "delta_gt": 46,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          7,
+          12
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CONFIRMED_INCIDENT",
+        "vlm_source": "deterministic_high_confidence_bypass",
+        "accel": -12.294831199033101,
+        "iou": 0.0,
+        "dist_m": 1.6286449187259744
+      },
+      {
+        "episode_id": "aPsS_HaokoU_00_ep08_f148",
+        "peak_frame": 154,
+        "is_in_gt_window": false,
+        "delta_gt": 74,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          30,
+          31
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CONFIRMED_INCIDENT",
+        "vlm_source": "deterministic_high_confidence_bypass",
+        "accel": -42.95034689122609,
+        "iou": 0.5627805264132272,
+        "dist_m": 0.33897604417620997
+      },
+      {
+        "episode_id": "aPsS_HaokoU_00_ep09_f169",
+        "peak_frame": 169,
+        "is_in_gt_window": false,
+        "delta_gt": 89,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          30,
+          32
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": null,
+        "iou": null,
+        "dist_m": 9.291189789143363
+      },
+      {
+        "episode_id": "aPsS_HaokoU_00_ep10_f182",
+        "peak_frame": 182,
+        "is_in_gt_window": false,
+        "delta_gt": 102,
+        "event_type": "barrier_strike",
+        "track_ids": [
+          34
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CONFIRMED_INCIDENT",
+        "vlm_source": "deterministic_high_confidence_bypass",
+        "accel": -17.92341511065571,
+        "iou": null,
+        "dist_m": null
+      },
+      {
+        "episode_id": "aPsS_HaokoU_00_ep11_f184",
+        "peak_frame": 184,
+        "is_in_gt_window": false,
+        "delta_gt": 104,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          30,
+          36
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": null,
+        "iou": null,
+        "dist_m": 4.90748407837146
+      },
+      {
+        "episode_id": "aPsS_HaokoU_00_ep12_f187",
+        "peak_frame": 187,
+        "is_in_gt_window": false,
+        "delta_gt": 107,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          6,
+          30
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": null,
+        "iou": null,
+        "dist_m": 10.769166433376324
+      },
+      {
+        "episode_id": "aPsS_HaokoU_00_ep13_f187",
+        "peak_frame": 187,
+        "is_in_gt_window": false,
+        "delta_gt": 107,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          7,
+          30
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": null,
+        "iou": null,
+        "dist_m": 13.08071104390804
+      },
+      {
+        "episode_id": "aPsS_HaokoU_00_ep14_f189",
+        "peak_frame": 189,
+        "is_in_gt_window": false,
+        "delta_gt": 109,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          10,
+          30
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": null,
+        "iou": null,
+        "dist_m": 8.0315348649413
+      },
+      {
+        "episode_id": "aPsS_HaokoU_00_ep15_f202",
+        "peak_frame": 202,
+        "is_in_gt_window": false,
+        "delta_gt": 122,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          6,
+          30
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -3.8396555474570833,
+        "iou": 0.20651092601652657,
+        "dist_m": 1.6172539053928174
+      },
+      {
+        "episode_id": "aPsS_HaokoU_00_ep16_f224",
+        "peak_frame": 224,
+        "is_in_gt_window": false,
+        "delta_gt": 144,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          30,
+          41
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": null,
+        "iou": null,
+        "dist_m": 10.482047091275321
+      }
+    ]
+  },
+  {
+    "video_id": "maJsgJsapH4_00",
+    "split": "split_geo_aware",
+    "gt_frame": 69,
+    "total_vlm_calls": 18,
+    "in_window_episodes": 3,
+    "out_of_window_episodes": 15,
+    "episodes": [
+      {
+        "episode_id": "maJsgJsapH4_00_ep01_f35",
+        "peak_frame": 35,
+        "is_in_gt_window": true,
+        "delta_gt": -34,
+        "event_type": "single_vehicle_anomaly",
+        "track_ids": [
+          2
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -57.14906275686178,
+        "iou": null,
+        "dist_m": null
+      },
+      {
+        "episode_id": "maJsgJsapH4_00_ep02_f43",
+        "peak_frame": 43,
+        "is_in_gt_window": true,
+        "delta_gt": -26,
+        "event_type": "barrier_strike",
+        "track_ids": [
+          3
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -10.349742968761468,
+        "iou": null,
+        "dist_m": null
+      },
+      {
+        "episode_id": "maJsgJsapH4_00_ep03_f57",
+        "peak_frame": 57,
+        "is_in_gt_window": true,
+        "delta_gt": -12,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          9,
+          11
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": null,
+        "iou": null,
+        "dist_m": 11.334465662314361
+      },
+      {
+        "episode_id": "maJsgJsapH4_00_ep04_f105",
+        "peak_frame": 105,
+        "is_in_gt_window": false,
+        "delta_gt": 36,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          21,
+          22
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CONFIRMED_INCIDENT",
+        "vlm_source": "deterministic_high_confidence_bypass",
+        "accel": 60.0,
+        "iou": 0.27313000252481917,
+        "dist_m": 2.289342415467191
+      },
+      {
+        "episode_id": "maJsgJsapH4_00_ep05_f108",
+        "peak_frame": 108,
+        "is_in_gt_window": false,
+        "delta_gt": 39,
+        "event_type": "wrong_way_hazard",
+        "track_ids": [
+          18
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CONFIRMED_INCIDENT",
+        "vlm_source": "deterministic_high_confidence_bypass",
+        "accel": null,
+        "iou": null,
+        "dist_m": null
+      },
+      {
+        "episode_id": "maJsgJsapH4_00_ep06_f109",
+        "peak_frame": 109,
+        "is_in_gt_window": false,
+        "delta_gt": 40,
+        "event_type": "barrier_strike",
+        "track_ids": [
+          13
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": 0.6640232962419027,
+        "iou": null,
+        "dist_m": null
+      },
+      {
+        "episode_id": "maJsgJsapH4_00_ep07_f129",
+        "peak_frame": 145,
+        "is_in_gt_window": false,
+        "delta_gt": 76,
+        "event_type": "barrier_strike",
+        "track_ids": [
+          14
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": 3.3262272575366914,
+        "iou": null,
+        "dist_m": null
+      },
+      {
+        "episode_id": "maJsgJsapH4_00_ep08_f138",
+        "peak_frame": 138,
+        "is_in_gt_window": false,
+        "delta_gt": 69,
+        "event_type": "barrier_strike",
+        "track_ids": [
+          25
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -19.390657227458618,
+        "iou": null,
+        "dist_m": null
+      },
+      {
+        "episode_id": "maJsgJsapH4_00_ep09_f140",
+        "peak_frame": 140,
+        "is_in_gt_window": false,
+        "delta_gt": 71,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          23,
+          28
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": null,
+        "iou": null,
+        "dist_m": 9.236816191936757
+      },
+      {
+        "episode_id": "maJsgJsapH4_00_ep10_f145",
+        "peak_frame": 145,
+        "is_in_gt_window": false,
+        "delta_gt": 76,
+        "event_type": "single_vehicle_anomaly",
+        "track_ids": [
+          20
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -4.107253981838984,
+        "iou": null,
+        "dist_m": null
+      },
+      {
+        "episode_id": "maJsgJsapH4_00_ep11_f149",
+        "peak_frame": 149,
+        "is_in_gt_window": false,
+        "delta_gt": 80,
+        "event_type": "barrier_strike",
+        "track_ids": [
+          15
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -49.49490031488906,
+        "iou": null,
+        "dist_m": null
+      },
+      {
+        "episode_id": "maJsgJsapH4_00_ep12_f210",
+        "peak_frame": 210,
+        "is_in_gt_window": false,
+        "delta_gt": 141,
+        "event_type": "barrier_strike",
+        "track_ids": [
+          27
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -60.0,
+        "iou": null,
+        "dist_m": null
+      },
+      {
+        "episode_id": "maJsgJsapH4_00_ep13_f223",
+        "peak_frame": 223,
+        "is_in_gt_window": false,
+        "delta_gt": 154,
+        "event_type": "barrier_strike",
+        "track_ids": [
+          26
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -34.353914637163314,
+        "iou": null,
+        "dist_m": null
+      },
+      {
+        "episode_id": "maJsgJsapH4_00_ep14_f232",
+        "peak_frame": 232,
+        "is_in_gt_window": false,
+        "delta_gt": 163,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          34,
+          38
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -32.706897431539794,
+        "iou": 0.21488124010267898,
+        "dist_m": 12.16304481000255
+      },
+      {
+        "episode_id": "maJsgJsapH4_00_ep15_f236",
+        "peak_frame": 236,
+        "is_in_gt_window": false,
+        "delta_gt": 167,
+        "event_type": "single_vehicle_anomaly",
+        "track_ids": [
+          32
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -2.2423846251480093,
+        "iou": null,
+        "dist_m": null
+      },
+      {
+        "episode_id": "maJsgJsapH4_00_ep16_f237",
+        "peak_frame": 237,
+        "is_in_gt_window": false,
+        "delta_gt": 168,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          54,
+          55
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CONFIRMED_INCIDENT",
+        "vlm_source": "deterministic_high_confidence_bypass",
+        "accel": -60.0,
+        "iou": 0.5552919029213125,
+        "dist_m": 11.402680044661743
+      },
+      {
+        "episode_id": "maJsgJsapH4_00_ep17_f241",
+        "peak_frame": 241,
+        "is_in_gt_window": false,
+        "delta_gt": 172,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          32,
+          55
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": null,
+        "iou": null,
+        "dist_m": 36.9840547852268
+      },
+      {
+        "episode_id": "maJsgJsapH4_00_ep18_f242",
+        "peak_frame": 242,
+        "is_in_gt_window": false,
+        "delta_gt": 173,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          32,
+          38
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": null,
+        "iou": null,
+        "dist_m": 16.320567228625254
+      }
+    ]
+  },
+  {
+    "video_id": "82sQ7N-aHOw_00",
+    "split": "split_geo_aware",
+    "gt_frame": 15,
+    "total_vlm_calls": 7,
+    "in_window_episodes": 0,
+    "out_of_window_episodes": 7,
+    "episodes": [
+      {
+        "episode_id": "82sQ7N-aHOw_00_ep01_f73",
+        "peak_frame": 73,
+        "is_in_gt_window": false,
+        "delta_gt": 58,
+        "event_type": "barrier_strike",
+        "track_ids": [
+          19
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -60.0,
+        "iou": null,
+        "dist_m": null
+      },
+      {
+        "episode_id": "82sQ7N-aHOw_00_ep02_f85",
+        "peak_frame": 85,
+        "is_in_gt_window": false,
+        "delta_gt": 70,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          22,
+          37
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CONFIRMED_INCIDENT",
+        "vlm_source": "deterministic_high_confidence_bypass",
+        "accel": -43.41203779358186,
+        "iou": 0.6741855993321392,
+        "dist_m": 0.7620038382178956
+      },
+      {
+        "episode_id": "82sQ7N-aHOw_00_ep03_f92",
+        "peak_frame": 92,
+        "is_in_gt_window": false,
+        "delta_gt": 77,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          25,
+          40
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -9.650752835042914,
+        "iou": 0.5780700619579511,
+        "dist_m": 1.2105838966391562
+      },
+      {
+        "episode_id": "82sQ7N-aHOw_00_ep04_f99",
+        "peak_frame": 99,
+        "is_in_gt_window": false,
+        "delta_gt": 84,
+        "event_type": "barrier_strike",
+        "track_ids": [
+          43
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": 0.47416258067027034,
+        "iou": null,
+        "dist_m": null
+      },
+      {
+        "episode_id": "82sQ7N-aHOw_00_ep05_f141",
+        "peak_frame": 141,
+        "is_in_gt_window": false,
+        "delta_gt": 126,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          52,
+          68
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CONFIRMED_INCIDENT",
+        "vlm_source": "deterministic_high_confidence_bypass",
+        "accel": 60.0,
+        "iou": 0.3841526303035945,
+        "dist_m": 1.5780549962558457
+      },
+      {
+        "episode_id": "82sQ7N-aHOw_00_ep06_f166",
+        "peak_frame": 166,
+        "is_in_gt_window": false,
+        "delta_gt": 151,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          67,
+          74
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -5.2449246730691685,
+        "iou": 0.2919819129993617,
+        "dist_m": 1.8801598822255496
+      },
+      {
+        "episode_id": "82sQ7N-aHOw_00_ep07_f202",
+        "peak_frame": 202,
+        "is_in_gt_window": false,
+        "delta_gt": 187,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          77,
+          82
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": -1.185071592126439,
+        "iou": 0.2641759010550889,
+        "dist_m": 0.35592349618547436
+      }
+    ]
+  },
+  {
+    "video_id": "bJMc3sNP2AU_00",
+    "split": "split_geo_aware",
+    "gt_frame": 32,
+    "total_vlm_calls": 1,
+    "in_window_episodes": 1,
+    "out_of_window_episodes": 0,
+    "episodes": [
+      {
+        "episode_id": "bJMc3sNP2AU_00_ep01_f60",
+        "peak_frame": 60,
+        "is_in_gt_window": true,
+        "delta_gt": 28,
+        "event_type": "single_vehicle_anomaly",
+        "track_ids": [
+          1
+        ],
+        "vlm_dispatched": true,
+        "vlm_verdict": "CANDIDATE_UNCONFIRMED",
+        "vlm_source": "offline_unverified_fallback",
+        "accel": 1.0105233645861385,
+        "iou": null,
+        "dist_m": null
+      }
+    ]
+  }
+]

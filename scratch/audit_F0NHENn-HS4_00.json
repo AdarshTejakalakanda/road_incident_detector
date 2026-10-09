@@ -1,0 +1,3747 @@
+{
+  "video_id": "F0NHENn-HS4_00",
+  "gt_frame": 39,
+  "window_min": 4,
+  "window_max": 74,
+  "fps": 15.047770700636942,
+  "active_tracks_at_gt": [
+    {
+      "track_id": 1,
+      "bbox": [
+        1249.0,
+        821.7999877929688,
+        155.9000244140625,
+        155.29998779296875
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 40,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 2,
+      "bbox": [
+        1640.7768811000858,
+        1213.9494277360677,
+        1.0,
+        1.0
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 40,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 3,
+      "bbox": [
+        1832.8963726116187,
+        1316.8353558053211,
+        1.0,
+        1.0
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 40,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 4,
+      "bbox": [
+        1354.300048828125,
+        978.7999877929688,
+        167.2999267578125,
+        101.20001220703125
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 40,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 5,
+      "bbox": [
+        714.5,
+        721.7999877929688,
+        139.20001220703125,
+        125.4000244140625
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 40,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 6,
+      "bbox": [
+        830.0999755859375,
+        546.7999877929688,
+        106.300048828125,
+        100.20001220703125
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 40,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 7,
+      "bbox": [
+        829.4000244140625,
+        329.29998779296875,
+        91.29998779296875,
+        82.4000244140625
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 40,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 8,
+      "bbox": [
+        1113.9000244140625,
+        639.5999755859375,
+        130.4000244140625,
+        129.4000244140625
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 40,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 9,
+      "bbox": [
+        948.1208899164377,
+        398.86576512101453,
+        88.30642959401952,
+        90.21702514156387
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 40,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 10,
+      "bbox": [
+        737.2000122070312,
+        246.5,
+        81.5,
+        77.39999389648438
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 40,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 11,
+      "bbox": [
+        459.8459257704955,
+        83.79024120168185,
+        281.20521511973527,
+        402.44285563495487
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 40,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 12,
+      "bbox": [
+        530.2000122070312,
+        164.6999969482422,
+        65.79998779296875,
+        54.90000915527344
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 40,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 13,
+      "bbox": [
+        802.4000244140625,
+        289.6000061035156,
+        87.0,
+        81.60000610351562
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 40,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 14,
+      "bbox": [
+        986.9788566025139,
+        453.7556881725051,
+        12.686163614925102,
+        14.137153762288301
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 40,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 15,
+      "bbox": [
+        1067.0999755859375,
+        539.4000244140625,
+        123.2000732421875,
+        137.0999755859375
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 40,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 16,
+      "bbox": [
+        698.9000244140625,
+        205.6999969482422,
+        63.39996337890625,
+        66.19999694824219
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 40,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 17,
+      "bbox": [
+        713.7999877929688,
+        384.3999938964844,
+        94.5,
+        84.80001831054688
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 40,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 18,
+      "bbox": [
+        298.81201474497607,
+        55.31671015874184,
+        584.7563495858399,
+        555.4388703742147
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 39,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 19,
+      "bbox": [
+        697.8416402974158,
+        292.9884277889573,
+        260.70005820697554,
+        115.6624251398618
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 39,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 20,
+      "bbox": [
+        823.1784490218944,
+        290.36531189594234,
+        45.81729780654733,
+        30.04773789333528
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 39,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 21,
+      "bbox": [
+        578.9261294664159,
+        92.47521928519231,
+        59.37088156303935,
+        64.26685648516201
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 38,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 22,
+      "bbox": [
+        551.3578962193587,
+        268.1719177502909,
+        87.3222776875333,
+        79.74237392729846
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 37,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 23,
+      "bbox": [
+        762.9459995090696,
+        474.1316561579403,
+        74.90337748358691,
+        112.14987029359813
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 36,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 24,
+      "bbox": [
+        812.5814399706452,
+        286.314291407181,
+        53.84060560539012,
+        25.432197084795728
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 34,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 25,
+      "bbox": [
+        635.072819131206,
+        180.87654087451884,
+        55.94251473069049,
+        65.81663258602411
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 30,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 26,
+      "bbox": [
+        786.0,
+        492.3999938964844,
+        15.9000244140625,
+        262.1999816894531
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 29,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 27,
+      "bbox": [
+        718.333936074053,
+        227.51994069189635,
+        92.87378613357436,
+        99.07432208421406
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 27,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 28,
+      "bbox": [
+        557.0999755859375,
+        361.3999938964844,
+        90.20001220703125,
+        125.0
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 24,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 29,
+      "bbox": [
+        559.0999755859375,
+        361.79998779296875,
+        86.0,
+        78.30001831054688
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 14,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 30,
+      "bbox": [
+        946.2999877929688,
+        440.1000061035156,
+        122.10003662109375,
+        129.69998168945312
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 11,
+      "cls": "vehicle"
+    },
+    {
+      "track_id": 31,
+      "bbox": [
+        831.2910943950936,
+        329.9337627864086,
+        48.58402646884454,
+        41.23129586193054
+      ],
+      "speed_kmh": 0.0,
+      "accel_ms2": 0.0,
+      "age": 10,
+      "cls": "vehicle"
+    }
+  ],
+  "total_raw_candidates": 79,
+  "window_candidates": [
+    {
+      "frame": 7,
+      "timestamp_s": 0.465,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        9,
+        14
+      ],
+      "confidence": 0.98,
+      "description": "Collision candidate between tracks 9 (vehicle) and 14 (vehicle): dist=8.9m, iou=0.70, active_signals=4/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": true,
+        "distance_delta_m": -2.0419901984944246,
+        "trajectory_convergence": true,
+        "tca_sec": 0.28789237367143694,
+        "dca_m": 0.24543755907068823,
+        "sudden_deceleration": true,
+        "accel_1_ms2": -22.957185104909957,
+        "accel_2_ms2": -60.0,
+        "post_event_proximity": true,
+        "ground_distance_m": 8.852351354847343,
+        "distance_m": 8.852351354847343,
+        "heading_delta_deg": 28.37289835558935,
+        "is_crossing_trajectory": false,
+        "selected_max_dist_m": 2.0,
+        "ignore_flow_coherence": false,
+        "bbox_iou": 0.6965524677504454,
+        "persistence_frames": 2,
+        "angular_approach": true,
+        "closing_velocity_mps": 30.72518495748072,
+        "proj1": -0.8492031925302654,
+        "proj2": 0.9981326754003645,
+        "is_tbone": false,
+        "cos_align": 0.8798734508510055,
+        "post_event_rest": true,
+        "S_dissip": 0.7,
+        "S_v_drop": 1.0,
+        "S_deflect": 1.0,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 8.852351354847343,
+        "heading_delta": 28.37289835558935,
+        "norm_pixel_dist": 0.139,
+        "is_kinematic_closure_corridor": false,
+        "is_tentative_rescued": false,
+        "pixel_centroid": [
+          881.0733761164871,
+          356.5055847181102
+        ],
+        "char_dim": 124.26084853775498
+      }
+    },
+    {
+      "frame": 7,
+      "timestamp_s": 0.465,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        13,
+        19
+      ],
+      "confidence": 0.85,
+      "description": "Collision candidate between tracks 13 (vehicle) and 19 (candidate_vehicle_recovered): dist=71.7m, iou=0.54, active_signals=3/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": true,
+        "distance_delta_m": -2.685718689996648,
+        "trajectory_convergence": false,
+        "tca_sec": 6.9108776207518945,
+        "dca_m": 4.5769240194771355,
+        "sudden_deceleration": true,
+        "accel_1_ms2": -18.85658072900885,
+        "accel_2_ms2": 4.650819173038561,
+        "post_event_proximity": true,
+        "ground_distance_m": 71.71230646977907,
+        "distance_m": 71.71230646977907,
+        "heading_delta_deg": 1.1244709519224425,
+        "is_crossing_trajectory": false,
+        "selected_max_dist_m": 2.0,
+        "ignore_flow_coherence": false,
+        "bbox_iou": 0.5404985126689158,
+        "persistence_frames": 2,
+        "angular_approach": true,
+        "closing_velocity_mps": 10.334460467347418,
+        "proj1": -0.9986377323059585,
+        "proj2": 0.9994694070463529,
+        "is_tbone": false,
+        "cos_align": 0.9998074217297116,
+        "post_event_rest": true,
+        "S_dissip": 0.4974,
+        "S_v_drop": 0.4213,
+        "S_deflect": 1.0,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 71.71230646977907,
+        "heading_delta": 1.1244709519224425,
+        "norm_pixel_dist": 0.257,
+        "is_kinematic_closure_corridor": true,
+        "is_tentative_rescued": true,
+        "pixel_centroid": [
+          743.3000183105469,
+          238.9749984741211
+        ],
+        "char_dim": 57.75
+      }
+    },
+    {
+      "frame": 9,
+      "timestamp_s": 0.598,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        19,
+        20
+      ],
+      "confidence": 0.98,
+      "description": "Collision candidate between tracks 19 (candidate_vehicle_recovered) and 20 (candidate_vehicle_recovered): dist=63.4m, iou=0.23, active_signals=4/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": true,
+        "distance_delta_m": -4.136073227268859,
+        "trajectory_convergence": true,
+        "tca_sec": 1.9725587453506883,
+        "dca_m": 1.27484701880992,
+        "sudden_deceleration": true,
+        "accel_1_ms2": 1.8835973826674142,
+        "accel_2_ms2": -60.0,
+        "post_event_proximity": true,
+        "ground_distance_m": 63.441910042469765,
+        "distance_m": 63.441910042469765,
+        "heading_delta_deg": 2.5566844682503644,
+        "is_crossing_trajectory": false,
+        "selected_max_dist_m": 2.0,
+        "ignore_flow_coherence": false,
+        "bbox_iou": 0.22756075563507416,
+        "persistence_frames": 2,
+        "angular_approach": true,
+        "closing_velocity_mps": 32.149254112755266,
+        "proj1": 0.9997968130920272,
+        "proj2": -0.9979024046554382,
+        "is_tbone": false,
+        "cos_align": 0.9990045786722792,
+        "post_event_rest": true,
+        "S_dissip": 0.7,
+        "S_v_drop": 1.0,
+        "S_deflect": 1.0,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 63.441910042469765,
+        "heading_delta": 2.5566844682503644,
+        "norm_pixel_dist": 0.433,
+        "is_kinematic_closure_corridor": true,
+        "is_tentative_rescued": true,
+        "pixel_centroid": [
+          746.5499249671318,
+          249.47399002122015
+        ],
+        "char_dim": 45.76906515887201
+      }
+    },
+    {
+      "frame": 10,
+      "timestamp_s": 0.665,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        8,
+        15
+      ],
+      "confidence": 0.85,
+      "description": "Collision candidate between tracks 8 (vehicle) and 15 (vehicle): dist=12.4m, iou=0.13, active_signals=3/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": false,
+        "distance_delta_m": -0.5273952824620576,
+        "trajectory_convergence": true,
+        "tca_sec": 1.5264191665453395,
+        "dca_m": 2.0224105727468267,
+        "sudden_deceleration": true,
+        "accel_1_ms2": -44.35695890116284,
+        "accel_2_ms2": -60.0,
+        "post_event_proximity": true,
+        "ground_distance_m": 12.436058115890557,
+        "distance_m": 12.436058115890557,
+        "heading_delta_deg": 7.844719050421016,
+        "is_crossing_trajectory": false,
+        "selected_max_dist_m": 2.0,
+        "ignore_flow_coherence": false,
+        "bbox_iou": 0.13423900468651237,
+        "persistence_frames": 2,
+        "angular_approach": true,
+        "closing_velocity_mps": 7.931742742265424,
+        "proj1": -0.9895080595511765,
+        "proj2": 0.9999674464595282,
+        "is_tbone": false,
+        "cos_align": 0.9906416134336494,
+        "post_event_rest": true,
+        "S_dissip": 0.7,
+        "S_v_drop": 1.0,
+        "S_deflect": 1.0,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 12.436058115890557,
+        "heading_delta": 7.844719050421016,
+        "norm_pixel_dist": 0.727,
+        "is_kinematic_closure_corridor": true,
+        "is_tentative_rescued": false,
+        "pixel_centroid": [
+          1011.5210694268951,
+          490.38750545314167
+        ],
+        "char_dim": 102.10536854386872
+      }
+    },
+    {
+      "frame": 14,
+      "timestamp_s": 0.93,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        17,
+        18
+      ],
+      "confidence": 0.7,
+      "description": "Collision candidate between tracks 17 (vehicle) and 18 (vehicle): dist=30.9m, iou=0.08, active_signals=2/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": false,
+        "distance_delta_m": 0.9909182947137438,
+        "trajectory_convergence": false,
+        "tca_sec": Infinity,
+        "dca_m": 30.94457272844713,
+        "sudden_deceleration": true,
+        "accel_1_ms2": 60.0,
+        "accel_2_ms2": -60.0,
+        "post_event_proximity": true,
+        "ground_distance_m": 30.94457272844713,
+        "distance_m": 30.94457272844713,
+        "heading_delta_deg": 1.5872171384517542,
+        "is_crossing_trajectory": false,
+        "selected_max_dist_m": 2.0,
+        "ignore_flow_coherence": false,
+        "bbox_iou": 0.08053220982924213,
+        "persistence_frames": 2,
+        "angular_approach": false,
+        "closing_velocity_mps": -14.913997957022216,
+        "proj1": 0.9844330035773742,
+        "proj2": -0.9889236123038553,
+        "is_tbone": false,
+        "cos_align": 0.9996163195645009,
+        "post_event_rest": true,
+        "S_dissip": 0.7,
+        "S_v_drop": 1.0,
+        "S_deflect": 1.0,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 30.94457272844713,
+        "heading_delta": 1.5872171384517542,
+        "norm_pixel_dist": 0.685,
+        "is_kinematic_closure_corridor": true,
+        "is_tentative_rescued": false,
+        "pixel_centroid": [
+          644.9734294831529,
+          357.17627153525456
+        ],
+        "char_dim": 150.33447748197747
+      }
+    },
+    {
+      "frame": 17,
+      "timestamp_s": 1.13,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        13,
+        24
+      ],
+      "confidence": 0.85,
+      "description": "Collision candidate between tracks 13 (vehicle) and 24 (candidate_vehicle_recovered): dist=48.4m, iou=0.45, active_signals=3/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": true,
+        "distance_delta_m": -1.827641212553793,
+        "trajectory_convergence": false,
+        "tca_sec": 3.026990315724357,
+        "dca_m": 0.672133901678456,
+        "sudden_deceleration": true,
+        "accel_1_ms2": -11.071244109700055,
+        "accel_2_ms2": 1.4070752209609545,
+        "post_event_proximity": true,
+        "ground_distance_m": 48.39936889711811,
+        "distance_m": 48.39936889711811,
+        "heading_delta_deg": 1.1545578998938735,
+        "is_crossing_trajectory": false,
+        "selected_max_dist_m": 2.0,
+        "ignore_flow_coherence": false,
+        "bbox_iou": 0.4457662291774031,
+        "persistence_frames": 2,
+        "angular_approach": true,
+        "closing_velocity_mps": 15.986187520148196,
+        "proj1": -0.9980030698410719,
+        "proj2": 0.9990732043151702,
+        "is_tbone": false,
+        "cos_align": 0.999796978758951,
+        "post_event_rest": true,
+        "S_dissip": 0.5784,
+        "S_v_drop": 0.6526,
+        "S_deflect": 1.0,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 48.39936889711811,
+        "heading_delta": 1.1545578998938735,
+        "norm_pixel_dist": 0.329,
+        "is_kinematic_closure_corridor": true,
+        "is_tentative_rescued": true,
+        "pixel_centroid": [
+          771.2012757703267,
+          258.83412060234315
+        ],
+        "char_dim": 58.39322635996788
+      }
+    },
+    {
+      "frame": 17,
+      "timestamp_s": 1.13,
+      "event_type": "distant_trajectory_conflict",
+      "track_ids": [
+        2,
+        4
+      ],
+      "confidence": 0.85,
+      "description": "Distant trajectory conflict between tracks 2 (vehicle) and 4 (vehicle): TCA=1.21s, DCA=1.2m, rel_spd=15.8km/h",
+      "signals": {
+        "trajectory_conflict": true,
+        "tca_sec": 1.210002753469282,
+        "dca_m": 1.1892900416731433,
+        "distance_m": 5.451251878825612,
+        "norm_distance": 1.1997010499219778,
+        "relative_speed_kmh": 15.827877551844932,
+        "metric_accel_1": -0.5649807769179355,
+        "metric_accel_2": -0.4011812025117358
+      }
+    },
+    {
+      "frame": 18,
+      "timestamp_s": 1.196,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        7,
+        20
+      ],
+      "confidence": 0.98,
+      "description": "Collision candidate between tracks 7 (vehicle) and 20 (candidate_vehicle_recovered): dist=32.5m, iou=0.21, active_signals=4/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": true,
+        "distance_delta_m": -2.780529713776211,
+        "trajectory_convergence": true,
+        "tca_sec": 0.7769553024994154,
+        "dca_m": 0.39916626388005794,
+        "sudden_deceleration": true,
+        "accel_1_ms2": -60.0,
+        "accel_2_ms2": -60.0,
+        "post_event_proximity": true,
+        "ground_distance_m": 32.51311816832684,
+        "distance_m": 32.51311816832684,
+        "heading_delta_deg": 2.345382424498198,
+        "is_crossing_trajectory": false,
+        "selected_max_dist_m": 2.0,
+        "ignore_flow_coherence": false,
+        "bbox_iou": 0.20617941508491355,
+        "persistence_frames": 2,
+        "angular_approach": true,
+        "closing_velocity_mps": 41.84052475892928,
+        "proj1": -0.9993433617319445,
+        "proj2": 0.9999889855268753,
+        "is_tbone": false,
+        "cos_align": 0.9991622943824189,
+        "post_event_rest": true,
+        "S_dissip": 0.7,
+        "S_v_drop": 1.0,
+        "S_deflect": 1.0,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 32.51311816832684,
+        "heading_delta": 2.345382424498198,
+        "norm_pixel_dist": 0.617,
+        "is_kinematic_closure_corridor": true,
+        "is_tentative_rescued": true,
+        "pixel_centroid": [
+          786.8749847412109,
+          292.4000015258789
+        ],
+        "char_dim": 65.40000915527344
+      }
+    },
+    {
+      "frame": 18,
+      "timestamp_s": 1.196,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        13,
+        20
+      ],
+      "confidence": 0.98,
+      "description": "Collision candidate between tracks 13 (vehicle) and 20 (candidate_vehicle_recovered): dist=6.0m, iou=0.61, active_signals=4/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": true,
+        "distance_delta_m": -2.093812626367474,
+        "trajectory_convergence": true,
+        "tca_sec": 0.18922971092019322,
+        "dca_m": 0.2221297882618955,
+        "sudden_deceleration": true,
+        "accel_1_ms2": -60.0,
+        "accel_2_ms2": -60.0,
+        "post_event_proximity": true,
+        "ground_distance_m": 5.969293464904285,
+        "distance_m": 5.969293464904285,
+        "heading_delta_deg": 0.7894325112761603,
+        "is_crossing_trajectory": false,
+        "selected_max_dist_m": 2.0,
+        "ignore_flow_coherence": false,
+        "bbox_iou": 0.605975018686092,
+        "persistence_frames": 2,
+        "angular_approach": true,
+        "closing_velocity_mps": 31.501541305899597,
+        "proj1": -0.999879182670216,
+        "proj2": 0.9995701129497258,
+        "is_tbone": false,
+        "cos_align": 0.999905082151601,
+        "post_event_rest": true,
+        "S_dissip": 0.7,
+        "S_v_drop": 1.0,
+        "S_deflect": 1.0,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 5.969293464904285,
+        "heading_delta": 0.7894325112761603,
+        "norm_pixel_dist": 0.186,
+        "is_kinematic_closure_corridor": true,
+        "is_tentative_rescued": true,
+        "pixel_centroid": [
+          771.6750030517578,
+          274.27499771118164
+        ],
+        "char_dim": 64.3499984741211
+      }
+    },
+    {
+      "frame": 18,
+      "timestamp_s": 1.196,
+      "event_type": "barrier_strike",
+      "track_ids": [
+        2
+      ],
+      "confidence": 0.95,
+      "description": "Single-vehicle anomaly on track 2 (vehicle): type=severe_barrier_impact, S_single=0.54, accel=-47.1m/s^2, spd=0.0km/h",
+      "signals": {
+        "anomaly_type": "severe_barrier_impact",
+        "composite_score": 0.5363897944769915,
+        "s_theta": 1.0,
+        "s_decel": 0.0,
+        "s_bound": 1.0,
+        "s_ar": 0.2426,
+        "theta_deg": 45.1,
+        "decel_mag": 47.12,
+        "d_edge_m": 0.02,
+        "delta_ar": 0.2106,
+        "shoulder_admitted": false,
+        "v_dot_n": 0.583,
+        "metric_accel_ms2": -47.12149870571161,
+        "metric_speed_kmh": 0.0,
+        "max_recent_speed_kmh": 20.617311148536036,
+        "heading_deg": 324.35714455319635,
+        "yaw_delta_deg": 2.2737367544323206e-13,
+        "aspect_ratio": 1.2363135100885665,
+        "aspect_ratio_ratio": 0.002078917660056552,
+        "kinematic_plausibility": {
+          "track_id": 2,
+          "frame_idx": 18,
+          "timestamp_s": 1.196,
+          "decel_onset_frame": 15,
+          "v_entry_kmh": 21.21,
+          "v_curr_kmh": 0.0,
+          "accel_mps2": -47.12,
+          "tau_rest_s": 0.125,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+          "rejection_reason": null
+        },
+        "v_entry_kmh": 21.21,
+        "decel_onset_frame": 15,
+        "tau_rest_s": 0.125,
+        "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+      }
+    },
+    {
+      "frame": 18,
+      "timestamp_s": 1.196,
+      "event_type": "distant_trajectory_conflict",
+      "track_ids": [
+        10,
+        13
+      ],
+      "confidence": 0.85,
+      "description": "Distant trajectory conflict between tracks 10 (vehicle) and 13 (vehicle): TCA=1.33s, DCA=0.8m, rel_spd=148.5km/h",
+      "signals": {
+        "trajectory_conflict": true,
+        "tca_sec": 1.332940152067863,
+        "dca_m": 0.7982197154885001,
+        "distance_m": 54.97582623443984,
+        "norm_distance": 0.8987015917761991,
+        "relative_speed_kmh": 148.46286349178916,
+        "metric_accel_1": -1.8449868425943716,
+        "metric_accel_2": -3.595206829761672
+      }
+    },
+    {
+      "frame": 20,
+      "timestamp_s": 1.329,
+      "event_type": "distant_trajectory_conflict",
+      "track_ids": [
+        14,
+        20
+      ],
+      "confidence": 0.85,
+      "description": "Distant trajectory conflict between tracks 14 (vehicle) and 20 (candidate_vehicle_recovered): TCA=1.42s, DCA=1.2m, rel_spd=186.6km/h",
+      "signals": {
+        "trajectory_conflict": true,
+        "tca_sec": 1.418578974993525,
+        "dca_m": 1.1757739182897708,
+        "distance_m": 73.54887496507514,
+        "norm_distance": 1.627191896873436,
+        "relative_speed_kmh": 186.6248683353006,
+        "metric_accel_1": -1.7419354838709677,
+        "metric_accel_2": -3.6193011723489605
+      }
+    },
+    {
+      "frame": 21,
+      "timestamp_s": 1.396,
+      "event_type": "distant_trajectory_conflict",
+      "track_ids": [
+        14,
+        24
+      ],
+      "confidence": 0.85,
+      "description": "Distant trajectory conflict between tracks 14 (vehicle) and 24 (candidate_vehicle_recovered): TCA=1.62s, DCA=0.4m, rel_spd=233.9km/h",
+      "signals": {
+        "trajectory_conflict": true,
+        "tca_sec": 1.6164401862495152,
+        "dca_m": 0.35681928362973503,
+        "distance_m": 105.03121447388523,
+        "norm_distance": 1.8148187797010613,
+        "relative_speed_kmh": 233.91536125877695,
+        "metric_accel_1": -0.42944104922500603,
+        "metric_accel_2": 0.3177117057620435
+      }
+    },
+    {
+      "frame": 22,
+      "timestamp_s": 1.462,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        20,
+        24
+      ],
+      "confidence": 0.98,
+      "description": "Collision candidate between tracks 20 (candidate_vehicle_recovered) and 24 (candidate_vehicle_recovered): dist=32.6m, iou=0.31, active_signals=4/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": true,
+        "distance_delta_m": -1.9841448847136505,
+        "trajectory_convergence": true,
+        "tca_sec": 1.3957542924647308,
+        "dca_m": 0.9917374341960569,
+        "sudden_deceleration": true,
+        "accel_1_ms2": -54.18264965412349,
+        "accel_2_ms2": 1.1164618721522077,
+        "post_event_proximity": true,
+        "ground_distance_m": 32.56807018192771,
+        "distance_m": 32.56807018192771,
+        "heading_delta_deg": 1.2632860656694873,
+        "is_crossing_trajectory": false,
+        "selected_max_dist_m": 2.0,
+        "ignore_flow_coherence": false,
+        "bbox_iou": 0.31048281520755017,
+        "persistence_frames": 2,
+        "angular_approach": true,
+        "closing_velocity_mps": 23.312033316961372,
+        "proj1": -0.996108014428883,
+        "proj2": 0.9978091200087351,
+        "is_tbone": false,
+        "cos_align": 0.9997569416433896,
+        "post_event_rest": true,
+        "S_dissip": 0.6836,
+        "S_v_drop": 0.9531,
+        "S_deflect": 1.0,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 32.56807018192771,
+        "heading_delta": 1.2632860656694873,
+        "norm_pixel_dist": 0.514,
+        "is_kinematic_closure_corridor": true,
+        "is_tentative_rescued": true,
+        "pixel_centroid": [
+          785.9040529899648,
+          279.45922740679634
+        ],
+        "char_dim": 49.31645286354073
+      }
+    },
+    {
+      "frame": 22,
+      "timestamp_s": 1.462,
+      "event_type": "distant_trajectory_conflict",
+      "track_ids": [
+        7,
+        14
+      ],
+      "confidence": 0.85,
+      "description": "Distant trajectory conflict between tracks 7 (vehicle) and 14 (vehicle): TCA=1.64s, DCA=0.0m, rel_spd=89.7km/h",
+      "signals": {
+        "trajectory_conflict": true,
+        "tca_sec": 1.6350284215223105,
+        "dca_m": 0.026307193089010795,
+        "distance_m": 40.725439808943264,
+        "norm_distance": 1.1997137071137147,
+        "relative_speed_kmh": 89.6691157132056,
+        "metric_accel_1": 1.0065269681339721,
+        "metric_accel_2": 1.8048127605902213
+      }
+    },
+    {
+      "frame": 24,
+      "timestamp_s": 1.595,
+      "event_type": "distant_trajectory_conflict",
+      "track_ids": [
+        9,
+        20
+      ],
+      "confidence": 0.85,
+      "description": "Distant trajectory conflict between tracks 9 (vehicle) and 20 (candidate_vehicle_recovered): TCA=1.46s, DCA=1.4m, rel_spd=112.8km/h",
+      "signals": {
+        "trajectory_conflict": true,
+        "tca_sec": 1.4633686198220173,
+        "dca_m": 1.4090302462873523,
+        "distance_m": 45.870494071833605,
+        "norm_distance": 2.009015255846607,
+        "relative_speed_kmh": 112.7917125292788,
+        "metric_accel_1": 3.0269054153640247,
+        "metric_accel_2": -3.562095341057905
+      }
+    },
+    {
+      "frame": 26,
+      "timestamp_s": 1.728,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        10,
+        27
+      ],
+      "confidence": 0.85,
+      "description": "Collision candidate between tracks 10 (vehicle) and 27 (candidate_vehicle_recovered): dist=65.8m, iou=0.41, active_signals=3/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": true,
+        "distance_delta_m": -3.05019937961022,
+        "trajectory_convergence": false,
+        "tca_sec": 4.162583082072205,
+        "dca_m": 1.0037097662431735,
+        "sudden_deceleration": true,
+        "accel_1_ms2": -60.0,
+        "accel_2_ms2": 0.31534850196611147,
+        "post_event_proximity": true,
+        "ground_distance_m": 65.79872807341737,
+        "distance_m": 65.79872807341737,
+        "heading_delta_deg": 0.40171294317196926,
+        "is_crossing_trajectory": false,
+        "selected_max_dist_m": 2.0,
+        "ignore_flow_coherence": false,
+        "bbox_iou": 0.408423934920561,
+        "persistence_frames": 2,
+        "angular_approach": true,
+        "closing_velocity_mps": 15.80350852920682,
+        "proj1": -0.999929706547965,
+        "proj2": 0.9999882591787277,
+        "is_tbone": false,
+        "cos_align": 0.9999754215432691,
+        "post_event_rest": true,
+        "S_dissip": 0.5762,
+        "S_v_drop": 0.6464,
+        "S_deflect": 1.0,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 65.79872807341737,
+        "heading_delta": 0.40171294317196926,
+        "norm_pixel_dist": 0.347,
+        "is_kinematic_closure_corridor": true,
+        "is_tentative_rescued": true,
+        "pixel_centroid": [
+          729.0001180193728,
+          244.0534821309177
+        ],
+        "char_dim": 71.9126732295486
+      }
+    },
+    {
+      "frame": 26,
+      "timestamp_s": 1.728,
+      "event_type": "distant_trajectory_conflict",
+      "track_ids": [
+        13,
+        14
+      ],
+      "confidence": 0.85,
+      "description": "Distant trajectory conflict between tracks 13 (vehicle) and 14 (vehicle): TCA=1.33s, DCA=0.5m, rel_spd=158.2km/h",
+      "signals": {
+        "trajectory_conflict": true,
+        "tca_sec": 1.3271869769077982,
+        "dca_m": 0.46867629093097046,
+        "distance_m": 58.3314362280568,
+        "norm_distance": 1.710500038255251,
+        "relative_speed_kmh": 158.21914752253943,
+        "metric_accel_1": 3.3919582384771276,
+        "metric_accel_2": 0.04432867168092974
+      }
+    },
+    {
+      "frame": 35,
+      "timestamp_s": 2.326,
+      "event_type": "distant_trajectory_conflict",
+      "track_ids": [
+        1,
+        4
+      ],
+      "confidence": 0.85,
+      "description": "Distant trajectory conflict between tracks 1 (vehicle) and 4 (vehicle): TCA=1.02s, DCA=0.9m, rel_spd=16.8km/h",
+      "signals": {
+        "trajectory_conflict": true,
+        "tca_sec": 1.0209696714859984,
+        "dca_m": 0.8693483951528458,
+        "distance_m": 4.85289084864879,
+        "norm_distance": 1.1319783257990434,
+        "relative_speed_kmh": 16.83477786142122,
+        "metric_accel_1": 0.18461779314100102,
+        "metric_accel_2": -0.48769380224058106
+      }
+    },
+    {
+      "frame": 36,
+      "timestamp_s": 2.392,
+      "event_type": "single_vehicle_anomaly",
+      "track_ids": [
+        8
+      ],
+      "confidence": 0.9,
+      "description": "Single-vehicle anomaly on track 8 (vehicle): type=yaw, S_single=0.70, accel=-52.4m/s^2, spd=14.3km/h",
+      "signals": {
+        "anomaly_type": "yaw",
+        "composite_score": 0.7,
+        "s_theta": 1.0,
+        "s_decel": 1.0,
+        "s_bound": 0.0,
+        "s_ar": 0.0,
+        "theta_deg": 70.94,
+        "decel_mag": 60.0,
+        "d_edge_m": 5.18,
+        "delta_ar": 0.1271,
+        "shoulder_admitted": false,
+        "v_dot_n": 0.988,
+        "metric_accel_ms2": -52.42449299613207,
+        "metric_speed_kmh": 14.302413355316842,
+        "max_recent_speed_kmh": 27.055493105563244,
+        "heading_deg": 343.401891490386,
+        "yaw_delta_deg": 70.94059648736538,
+        "aspect_ratio": 1.0838920968185428,
+        "aspect_ratio_ratio": 0.12711057381769816,
+        "kinematic_plausibility": {
+          "track_id": 8,
+          "frame_idx": 36,
+          "timestamp_s": 2.392,
+          "decel_onset_frame": 36,
+          "v_entry_kmh": 27.06,
+          "v_curr_kmh": 14.3,
+          "accel_mps2": -52.42,
+          "tau_rest_s": 0.143,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+          "rejection_reason": null
+        },
+        "v_entry_kmh": 27.06,
+        "decel_onset_frame": 36,
+        "tau_rest_s": 0.143,
+        "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+      }
+    },
+    {
+      "frame": 40,
+      "timestamp_s": 2.658,
+      "event_type": "single_vehicle_anomaly",
+      "track_ids": [
+        29
+      ],
+      "confidence": 0.9,
+      "description": "Single-vehicle anomaly on track 29 (vehicle): type=composite(0.70), S_single=0.70, accel=-230.1m/s^2, spd=12.6km/h",
+      "signals": {
+        "anomaly_type": "composite(0.70)",
+        "composite_score": 0.7,
+        "s_theta": 1.0,
+        "s_decel": 1.0,
+        "s_bound": 0.0,
+        "s_ar": 0.0,
+        "theta_deg": 171.09,
+        "decel_mag": 60.0,
+        "d_edge_m": 8.82,
+        "delta_ar": 0.1268,
+        "shoulder_admitted": false,
+        "v_dot_n": 0.063,
+        "metric_accel_ms2": -60.0,
+        "metric_speed_kmh": 12.628539708998582,
+        "max_recent_speed_kmh": 73.81344419399932,
+        "heading_deg": 101.37991803934347,
+        "yaw_delta_deg": 7.057282964218416,
+        "aspect_ratio": 0.9904055064389495,
+        "aspect_ratio_ratio": 0.09827012454609071,
+        "kinematic_plausibility": {
+          "track_id": 29,
+          "frame_idx": 40,
+          "timestamp_s": 2.658,
+          "decel_onset_frame": 40,
+          "v_entry_kmh": 73.81,
+          "v_curr_kmh": 12.63,
+          "accel_mps2": -60.0,
+          "tau_rest_s": 0.342,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+          "rejection_reason": null
+        },
+        "v_entry_kmh": 73.81,
+        "decel_onset_frame": 40,
+        "tau_rest_s": 0.342,
+        "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+      }
+    },
+    {
+      "frame": 43,
+      "timestamp_s": 2.858,
+      "event_type": "distant_trajectory_conflict",
+      "track_ids": [
+        12,
+        29
+      ],
+      "confidence": 0.85,
+      "description": "Distant trajectory conflict between tracks 12 (vehicle) and 29 (vehicle): TCA=0.55s, DCA=1.1m, rel_spd=226.6km/h",
+      "signals": {
+        "trajectory_conflict": true,
+        "tca_sec": 0.5452861399756075,
+        "dca_m": 1.1397400449220414,
+        "distance_m": 34.34498929042515,
+        "norm_distance": 2.4983175825585326,
+        "relative_speed_kmh": 226.62204931753638,
+        "metric_accel_1": 0.060948962194276285,
+        "metric_accel_2": 0.9681467397047607
+      }
+    },
+    {
+      "frame": 44,
+      "timestamp_s": 2.924,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        9,
+        30
+      ],
+      "confidence": 0.85,
+      "description": "Collision candidate between tracks 9 (vehicle) and 30 (vehicle): dist=10.1m, iou=0.23, active_signals=3/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": false,
+        "distance_delta_m": -0.7226467043919289,
+        "trajectory_convergence": true,
+        "tca_sec": 0.9116582003456487,
+        "dca_m": 1.2954173500461597,
+        "sudden_deceleration": true,
+        "accel_1_ms2": -60.0,
+        "accel_2_ms2": 36.82000937885711,
+        "post_event_proximity": true,
+        "ground_distance_m": 10.07457088448972,
+        "distance_m": 10.07457088448972,
+        "heading_delta_deg": 7.973061585545326,
+        "is_crossing_trajectory": false,
+        "selected_max_dist_m": 2.0,
+        "ignore_flow_coherence": false,
+        "bbox_iou": 0.23035856159878426,
+        "persistence_frames": 2,
+        "angular_approach": true,
+        "closing_velocity_mps": 10.868110861783212,
+        "proj1": 0.9994242687914758,
+        "proj2": -0.9944693400898502,
+        "is_tbone": false,
+        "cos_align": 0.9903333934733646,
+        "post_event_rest": true,
+        "S_dissip": 0.7,
+        "S_v_drop": 1.0,
+        "S_deflect": 1.0,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 10.07457088448972,
+        "heading_delta": 7.973061585545326,
+        "norm_pixel_dist": 0.554,
+        "is_kinematic_closure_corridor": true,
+        "is_tentative_rescued": false,
+        "pixel_centroid": [
+          1013.7814521834121,
+          497.1270164950159
+        ],
+        "char_dim": 120.0153739844014
+      }
+    },
+    {
+      "frame": 44,
+      "timestamp_s": 2.924,
+      "event_type": "distant_trajectory_conflict",
+      "track_ids": [
+        6,
+        13
+      ],
+      "confidence": 0.85,
+      "description": "Distant trajectory conflict between tracks 6 (vehicle) and 13 (vehicle): TCA=1.62s, DCA=0.7m, rel_spd=110.5km/h",
+      "signals": {
+        "trajectory_conflict": true,
+        "tca_sec": 1.6203409009455978,
+        "dca_m": 0.6679463920806434,
+        "distance_m": 49.748508951654905,
+        "norm_distance": 2.800533767653135,
+        "relative_speed_kmh": 110.51902023414074,
+        "metric_accel_1": -1.040253869883355,
+        "metric_accel_2": -3.1839627224850524
+      }
+    },
+    {
+      "frame": 50,
+      "timestamp_s": 3.323,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        16,
+        34
+      ],
+      "confidence": 0.98,
+      "description": "Collision candidate between tracks 16 (vehicle) and 34 (candidate_vehicle_recovered): dist=28.8m, iou=0.38, active_signals=4/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": true,
+        "distance_delta_m": -4.814901167676734,
+        "trajectory_convergence": true,
+        "tca_sec": 0.6746649045731395,
+        "dca_m": 2.233665438540972,
+        "sudden_deceleration": true,
+        "accel_1_ms2": 28.017029822132297,
+        "accel_2_ms2": -6.992786516352547,
+        "post_event_proximity": true,
+        "ground_distance_m": 28.829002918550206,
+        "distance_m": 28.829002918550206,
+        "heading_delta_deg": 20.20352697983415,
+        "is_crossing_trajectory": false,
+        "selected_max_dist_m": 2.0,
+        "ignore_flow_coherence": false,
+        "bbox_iou": 0.3778263148834117,
+        "persistence_frames": 2,
+        "angular_approach": true,
+        "closing_velocity_mps": 42.47432876433,
+        "proj1": 0.9961203068965723,
+        "proj2": -0.9044388018089526,
+        "is_tbone": false,
+        "cos_align": 0.9384717653183771,
+        "post_event_rest": true,
+        "S_dissip": 0.7,
+        "S_v_drop": 1.0,
+        "S_deflect": 1.0,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 28.829002918550206,
+        "heading_delta": 20.20352697983415,
+        "norm_pixel_dist": 0.355,
+        "is_kinematic_closure_corridor": false,
+        "is_tentative_rescued": true,
+        "pixel_centroid": [
+          750.6914470881396,
+          283.44426424766493
+        ],
+        "char_dim": 57.82263161009345
+      }
+    },
+    {
+      "frame": 50,
+      "timestamp_s": 3.323,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        27,
+        34
+      ],
+      "confidence": 0.98,
+      "description": "Collision candidate between tracks 27 (candidate_vehicle_recovered) and 34 (candidate_vehicle_recovered): dist=18.8m, iou=0.28, active_signals=4/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": true,
+        "distance_delta_m": -4.737509069115976,
+        "trajectory_convergence": true,
+        "tca_sec": 0.4445508314681393,
+        "dca_m": 3.235481096550107,
+        "sudden_deceleration": true,
+        "accel_1_ms2": 26.973553493059562,
+        "accel_2_ms2": -6.992786516352547,
+        "post_event_proximity": true,
+        "ground_distance_m": 18.83757805891862,
+        "distance_m": 18.83757805891862,
+        "heading_delta_deg": 14.632271276058175,
+        "is_crossing_trajectory": false,
+        "selected_max_dist_m": 2.0,
+        "ignore_flow_coherence": false,
+        "bbox_iou": 0.27740953327593204,
+        "persistence_frames": 2,
+        "angular_approach": true,
+        "closing_velocity_mps": 41.12434633391847,
+        "proj1": 0.998790365265124,
+        "proj2": -0.9788179888024645,
+        "is_tbone": false,
+        "cos_align": 0.9675670414411426,
+        "post_event_rest": true,
+        "S_dissip": 0.7,
+        "S_v_drop": 1.0,
+        "S_deflect": 1.0,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 18.83757805891862,
+        "heading_delta": 14.632271276058175,
+        "norm_pixel_dist": 0.681,
+        "is_kinematic_closure_corridor": true,
+        "is_tentative_rescued": true,
+        "pixel_centroid": [
+          777.5164440363818,
+          291.1442611959071
+        ],
+        "char_dim": 51.82263161009345
+      }
+    },
+    {
+      "frame": 51,
+      "timestamp_s": 3.389,
+      "event_type": "distant_trajectory_conflict",
+      "track_ids": [
+        16,
+        32
+      ],
+      "confidence": 0.85,
+      "description": "Distant trajectory conflict between tracks 16 (vehicle) and 32 (candidate_vehicle_recovered): TCA=1.49s, DCA=0.6m, rel_spd=138.3km/h",
+      "signals": {
+        "trajectory_conflict": true,
+        "tca_sec": 1.4908615899725024,
+        "dca_m": 0.6087685742208069,
+        "distance_m": 57.269176351234876,
+        "norm_distance": 2.0987024930560967,
+        "relative_speed_kmh": 138.28070143942145,
+        "metric_accel_1": 1.123132626873388,
+        "metric_accel_2": -3.345724400974445
+      }
+    },
+    {
+      "frame": 52,
+      "timestamp_s": 3.456,
+      "event_type": "single_vehicle_anomaly",
+      "track_ids": [
+        7
+      ],
+      "confidence": 0.9,
+      "description": "Single-vehicle anomaly on track 7 (vehicle): type=composite(0.72), S_single=0.72, accel=-330.5m/s^2, spd=8.5km/h",
+      "signals": {
+        "anomaly_type": "composite(0.72)",
+        "composite_score": 0.7212683957435185,
+        "s_theta": 1.0,
+        "s_decel": 1.0,
+        "s_bound": 0.0,
+        "s_ar": 0.1418,
+        "theta_deg": 166.88,
+        "decel_mag": 60.0,
+        "d_edge_m": 13.21,
+        "delta_ar": 0.1854,
+        "shoulder_admitted": false,
+        "v_dot_n": 0.105,
+        "metric_accel_ms2": -60.0,
+        "metric_speed_kmh": 8.532602774581237,
+        "max_recent_speed_kmh": 76.03196792133467,
+        "heading_deg": 268.25578275138366,
+        "yaw_delta_deg": 0.6033362511807923,
+        "aspect_ratio": 1.04545501084464,
+        "aspect_ratio_ratio": 0.14522583782711046,
+        "kinematic_plausibility": {
+          "track_id": 7,
+          "frame_idx": 52,
+          "timestamp_s": 3.456,
+          "decel_onset_frame": 52,
+          "v_entry_kmh": 76.03,
+          "v_curr_kmh": 8.53,
+          "accel_mps2": -60.0,
+          "tau_rest_s": 0.352,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+          "rejection_reason": null
+        },
+        "v_entry_kmh": 76.03,
+        "decel_onset_frame": 52,
+        "tau_rest_s": 0.352,
+        "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+      }
+    },
+    {
+      "frame": 53,
+      "timestamp_s": 3.522,
+      "event_type": "distant_trajectory_conflict",
+      "track_ids": [
+        12,
+        22
+      ],
+      "confidence": 0.85,
+      "description": "Distant trajectory conflict between tracks 12 (vehicle) and 22 (candidate_vehicle_recovered): TCA=0.15s, DCA=1.2m, rel_spd=217.1km/h",
+      "signals": {
+        "trajectory_conflict": true,
+        "tca_sec": 0.15055588114983995,
+        "dca_m": 1.1798377213530165,
+        "distance_m": 9.15570519814147,
+        "norm_distance": 0.8495036686182982,
+        "relative_speed_kmh": 217.10028213067554,
+        "metric_accel_1": 0.12696023540666448,
+        "metric_accel_2": -1.094838147414643
+      }
+    },
+    {
+      "frame": 55,
+      "timestamp_s": 3.655,
+      "event_type": "single_vehicle_anomaly",
+      "track_ids": [
+        13
+      ],
+      "confidence": 0.9,
+      "description": "Single-vehicle anomaly on track 13 (vehicle): type=yaw, S_single=0.70, accel=-58.7m/s^2, spd=8.3km/h",
+      "signals": {
+        "anomaly_type": "yaw",
+        "composite_score": 0.7,
+        "s_theta": 1.0,
+        "s_decel": 1.0,
+        "s_bound": 0.0,
+        "s_ar": 0.0,
+        "theta_deg": 80.81,
+        "decel_mag": 60.0,
+        "d_edge_m": 13.99,
+        "delta_ar": 0.0552,
+        "shoulder_admitted": false,
+        "v_dot_n": 0.992,
+        "metric_accel_ms2": -58.73972009074387,
+        "metric_speed_kmh": 8.267124888724451,
+        "max_recent_speed_kmh": 31.62970727530515,
+        "heading_deg": 359.4192513754448,
+        "yaw_delta_deg": 80.81084862091382,
+        "aspect_ratio": 1.1435709068825324,
+        "aspect_ratio_ratio": 0.0015127345037229318,
+        "kinematic_plausibility": {
+          "track_id": 13,
+          "frame_idx": 55,
+          "timestamp_s": 3.655,
+          "decel_onset_frame": 55,
+          "v_entry_kmh": 31.63,
+          "v_curr_kmh": 8.27,
+          "accel_mps2": -58.74,
+          "tau_rest_s": 0.15,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+          "rejection_reason": null
+        },
+        "v_entry_kmh": 31.63,
+        "decel_onset_frame": 55,
+        "tau_rest_s": 0.15,
+        "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+      }
+    },
+    {
+      "frame": 56,
+      "timestamp_s": 3.721,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        13,
+        32
+      ],
+      "confidence": 0.85,
+      "description": "Collision candidate between tracks 13 (vehicle) and 32 (candidate_vehicle_recovered): dist=13.8m, iou=0.44, active_signals=3/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": false,
+        "distance_delta_m": -1.4574045783622225,
+        "trajectory_convergence": true,
+        "tca_sec": 0.6302263281675896,
+        "dca_m": 0.11282785434771397,
+        "sudden_deceleration": true,
+        "accel_1_ms2": 26.546749962272116,
+        "accel_2_ms2": -24.168443917909425,
+        "post_event_proximity": true,
+        "ground_distance_m": 13.822175342532883,
+        "distance_m": 13.822175342532883,
+        "heading_delta_deg": 104.95226610634964,
+        "is_crossing_trajectory": true,
+        "selected_max_dist_m": 3.2,
+        "ignore_flow_coherence": true,
+        "bbox_iou": 0.43540917582188055,
+        "persistence_frames": 2,
+        "angular_approach": true,
+        "closing_velocity_mps": 21.930620369137568,
+        "proj1": 0.367121121227509,
+        "proj2": 0.99340099563733,
+        "is_tbone": true,
+        "cos_align": -0.2580142294241152,
+        "post_event_rest": true,
+        "S_dissip": 0.7,
+        "S_v_drop": 1.0,
+        "S_deflect": 1.0,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 13.822175342532883,
+        "heading_delta": 104.95226610634964,
+        "norm_pixel_dist": 0.341,
+        "is_kinematic_closure_corridor": false,
+        "is_tentative_rescued": true,
+        "pixel_centroid": [
+          904.6954169290731,
+          374.6688819448427
+        ],
+        "char_dim": 56.05072100196469
+      }
+    },
+    {
+      "frame": 57,
+      "timestamp_s": 3.788,
+      "event_type": "single_vehicle_anomaly",
+      "track_ids": [
+        17
+      ],
+      "confidence": 0.9,
+      "description": "Single-vehicle anomaly on track 17 (vehicle): type=yaw, S_single=0.70, accel=-15.6m/s^2, spd=10.5km/h",
+      "signals": {
+        "anomaly_type": "yaw",
+        "composite_score": 0.7,
+        "s_theta": 1.0,
+        "s_decel": 1.0,
+        "s_bound": 0.0,
+        "s_ar": 0.0,
+        "theta_deg": 60.02,
+        "decel_mag": 55.27,
+        "d_edge_m": 14.21,
+        "delta_ar": 0.083,
+        "shoulder_admitted": false,
+        "v_dot_n": 0.982,
+        "metric_accel_ms2": -15.558980165070164,
+        "metric_speed_kmh": 10.500330500532517,
+        "max_recent_speed_kmh": 26.04849838568487,
+        "heading_deg": 341.39459023855517,
+        "yaw_delta_deg": 45.39407547928431,
+        "aspect_ratio": 0.9501992152972059,
+        "aspect_ratio_ratio": 0.00964434997924995,
+        "kinematic_plausibility": {
+          "track_id": 17,
+          "frame_idx": 57,
+          "timestamp_s": 3.788,
+          "decel_onset_frame": 57,
+          "v_entry_kmh": 26.05,
+          "v_curr_kmh": 10.5,
+          "accel_mps2": -15.56,
+          "tau_rest_s": 0.465,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+          "rejection_reason": null
+        },
+        "v_entry_kmh": 26.05,
+        "decel_onset_frame": 57,
+        "tau_rest_s": 0.465,
+        "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+      }
+    },
+    {
+      "frame": 57,
+      "timestamp_s": 3.788,
+      "event_type": "distant_trajectory_conflict",
+      "track_ids": [
+        17,
+        27
+      ],
+      "confidence": 0.85,
+      "description": "Distant trajectory conflict between tracks 17 (vehicle) and 27 (candidate_vehicle_recovered): TCA=1.06s, DCA=1.0m, rel_spd=217.2km/h",
+      "signals": {
+        "trajectory_conflict": true,
+        "tca_sec": 1.0587895860132548,
+        "dca_m": 1.0325118388731658,
+        "distance_m": 63.89633502795227,
+        "norm_distance": 1.9777709276989521,
+        "relative_speed_kmh": 217.2261372925257,
+        "metric_accel_1": -2.477257399606492,
+        "metric_accel_2": 0.2711299239999631
+      }
+    },
+    {
+      "frame": 59,
+      "timestamp_s": 3.921,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        12,
+        22
+      ],
+      "confidence": 0.7,
+      "description": "Collision candidate between tracks 12 (vehicle) and 22 (candidate_vehicle_recovered): dist=23.5m, iou=0.10, active_signals=2/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": false,
+        "distance_delta_m": 5.745714725567158,
+        "trajectory_convergence": false,
+        "tca_sec": Infinity,
+        "dca_m": 23.451665591526847,
+        "sudden_deceleration": true,
+        "accel_1_ms2": 5.152378328137249,
+        "accel_2_ms2": -9.543421113620889,
+        "post_event_proximity": true,
+        "ground_distance_m": 23.451665591526847,
+        "distance_m": 23.451665591526847,
+        "heading_delta_deg": 0.2949683161477028,
+        "is_crossing_trajectory": false,
+        "selected_max_dist_m": 2.0,
+        "ignore_flow_coherence": false,
+        "bbox_iou": 0.09841910813121355,
+        "persistence_frames": 2,
+        "angular_approach": false,
+        "closing_velocity_mps": -56.41451362068981,
+        "proj1": -0.9991379025630511,
+        "proj2": 0.9989109396361476,
+        "is_tbone": false,
+        "cos_align": 0.9999867482108158,
+        "post_event_rest": true,
+        "S_dissip": 0.7,
+        "S_v_drop": 1.0,
+        "S_deflect": 1.0,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 23.451665591526847,
+        "heading_delta": 0.2949683161477028,
+        "norm_pixel_dist": 0.804,
+        "is_kinematic_closure_corridor": true,
+        "is_tentative_rescued": true,
+        "pixel_centroid": [
+          603.4526830905348,
+          279.76016559582087
+        ],
+        "char_dim": 62.414210151960724
+      }
+    },
+    {
+      "frame": 63,
+      "timestamp_s": 4.187,
+      "event_type": "distant_trajectory_conflict",
+      "track_ids": [
+        16,
+        29
+      ],
+      "confidence": 0.85,
+      "description": "Distant trajectory conflict between tracks 16 (vehicle) and 29 (vehicle): TCA=0.64s, DCA=0.1m, rel_spd=158.4km/h",
+      "signals": {
+        "trajectory_conflict": true,
+        "tca_sec": 0.6394365694185812,
+        "dca_m": 0.05897968505429258,
+        "distance_m": 28.133851016695797,
+        "norm_distance": 1.162201829477882,
+        "relative_speed_kmh": 158.3920062491655,
+        "metric_accel_1": -3.581649204290456,
+        "metric_accel_2": -1.067340198097814
+      }
+    },
+    {
+      "frame": 64,
+      "timestamp_s": 4.253,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        16,
+        28
+      ],
+      "confidence": 0.98,
+      "description": "Collision candidate between tracks 16 (vehicle) and 28 (vehicle): dist=29.0m, iou=0.03, active_signals=4/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": true,
+        "distance_delta_m": -4.154178577211443,
+        "trajectory_convergence": true,
+        "tca_sec": 0.4620560390748256,
+        "dca_m": 2.093187234617052,
+        "sudden_deceleration": true,
+        "accel_1_ms2": -60.0,
+        "accel_2_ms2": 60.0,
+        "post_event_proximity": true,
+        "ground_distance_m": 29.02514928788875,
+        "distance_m": 29.02514928788875,
+        "heading_delta_deg": 170.4894336614768,
+        "is_crossing_trajectory": false,
+        "selected_max_dist_m": 2.0,
+        "ignore_flow_coherence": false,
+        "bbox_iou": 0.03398499875863698,
+        "persistence_frames": 2,
+        "angular_approach": true,
+        "closing_velocity_mps": 62.49068049200614,
+        "proj1": 0.9999743561893393,
+        "proj2": 0.9874131454099776,
+        "is_tbone": true,
+        "cos_align": -0.9862551471158555,
+        "post_event_rest": true,
+        "S_dissip": 0.7,
+        "S_v_drop": 1.0,
+        "S_deflect": 1.0,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 29.02514928788875,
+        "heading_delta": 170.4894336614768,
+        "norm_pixel_dist": 0.586,
+        "is_kinematic_closure_corridor": true,
+        "is_tentative_rescued": true,
+        "pixel_centroid": [
+          634.5973594504449,
+          337.83984018916817
+        ],
+        "char_dim": 136.5475698705805
+      }
+    },
+    {
+      "frame": 66,
+      "timestamp_s": 4.386,
+      "event_type": "single_vehicle_anomaly",
+      "track_ids": [
+        28
+      ],
+      "confidence": 0.9,
+      "description": "Single-vehicle anomaly on track 28 (vehicle): type=decel_stop, S_single=0.70, accel=-154.0m/s^2, spd=0.3km/h",
+      "signals": {
+        "anomaly_type": "decel_stop",
+        "composite_score": 0.7,
+        "s_theta": 1.0,
+        "s_decel": 1.0,
+        "s_bound": 0.0,
+        "s_ar": 0.0,
+        "theta_deg": 144.47,
+        "decel_mag": 60.0,
+        "d_edge_m": 8.52,
+        "delta_ar": 0.0311,
+        "shoulder_admitted": false,
+        "v_dot_n": 0.025,
+        "metric_accel_ms2": -60.0,
+        "metric_speed_kmh": 0.3223404229882983,
+        "max_recent_speed_kmh": 87.40048190667109,
+        "heading_deg": 276.3417195571251,
+        "yaw_delta_deg": 0.15928368363478285,
+        "aspect_ratio": 0.4866759165795772,
+        "aspect_ratio_ratio": 0.031123927934375056,
+        "kinematic_plausibility": {
+          "track_id": 28,
+          "frame_idx": 66,
+          "timestamp_s": 4.386,
+          "decel_onset_frame": 66,
+          "v_entry_kmh": 35.62,
+          "v_curr_kmh": 0.32,
+          "accel_mps2": -60.0,
+          "tau_rest_s": 0.165,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+          "rejection_reason": null
+        },
+        "v_entry_kmh": 35.62,
+        "decel_onset_frame": 66,
+        "tau_rest_s": 0.165,
+        "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+      }
+    },
+    {
+      "frame": 66,
+      "timestamp_s": 4.386,
+      "event_type": "distant_trajectory_conflict",
+      "track_ids": [
+        6,
+        17
+      ],
+      "confidence": 0.85,
+      "description": "Distant trajectory conflict between tracks 6 (vehicle) and 17 (vehicle): TCA=1.14s, DCA=1.0m, rel_spd=54.1km/h",
+      "signals": {
+        "trajectory_conflict": true,
+        "tca_sec": 1.1396625362164647,
+        "dca_m": 0.968618944952421,
+        "distance_m": 17.13845692795477,
+        "norm_distance": 1.9850847088538526,
+        "relative_speed_kmh": 54.050936568388735,
+        "metric_accel_1": -1.0645813957204457,
+        "metric_accel_2": -2.42152466367713
+      }
+    },
+    {
+      "frame": 69,
+      "timestamp_s": 4.585,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        16,
+        22
+      ],
+      "confidence": 0.85,
+      "description": "Collision candidate between tracks 16 (vehicle) and 22 (candidate_vehicle_recovered): dist=6.6m, iou=0.10, active_signals=3/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": false,
+        "distance_delta_m": -1.4415178533075794,
+        "trajectory_convergence": true,
+        "tca_sec": 0.24627780846429798,
+        "dca_m": 3.024745552596798,
+        "sudden_deceleration": true,
+        "accel_1_ms2": -60.0,
+        "accel_2_ms2": -60.0,
+        "post_event_proximity": true,
+        "ground_distance_m": 6.605715017480848,
+        "distance_m": 6.605715017480848,
+        "heading_delta_deg": 4.737261857859825,
+        "is_crossing_trajectory": false,
+        "selected_max_dist_m": 2.0,
+        "ignore_flow_coherence": false,
+        "bbox_iou": 0.10257101368928627,
+        "persistence_frames": 2,
+        "angular_approach": true,
+        "closing_velocity_mps": 21.198374552851412,
+        "proj1": -0.7987801652234116,
+        "proj2": 0.8457374696769359,
+        "is_tbone": false,
+        "cos_align": 0.9965838879982852,
+        "post_event_rest": true,
+        "S_dissip": 0.7,
+        "S_v_drop": 1.0,
+        "S_deflect": 1.0,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 6.605715017480848,
+        "heading_delta": 4.737261857859825,
+        "norm_pixel_dist": 0.737,
+        "is_kinematic_closure_corridor": true,
+        "is_tentative_rescued": false,
+        "pixel_centroid": [
+          634.9490758699906,
+          338.51679449935125
+        ],
+        "char_dim": 106.28233097314015
+      }
+    },
+    {
+      "frame": 69,
+      "timestamp_s": 4.585,
+      "event_type": "collision_candidate",
+      "track_ids": [
+        22,
+        28
+      ],
+      "confidence": 0.98,
+      "description": "Collision candidate between tracks 22 (candidate_vehicle_recovered) and 28 (vehicle): dist=29.9m, iou=0.29, active_signals=4/4 (persistence=2f)",
+      "signals": {
+        "decreasing_distance": true,
+        "distance_delta_m": -2.9536767640864383,
+        "trajectory_convergence": true,
+        "tca_sec": 0.6737819129461514,
+        "dca_m": 0.15884298511911477,
+        "sudden_deceleration": true,
+        "accel_1_ms2": -60.0,
+        "accel_2_ms2": -60.0,
+        "post_event_proximity": true,
+        "ground_distance_m": 29.947884237130573,
+        "distance_m": 29.947884237130573,
+        "heading_delta_deg": 0.8614893569623848,
+        "is_crossing_trajectory": false,
+        "selected_max_dist_m": 2.0,
+        "ignore_flow_coherence": false,
+        "bbox_iou": 0.28938601294840494,
+        "persistence_frames": 2,
+        "angular_approach": true,
+        "closing_velocity_mps": 44.44619417896939,
+        "proj1": 0.9999926863076307,
+        "proj2": -0.9999371546285537,
+        "is_tbone": false,
+        "cos_align": 0.9998869641015928,
+        "post_event_rest": true,
+        "S_dissip": 0.5837,
+        "S_v_drop": 1.0,
+        "S_deflect": 0.6677,
+        "S_dwell": 0.0,
+        "S_rest": 0.0,
+        "dist_m": 29.947884237130573,
+        "heading_delta": 0.8614893569623848,
+        "norm_pixel_dist": 0.477,
+        "is_kinematic_closure_corridor": true,
+        "is_tentative_rescued": false,
+        "pixel_centroid": [
+          596.9722894733336,
+          360.5544606224436
+        ],
+        "char_dim": 147.52694280594432
+      }
+    },
+    {
+      "frame": 72,
+      "timestamp_s": 4.785,
+      "event_type": "barrier_strike",
+      "track_ids": [
+        8
+      ],
+      "confidence": 0.95,
+      "description": "Single-vehicle anomaly on track 8 (vehicle): type=severe_barrier_impact, S_single=0.30, accel=-32.6m/s^2, spd=5.9km/h",
+      "signals": {
+        "anomaly_type": "severe_barrier_impact",
+        "composite_score": 0.3,
+        "s_theta": 0.0,
+        "s_decel": 0.0,
+        "s_bound": 1.0,
+        "s_ar": 1.0,
+        "theta_deg": 3.64,
+        "decel_mag": 32.59,
+        "d_edge_m": 0.0,
+        "delta_ar": 0.4931,
+        "shoulder_admitted": false,
+        "v_dot_n": 0.045,
+        "metric_accel_ms2": -32.58933260984373,
+        "metric_speed_kmh": 5.9436889780061515,
+        "max_recent_speed_kmh": 38.94160287711154,
+        "heading_deg": 357.4490493743475,
+        "yaw_delta_deg": 1.575973724680864,
+        "aspect_ratio": 1.5571990768886284,
+        "aspect_ratio_ratio": 0.03691149713276783,
+        "kinematic_plausibility": {
+          "track_id": 8,
+          "frame_idx": 72,
+          "timestamp_s": 4.785,
+          "decel_onset_frame": 71,
+          "v_entry_kmh": 34.86,
+          "v_curr_kmh": 5.94,
+          "accel_mps2": -32.59,
+          "tau_rest_s": 0.297,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+          "rejection_reason": null
+        },
+        "v_entry_kmh": 34.86,
+        "decel_onset_frame": 71,
+        "tau_rest_s": 0.297,
+        "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+      }
+    },
+    {
+      "frame": 73,
+      "timestamp_s": 4.851,
+      "event_type": "distant_trajectory_conflict",
+      "track_ids": [
+        8,
+        15
+      ],
+      "confidence": 0.85,
+      "description": "Distant trajectory conflict between tracks 8 (vehicle) and 15 (vehicle): TCA=0.51s, DCA=1.3m, rel_spd=23.5km/h",
+      "signals": {
+        "trajectory_conflict": true,
+        "tca_sec": 0.5113204737184516,
+        "dca_m": 1.3115114884454304,
+        "distance_m": 3.580357047321398,
+        "norm_distance": 1.238327967752906,
+        "relative_speed_kmh": 23.455741890071373,
+        "metric_accel_1": 0.5147577461038394,
+        "metric_accel_2": -0.4753686798760501
+      }
+    }
+  ],
+  "in_window_episodes": [
+    {
+      "episode_id": "F0NHENn-HS4_00_ep01_f3",
+      "peak_frame": 18,
+      "peak_score": 109.03900074744368,
+      "start_frame": 3,
+      "end_frame": 18,
+      "involved_track_ids": [
+        13,
+        7,
+        19,
+        24,
+        20
+      ],
+      "peak_candidate": {
+        "frame": 18,
+        "timestamp_s": 1.196,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          13,
+          20
+        ],
+        "confidence": 0.98,
+        "description": "Collision candidate between tracks 13 (vehicle) and 20 (candidate_vehicle_recovered): dist=6.0m, iou=0.61, active_signals=4/4 (persistence=2f)",
+        "signals": {
+          "decreasing_distance": true,
+          "distance_delta_m": -2.093812626367474,
+          "trajectory_convergence": true,
+          "tca_sec": 0.18922971092019322,
+          "dca_m": 0.2221297882618955,
+          "sudden_deceleration": true,
+          "accel_1_ms2": -60.0,
+          "accel_2_ms2": -60.0,
+          "post_event_proximity": true,
+          "ground_distance_m": 5.969293464904285,
+          "distance_m": 5.969293464904285,
+          "heading_delta_deg": 0.7894325112761603,
+          "is_crossing_trajectory": false,
+          "selected_max_dist_m": 2.0,
+          "ignore_flow_coherence": false,
+          "bbox_iou": 0.605975018686092,
+          "persistence_frames": 2,
+          "angular_approach": true,
+          "closing_velocity_mps": 31.501541305899597,
+          "proj1": -0.999879182670216,
+          "proj2": 0.9995701129497258,
+          "is_tbone": false,
+          "cos_align": 0.999905082151601,
+          "post_event_rest": true,
+          "S_dissip": 0.7,
+          "S_v_drop": 1.0,
+          "S_deflect": 1.0,
+          "S_dwell": 0.0,
+          "S_rest": 0.0,
+          "dist_m": 5.969293464904285,
+          "heading_delta": 0.7894325112761603,
+          "norm_pixel_dist": 0.186,
+          "is_kinematic_closure_corridor": true,
+          "is_tentative_rescued": true,
+          "pixel_centroid": [
+            771.6750030517578,
+            274.27499771118164
+          ],
+          "char_dim": 64.3499984741211
+        }
+      },
+      "raw_candidate_frames": [
+        3,
+        7,
+        17,
+        18,
+        18
+      ],
+      "raw_candidate_types": [
+        "collision_candidate",
+        "collision_candidate",
+        "collision_candidate",
+        "collision_candidate",
+        "collision_candidate"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep02_f7",
+      "peak_frame": 7,
+      "peak_score": 112.66209871001782,
+      "start_frame": 7,
+      "end_frame": 7,
+      "involved_track_ids": [
+        9,
+        14
+      ],
+      "peak_candidate": {
+        "frame": 7,
+        "timestamp_s": 0.465,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          9,
+          14
+        ],
+        "confidence": 0.98,
+        "description": "Collision candidate between tracks 9 (vehicle) and 14 (vehicle): dist=8.9m, iou=0.70, active_signals=4/4 (persistence=2f)",
+        "signals": {
+          "decreasing_distance": true,
+          "distance_delta_m": -2.0419901984944246,
+          "trajectory_convergence": true,
+          "tca_sec": 0.28789237367143694,
+          "dca_m": 0.24543755907068823,
+          "sudden_deceleration": true,
+          "accel_1_ms2": -22.957185104909957,
+          "accel_2_ms2": -60.0,
+          "post_event_proximity": true,
+          "ground_distance_m": 8.852351354847343,
+          "distance_m": 8.852351354847343,
+          "heading_delta_deg": 28.37289835558935,
+          "is_crossing_trajectory": false,
+          "selected_max_dist_m": 2.0,
+          "ignore_flow_coherence": false,
+          "bbox_iou": 0.6965524677504454,
+          "persistence_frames": 2,
+          "angular_approach": true,
+          "closing_velocity_mps": 30.72518495748072,
+          "proj1": -0.8492031925302654,
+          "proj2": 0.9981326754003645,
+          "is_tbone": false,
+          "cos_align": 0.8798734508510055,
+          "post_event_rest": true,
+          "S_dissip": 0.7,
+          "S_v_drop": 1.0,
+          "S_deflect": 1.0,
+          "S_dwell": 0.0,
+          "S_rest": 0.0,
+          "dist_m": 8.852351354847343,
+          "heading_delta": 28.37289835558935,
+          "norm_pixel_dist": 0.139,
+          "is_kinematic_closure_corridor": false,
+          "is_tentative_rescued": false,
+          "pixel_centroid": [
+            881.0733761164871,
+            356.5055847181102
+          ],
+          "char_dim": 124.26084853775498
+        }
+      },
+      "raw_candidate_frames": [
+        7
+      ],
+      "raw_candidate_types": [
+        "collision_candidate"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep03_f9",
+      "peak_frame": 22,
+      "peak_score": 97.219312608302,
+      "start_frame": 9,
+      "end_frame": 22,
+      "involved_track_ids": [
+        19,
+        20,
+        24
+      ],
+      "peak_candidate": {
+        "frame": 22,
+        "timestamp_s": 1.462,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          20,
+          24
+        ],
+        "confidence": 0.98,
+        "description": "Collision candidate between tracks 20 (candidate_vehicle_recovered) and 24 (candidate_vehicle_recovered): dist=32.6m, iou=0.31, active_signals=4/4 (persistence=2f)",
+        "signals": {
+          "decreasing_distance": true,
+          "distance_delta_m": -1.9841448847136505,
+          "trajectory_convergence": true,
+          "tca_sec": 1.3957542924647308,
+          "dca_m": 0.9917374341960569,
+          "sudden_deceleration": true,
+          "accel_1_ms2": -54.18264965412349,
+          "accel_2_ms2": 1.1164618721522077,
+          "post_event_proximity": true,
+          "ground_distance_m": 32.56807018192771,
+          "distance_m": 32.56807018192771,
+          "heading_delta_deg": 1.2632860656694873,
+          "is_crossing_trajectory": false,
+          "selected_max_dist_m": 2.0,
+          "ignore_flow_coherence": false,
+          "bbox_iou": 0.31048281520755017,
+          "persistence_frames": 2,
+          "angular_approach": true,
+          "closing_velocity_mps": 23.312033316961372,
+          "proj1": -0.996108014428883,
+          "proj2": 0.9978091200087351,
+          "is_tbone": false,
+          "cos_align": 0.9997569416433896,
+          "post_event_rest": true,
+          "S_dissip": 0.6836,
+          "S_v_drop": 0.9531,
+          "S_deflect": 1.0,
+          "S_dwell": 0.0,
+          "S_rest": 0.0,
+          "dist_m": 32.56807018192771,
+          "heading_delta": 1.2632860656694873,
+          "norm_pixel_dist": 0.514,
+          "is_kinematic_closure_corridor": true,
+          "is_tentative_rescued": true,
+          "pixel_centroid": [
+            785.9040529899648,
+            279.45922740679634
+          ],
+          "char_dim": 49.31645286354073
+        }
+      },
+      "raw_candidate_frames": [
+        9,
+        22
+      ],
+      "raw_candidate_types": [
+        "collision_candidate",
+        "collision_candidate"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep04_f10",
+      "peak_frame": 10,
+      "peak_score": 88.8695601874605,
+      "start_frame": 10,
+      "end_frame": 36,
+      "involved_track_ids": [
+        8,
+        15
+      ],
+      "peak_candidate": {
+        "frame": 10,
+        "timestamp_s": 0.665,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          8,
+          15
+        ],
+        "confidence": 0.85,
+        "description": "Collision candidate between tracks 8 (vehicle) and 15 (vehicle): dist=12.4m, iou=0.13, active_signals=3/4 (persistence=2f)",
+        "signals": {
+          "decreasing_distance": false,
+          "distance_delta_m": -0.5273952824620576,
+          "trajectory_convergence": true,
+          "tca_sec": 1.5264191665453395,
+          "dca_m": 2.0224105727468267,
+          "sudden_deceleration": true,
+          "accel_1_ms2": -44.35695890116284,
+          "accel_2_ms2": -60.0,
+          "post_event_proximity": true,
+          "ground_distance_m": 12.436058115890557,
+          "distance_m": 12.436058115890557,
+          "heading_delta_deg": 7.844719050421016,
+          "is_crossing_trajectory": false,
+          "selected_max_dist_m": 2.0,
+          "ignore_flow_coherence": false,
+          "bbox_iou": 0.13423900468651237,
+          "persistence_frames": 2,
+          "angular_approach": true,
+          "closing_velocity_mps": 7.931742742265424,
+          "proj1": -0.9895080595511765,
+          "proj2": 0.9999674464595282,
+          "is_tbone": false,
+          "cos_align": 0.9906416134336494,
+          "post_event_rest": true,
+          "S_dissip": 0.7,
+          "S_v_drop": 1.0,
+          "S_deflect": 1.0,
+          "S_dwell": 0.0,
+          "S_rest": 0.0,
+          "dist_m": 12.436058115890557,
+          "heading_delta": 7.844719050421016,
+          "norm_pixel_dist": 0.727,
+          "is_kinematic_closure_corridor": true,
+          "is_tentative_rescued": false,
+          "pixel_centroid": [
+            1011.5210694268951,
+            490.38750545314167
+          ],
+          "char_dim": 102.10536854386872
+        }
+      },
+      "raw_candidate_frames": [
+        10,
+        36
+      ],
+      "raw_candidate_types": [
+        "collision_candidate",
+        "single_vehicle_anomaly"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep05_f14",
+      "peak_frame": 14,
+      "peak_score": 85.22128839316969,
+      "start_frame": 14,
+      "end_frame": 14,
+      "involved_track_ids": [
+        17,
+        18
+      ],
+      "peak_candidate": {
+        "frame": 14,
+        "timestamp_s": 0.93,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          17,
+          18
+        ],
+        "confidence": 0.7,
+        "description": "Collision candidate between tracks 17 (vehicle) and 18 (vehicle): dist=30.9m, iou=0.08, active_signals=2/4 (persistence=2f)",
+        "signals": {
+          "decreasing_distance": false,
+          "distance_delta_m": 0.9909182947137438,
+          "trajectory_convergence": false,
+          "tca_sec": Infinity,
+          "dca_m": 30.94457272844713,
+          "sudden_deceleration": true,
+          "accel_1_ms2": 60.0,
+          "accel_2_ms2": -60.0,
+          "post_event_proximity": true,
+          "ground_distance_m": 30.94457272844713,
+          "distance_m": 30.94457272844713,
+          "heading_delta_deg": 1.5872171384517542,
+          "is_crossing_trajectory": false,
+          "selected_max_dist_m": 2.0,
+          "ignore_flow_coherence": false,
+          "bbox_iou": 0.08053220982924213,
+          "persistence_frames": 2,
+          "angular_approach": false,
+          "closing_velocity_mps": -14.913997957022216,
+          "proj1": 0.9844330035773742,
+          "proj2": -0.9889236123038553,
+          "is_tbone": false,
+          "cos_align": 0.9996163195645009,
+          "post_event_rest": true,
+          "S_dissip": 0.7,
+          "S_v_drop": 1.0,
+          "S_deflect": 1.0,
+          "S_dwell": 0.0,
+          "S_rest": 0.0,
+          "dist_m": 30.94457272844713,
+          "heading_delta": 1.5872171384517542,
+          "norm_pixel_dist": 0.685,
+          "is_kinematic_closure_corridor": true,
+          "is_tentative_rescued": false,
+          "pixel_centroid": [
+            644.9734294831529,
+            357.17627153525456
+          ],
+          "char_dim": 150.33447748197747
+        }
+      },
+      "raw_candidate_frames": [
+        14
+      ],
+      "raw_candidate_types": [
+        "collision_candidate"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep06_f17",
+      "peak_frame": 17,
+      "peak_score": 8.5,
+      "start_frame": 17,
+      "end_frame": 17,
+      "involved_track_ids": [
+        2,
+        4
+      ],
+      "peak_candidate": {
+        "frame": 17,
+        "timestamp_s": 1.13,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          2,
+          4
+        ],
+        "confidence": 0.85,
+        "description": "Distant trajectory conflict between tracks 2 (vehicle) and 4 (vehicle): TCA=1.21s, DCA=1.2m, rel_spd=15.8km/h",
+        "signals": {
+          "trajectory_conflict": true,
+          "tca_sec": 1.210002753469282,
+          "dca_m": 1.1892900416731433,
+          "distance_m": 5.451251878825612,
+          "norm_distance": 1.1997010499219778,
+          "relative_speed_kmh": 15.827877551844932,
+          "metric_accel_1": -0.5649807769179355,
+          "metric_accel_2": -0.4011812025117358
+        }
+      },
+      "raw_candidate_frames": [
+        17
+      ],
+      "raw_candidate_types": [
+        "distant_trajectory_conflict"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep07_f18",
+      "peak_frame": 18,
+      "peak_score": 100.59169383430975,
+      "start_frame": 18,
+      "end_frame": 18,
+      "involved_track_ids": [
+        2
+      ],
+      "peak_candidate": {
+        "frame": 18,
+        "timestamp_s": 1.196,
+        "event_type": "barrier_strike",
+        "track_ids": [
+          2
+        ],
+        "confidence": 0.95,
+        "description": "Single-vehicle anomaly on track 2 (vehicle): type=severe_barrier_impact, S_single=0.54, accel=-47.1m/s^2, spd=0.0km/h",
+        "signals": {
+          "anomaly_type": "severe_barrier_impact",
+          "composite_score": 0.5363897944769915,
+          "s_theta": 1.0,
+          "s_decel": 0.0,
+          "s_bound": 1.0,
+          "s_ar": 0.2426,
+          "theta_deg": 45.1,
+          "decel_mag": 47.12,
+          "d_edge_m": 0.02,
+          "delta_ar": 0.2106,
+          "shoulder_admitted": false,
+          "v_dot_n": 0.583,
+          "metric_accel_ms2": -47.12149870571161,
+          "metric_speed_kmh": 0.0,
+          "max_recent_speed_kmh": 20.617311148536036,
+          "heading_deg": 324.35714455319635,
+          "yaw_delta_deg": 2.2737367544323206e-13,
+          "aspect_ratio": 1.2363135100885665,
+          "aspect_ratio_ratio": 0.002078917660056552,
+          "kinematic_plausibility": {
+            "track_id": 2,
+            "frame_idx": 18,
+            "timestamp_s": 1.196,
+            "decel_onset_frame": 15,
+            "v_entry_kmh": 21.21,
+            "v_curr_kmh": 0.0,
+            "accel_mps2": -47.12,
+            "tau_rest_s": 0.125,
+            "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+            "rejection_reason": null
+          },
+          "v_entry_kmh": 21.21,
+          "decel_onset_frame": 15,
+          "tau_rest_s": 0.125,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+        }
+      },
+      "raw_candidate_frames": [
+        18
+      ],
+      "raw_candidate_types": [
+        "barrier_strike"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep08_f18",
+      "peak_frame": 18,
+      "peak_score": 8.5,
+      "start_frame": 18,
+      "end_frame": 18,
+      "involved_track_ids": [
+        10,
+        13
+      ],
+      "peak_candidate": {
+        "frame": 18,
+        "timestamp_s": 1.196,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          10,
+          13
+        ],
+        "confidence": 0.85,
+        "description": "Distant trajectory conflict between tracks 10 (vehicle) and 13 (vehicle): TCA=1.33s, DCA=0.8m, rel_spd=148.5km/h",
+        "signals": {
+          "trajectory_conflict": true,
+          "tca_sec": 1.332940152067863,
+          "dca_m": 0.7982197154885001,
+          "distance_m": 54.97582623443984,
+          "norm_distance": 0.8987015917761991,
+          "relative_speed_kmh": 148.46286349178916,
+          "metric_accel_1": -1.8449868425943716,
+          "metric_accel_2": -3.595206829761672
+        }
+      },
+      "raw_candidate_frames": [
+        18
+      ],
+      "raw_candidate_types": [
+        "distant_trajectory_conflict"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep09_f20",
+      "peak_frame": 20,
+      "peak_score": 8.5,
+      "start_frame": 20,
+      "end_frame": 20,
+      "involved_track_ids": [
+        20,
+        14
+      ],
+      "peak_candidate": {
+        "frame": 20,
+        "timestamp_s": 1.329,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          14,
+          20
+        ],
+        "confidence": 0.85,
+        "description": "Distant trajectory conflict between tracks 14 (vehicle) and 20 (candidate_vehicle_recovered): TCA=1.42s, DCA=1.2m, rel_spd=186.6km/h",
+        "signals": {
+          "trajectory_conflict": true,
+          "tca_sec": 1.418578974993525,
+          "dca_m": 1.1757739182897708,
+          "distance_m": 73.54887496507514,
+          "norm_distance": 1.627191896873436,
+          "relative_speed_kmh": 186.6248683353006,
+          "metric_accel_1": -1.7419354838709677,
+          "metric_accel_2": -3.6193011723489605
+        }
+      },
+      "raw_candidate_frames": [
+        20
+      ],
+      "raw_candidate_types": [
+        "distant_trajectory_conflict"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep10_f21",
+      "peak_frame": 21,
+      "peak_score": 8.5,
+      "start_frame": 21,
+      "end_frame": 21,
+      "involved_track_ids": [
+        24,
+        14
+      ],
+      "peak_candidate": {
+        "frame": 21,
+        "timestamp_s": 1.396,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          14,
+          24
+        ],
+        "confidence": 0.85,
+        "description": "Distant trajectory conflict between tracks 14 (vehicle) and 24 (candidate_vehicle_recovered): TCA=1.62s, DCA=0.4m, rel_spd=233.9km/h",
+        "signals": {
+          "trajectory_conflict": true,
+          "tca_sec": 1.6164401862495152,
+          "dca_m": 0.35681928362973503,
+          "distance_m": 105.03121447388523,
+          "norm_distance": 1.8148187797010613,
+          "relative_speed_kmh": 233.91536125877695,
+          "metric_accel_1": -0.42944104922500603,
+          "metric_accel_2": 0.3177117057620435
+        }
+      },
+      "raw_candidate_frames": [
+        21
+      ],
+      "raw_candidate_types": [
+        "distant_trajectory_conflict"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep11_f22",
+      "peak_frame": 22,
+      "peak_score": 8.5,
+      "start_frame": 22,
+      "end_frame": 22,
+      "involved_track_ids": [
+        14,
+        7
+      ],
+      "peak_candidate": {
+        "frame": 22,
+        "timestamp_s": 1.462,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          7,
+          14
+        ],
+        "confidence": 0.85,
+        "description": "Distant trajectory conflict between tracks 7 (vehicle) and 14 (vehicle): TCA=1.64s, DCA=0.0m, rel_spd=89.7km/h",
+        "signals": {
+          "trajectory_conflict": true,
+          "tca_sec": 1.6350284215223105,
+          "dca_m": 0.026307193089010795,
+          "distance_m": 40.725439808943264,
+          "norm_distance": 1.1997137071137147,
+          "relative_speed_kmh": 89.6691157132056,
+          "metric_accel_1": 1.0065269681339721,
+          "metric_accel_2": 1.8048127605902213
+        }
+      },
+      "raw_candidate_frames": [
+        22
+      ],
+      "raw_candidate_types": [
+        "distant_trajectory_conflict"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep12_f24",
+      "peak_frame": 24,
+      "peak_score": 8.5,
+      "start_frame": 24,
+      "end_frame": 24,
+      "involved_track_ids": [
+        9,
+        20
+      ],
+      "peak_candidate": {
+        "frame": 24,
+        "timestamp_s": 1.595,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          9,
+          20
+        ],
+        "confidence": 0.85,
+        "description": "Distant trajectory conflict between tracks 9 (vehicle) and 20 (candidate_vehicle_recovered): TCA=1.46s, DCA=1.4m, rel_spd=112.8km/h",
+        "signals": {
+          "trajectory_conflict": true,
+          "tca_sec": 1.4633686198220173,
+          "dca_m": 1.4090302462873523,
+          "distance_m": 45.870494071833605,
+          "norm_distance": 2.009015255846607,
+          "relative_speed_kmh": 112.7917125292788,
+          "metric_accel_1": 3.0269054153640247,
+          "metric_accel_2": -3.562095341057905
+        }
+      },
+      "raw_candidate_frames": [
+        24
+      ],
+      "raw_candidate_types": [
+        "distant_trajectory_conflict"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep13_f26",
+      "peak_frame": 26,
+      "peak_score": 99.83695739682244,
+      "start_frame": 26,
+      "end_frame": 50,
+      "involved_track_ids": [
+        10,
+        27,
+        34
+      ],
+      "peak_candidate": {
+        "frame": 26,
+        "timestamp_s": 1.728,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          10,
+          27
+        ],
+        "confidence": 0.85,
+        "description": "Collision candidate between tracks 10 (vehicle) and 27 (candidate_vehicle_recovered): dist=65.8m, iou=0.41, active_signals=3/4 (persistence=2f)",
+        "signals": {
+          "decreasing_distance": true,
+          "distance_delta_m": -3.05019937961022,
+          "trajectory_convergence": false,
+          "tca_sec": 4.162583082072205,
+          "dca_m": 1.0037097662431735,
+          "sudden_deceleration": true,
+          "accel_1_ms2": -60.0,
+          "accel_2_ms2": 0.31534850196611147,
+          "post_event_proximity": true,
+          "ground_distance_m": 65.79872807341737,
+          "distance_m": 65.79872807341737,
+          "heading_delta_deg": 0.40171294317196926,
+          "is_crossing_trajectory": false,
+          "selected_max_dist_m": 2.0,
+          "ignore_flow_coherence": false,
+          "bbox_iou": 0.408423934920561,
+          "persistence_frames": 2,
+          "angular_approach": true,
+          "closing_velocity_mps": 15.80350852920682,
+          "proj1": -0.999929706547965,
+          "proj2": 0.9999882591787277,
+          "is_tbone": false,
+          "cos_align": 0.9999754215432691,
+          "post_event_rest": true,
+          "S_dissip": 0.5762,
+          "S_v_drop": 0.6464,
+          "S_deflect": 1.0,
+          "S_dwell": 0.0,
+          "S_rest": 0.0,
+          "dist_m": 65.79872807341737,
+          "heading_delta": 0.40171294317196926,
+          "norm_pixel_dist": 0.347,
+          "is_kinematic_closure_corridor": true,
+          "is_tentative_rescued": true,
+          "pixel_centroid": [
+            729.0001180193728,
+            244.0534821309177
+          ],
+          "char_dim": 71.9126732295486
+        }
+      },
+      "raw_candidate_frames": [
+        26,
+        50
+      ],
+      "raw_candidate_types": [
+        "collision_candidate",
+        "collision_candidate"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep14_f26",
+      "peak_frame": 26,
+      "peak_score": 8.5,
+      "start_frame": 26,
+      "end_frame": 26,
+      "involved_track_ids": [
+        13,
+        14
+      ],
+      "peak_candidate": {
+        "frame": 26,
+        "timestamp_s": 1.728,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          13,
+          14
+        ],
+        "confidence": 0.85,
+        "description": "Distant trajectory conflict between tracks 13 (vehicle) and 14 (vehicle): TCA=1.33s, DCA=0.5m, rel_spd=158.2km/h",
+        "signals": {
+          "trajectory_conflict": true,
+          "tca_sec": 1.3271869769077982,
+          "dca_m": 0.46867629093097046,
+          "distance_m": 58.3314362280568,
+          "norm_distance": 1.710500038255251,
+          "relative_speed_kmh": 158.21914752253943,
+          "metric_accel_1": 3.3919582384771276,
+          "metric_accel_2": 0.04432867168092974
+        }
+      },
+      "raw_candidate_frames": [
+        26
+      ],
+      "raw_candidate_types": [
+        "distant_trajectory_conflict"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep15_f35",
+      "peak_frame": 35,
+      "peak_score": 9.382654908107261,
+      "start_frame": 35,
+      "end_frame": 35,
+      "involved_track_ids": [
+        1,
+        4
+      ],
+      "peak_candidate": {
+        "frame": 35,
+        "timestamp_s": 2.326,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          1,
+          4
+        ],
+        "confidence": 0.85,
+        "description": "Distant trajectory conflict between tracks 1 (vehicle) and 4 (vehicle): TCA=1.02s, DCA=0.9m, rel_spd=16.8km/h",
+        "signals": {
+          "trajectory_conflict": true,
+          "tca_sec": 1.0209696714859984,
+          "dca_m": 0.8693483951528458,
+          "distance_m": 4.85289084864879,
+          "norm_distance": 1.1319783257990434,
+          "relative_speed_kmh": 16.83477786142122,
+          "metric_accel_1": 0.18461779314100102,
+          "metric_accel_2": -0.48769380224058106
+        }
+      },
+      "raw_candidate_frames": [
+        35
+      ],
+      "raw_candidate_types": [
+        "distant_trajectory_conflict"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep16_f40",
+      "peak_frame": 40,
+      "peak_score": 80.0,
+      "start_frame": 40,
+      "end_frame": 40,
+      "involved_track_ids": [
+        29
+      ],
+      "peak_candidate": {
+        "frame": 40,
+        "timestamp_s": 2.658,
+        "event_type": "single_vehicle_anomaly",
+        "track_ids": [
+          29
+        ],
+        "confidence": 0.9,
+        "description": "Single-vehicle anomaly on track 29 (vehicle): type=composite(0.70), S_single=0.70, accel=-230.1m/s^2, spd=12.6km/h",
+        "signals": {
+          "anomaly_type": "composite(0.70)",
+          "composite_score": 0.7,
+          "s_theta": 1.0,
+          "s_decel": 1.0,
+          "s_bound": 0.0,
+          "s_ar": 0.0,
+          "theta_deg": 171.09,
+          "decel_mag": 60.0,
+          "d_edge_m": 8.82,
+          "delta_ar": 0.1268,
+          "shoulder_admitted": false,
+          "v_dot_n": 0.063,
+          "metric_accel_ms2": -60.0,
+          "metric_speed_kmh": 12.628539708998582,
+          "max_recent_speed_kmh": 73.81344419399932,
+          "heading_deg": 101.37991803934347,
+          "yaw_delta_deg": 7.057282964218416,
+          "aspect_ratio": 0.9904055064389495,
+          "aspect_ratio_ratio": 0.09827012454609071,
+          "kinematic_plausibility": {
+            "track_id": 29,
+            "frame_idx": 40,
+            "timestamp_s": 2.658,
+            "decel_onset_frame": 40,
+            "v_entry_kmh": 73.81,
+            "v_curr_kmh": 12.63,
+            "accel_mps2": -60.0,
+            "tau_rest_s": 0.342,
+            "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+            "rejection_reason": null
+          },
+          "v_entry_kmh": 73.81,
+          "decel_onset_frame": 40,
+          "tau_rest_s": 0.342,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+        }
+      },
+      "raw_candidate_frames": [
+        40
+      ],
+      "raw_candidate_types": [
+        "single_vehicle_anomaly"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep17_f43",
+      "peak_frame": 43,
+      "peak_score": 8.5,
+      "start_frame": 43,
+      "end_frame": 43,
+      "involved_track_ids": [
+        12,
+        29
+      ],
+      "peak_candidate": {
+        "frame": 43,
+        "timestamp_s": 2.858,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          12,
+          29
+        ],
+        "confidence": 0.85,
+        "description": "Distant trajectory conflict between tracks 12 (vehicle) and 29 (vehicle): TCA=0.55s, DCA=1.1m, rel_spd=226.6km/h",
+        "signals": {
+          "trajectory_conflict": true,
+          "tca_sec": 0.5452861399756075,
+          "dca_m": 1.1397400449220414,
+          "distance_m": 34.34498929042515,
+          "norm_distance": 2.4983175825585326,
+          "relative_speed_kmh": 226.62204931753638,
+          "metric_accel_1": 0.060948962194276285,
+          "metric_accel_2": 0.9681467397047607
+        }
+      },
+      "raw_candidate_frames": [
+        43
+      ],
+      "raw_candidate_types": [
+        "distant_trajectory_conflict"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep18_f44",
+      "peak_frame": 44,
+      "peak_score": 92.71434246395137,
+      "start_frame": 44,
+      "end_frame": 44,
+      "involved_track_ids": [
+        9,
+        30
+      ],
+      "peak_candidate": {
+        "frame": 44,
+        "timestamp_s": 2.924,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          9,
+          30
+        ],
+        "confidence": 0.85,
+        "description": "Collision candidate between tracks 9 (vehicle) and 30 (vehicle): dist=10.1m, iou=0.23, active_signals=3/4 (persistence=2f)",
+        "signals": {
+          "decreasing_distance": false,
+          "distance_delta_m": -0.7226467043919289,
+          "trajectory_convergence": true,
+          "tca_sec": 0.9116582003456487,
+          "dca_m": 1.2954173500461597,
+          "sudden_deceleration": true,
+          "accel_1_ms2": -60.0,
+          "accel_2_ms2": 36.82000937885711,
+          "post_event_proximity": true,
+          "ground_distance_m": 10.07457088448972,
+          "distance_m": 10.07457088448972,
+          "heading_delta_deg": 7.973061585545326,
+          "is_crossing_trajectory": false,
+          "selected_max_dist_m": 2.0,
+          "ignore_flow_coherence": false,
+          "bbox_iou": 0.23035856159878426,
+          "persistence_frames": 2,
+          "angular_approach": true,
+          "closing_velocity_mps": 10.868110861783212,
+          "proj1": 0.9994242687914758,
+          "proj2": -0.9944693400898502,
+          "is_tbone": false,
+          "cos_align": 0.9903333934733646,
+          "post_event_rest": true,
+          "S_dissip": 0.7,
+          "S_v_drop": 1.0,
+          "S_deflect": 1.0,
+          "S_dwell": 0.0,
+          "S_rest": 0.0,
+          "dist_m": 10.07457088448972,
+          "heading_delta": 7.973061585545326,
+          "norm_pixel_dist": 0.554,
+          "is_kinematic_closure_corridor": true,
+          "is_tentative_rescued": false,
+          "pixel_centroid": [
+            1013.7814521834121,
+            497.1270164950159
+          ],
+          "char_dim": 120.0153739844014
+        }
+      },
+      "raw_candidate_frames": [
+        44
+      ],
+      "raw_candidate_types": [
+        "collision_candidate"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep19_f44",
+      "peak_frame": 44,
+      "peak_score": 8.5,
+      "start_frame": 44,
+      "end_frame": 44,
+      "involved_track_ids": [
+        13,
+        6
+      ],
+      "peak_candidate": {
+        "frame": 44,
+        "timestamp_s": 2.924,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          6,
+          13
+        ],
+        "confidence": 0.85,
+        "description": "Distant trajectory conflict between tracks 6 (vehicle) and 13 (vehicle): TCA=1.62s, DCA=0.7m, rel_spd=110.5km/h",
+        "signals": {
+          "trajectory_conflict": true,
+          "tca_sec": 1.6203409009455978,
+          "dca_m": 0.6679463920806434,
+          "distance_m": 49.748508951654905,
+          "norm_distance": 2.800533767653135,
+          "relative_speed_kmh": 110.51902023414074,
+          "metric_accel_1": -1.040253869883355,
+          "metric_accel_2": -3.1839627224850524
+        }
+      },
+      "raw_candidate_frames": [
+        44
+      ],
+      "raw_candidate_types": [
+        "distant_trajectory_conflict"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep20_f50",
+      "peak_frame": 50,
+      "peak_score": 99.91305259533647,
+      "start_frame": 50,
+      "end_frame": 69,
+      "involved_track_ids": [
+        16,
+        34,
+        28,
+        22
+      ],
+      "peak_candidate": {
+        "frame": 50,
+        "timestamp_s": 3.323,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          16,
+          34
+        ],
+        "confidence": 0.98,
+        "description": "Collision candidate between tracks 16 (vehicle) and 34 (candidate_vehicle_recovered): dist=28.8m, iou=0.38, active_signals=4/4 (persistence=2f)",
+        "signals": {
+          "decreasing_distance": true,
+          "distance_delta_m": -4.814901167676734,
+          "trajectory_convergence": true,
+          "tca_sec": 0.6746649045731395,
+          "dca_m": 2.233665438540972,
+          "sudden_deceleration": true,
+          "accel_1_ms2": 28.017029822132297,
+          "accel_2_ms2": -6.992786516352547,
+          "post_event_proximity": true,
+          "ground_distance_m": 28.829002918550206,
+          "distance_m": 28.829002918550206,
+          "heading_delta_deg": 20.20352697983415,
+          "is_crossing_trajectory": false,
+          "selected_max_dist_m": 2.0,
+          "ignore_flow_coherence": false,
+          "bbox_iou": 0.3778263148834117,
+          "persistence_frames": 2,
+          "angular_approach": true,
+          "closing_velocity_mps": 42.47432876433,
+          "proj1": 0.9961203068965723,
+          "proj2": -0.9044388018089526,
+          "is_tbone": false,
+          "cos_align": 0.9384717653183771,
+          "post_event_rest": true,
+          "S_dissip": 0.7,
+          "S_v_drop": 1.0,
+          "S_deflect": 1.0,
+          "S_dwell": 0.0,
+          "S_rest": 0.0,
+          "dist_m": 28.829002918550206,
+          "heading_delta": 20.20352697983415,
+          "norm_pixel_dist": 0.355,
+          "is_kinematic_closure_corridor": false,
+          "is_tentative_rescued": true,
+          "pixel_centroid": [
+            750.6914470881396,
+            283.44426424766493
+          ],
+          "char_dim": 57.82263161009345
+        }
+      },
+      "raw_candidate_frames": [
+        50,
+        64,
+        69
+      ],
+      "raw_candidate_types": [
+        "collision_candidate",
+        "collision_candidate",
+        "collision_candidate"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep21_f51",
+      "peak_frame": 51,
+      "peak_score": 8.5,
+      "start_frame": 51,
+      "end_frame": 51,
+      "involved_track_ids": [
+        16,
+        32
+      ],
+      "peak_candidate": {
+        "frame": 51,
+        "timestamp_s": 3.389,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          16,
+          32
+        ],
+        "confidence": 0.85,
+        "description": "Distant trajectory conflict between tracks 16 (vehicle) and 32 (candidate_vehicle_recovered): TCA=1.49s, DCA=0.6m, rel_spd=138.3km/h",
+        "signals": {
+          "trajectory_conflict": true,
+          "tca_sec": 1.4908615899725024,
+          "dca_m": 0.6087685742208069,
+          "distance_m": 57.269176351234876,
+          "norm_distance": 2.0987024930560967,
+          "relative_speed_kmh": 138.28070143942145,
+          "metric_accel_1": 1.123132626873388,
+          "metric_accel_2": -3.345724400974445
+        }
+      },
+      "raw_candidate_frames": [
+        51
+      ],
+      "raw_candidate_types": [
+        "distant_trajectory_conflict"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep22_f52",
+      "peak_frame": 52,
+      "peak_score": 80.63805187230555,
+      "start_frame": 52,
+      "end_frame": 52,
+      "involved_track_ids": [
+        7
+      ],
+      "peak_candidate": {
+        "frame": 52,
+        "timestamp_s": 3.456,
+        "event_type": "single_vehicle_anomaly",
+        "track_ids": [
+          7
+        ],
+        "confidence": 0.9,
+        "description": "Single-vehicle anomaly on track 7 (vehicle): type=composite(0.72), S_single=0.72, accel=-330.5m/s^2, spd=8.5km/h",
+        "signals": {
+          "anomaly_type": "composite(0.72)",
+          "composite_score": 0.7212683957435185,
+          "s_theta": 1.0,
+          "s_decel": 1.0,
+          "s_bound": 0.0,
+          "s_ar": 0.1418,
+          "theta_deg": 166.88,
+          "decel_mag": 60.0,
+          "d_edge_m": 13.21,
+          "delta_ar": 0.1854,
+          "shoulder_admitted": false,
+          "v_dot_n": 0.105,
+          "metric_accel_ms2": -60.0,
+          "metric_speed_kmh": 8.532602774581237,
+          "max_recent_speed_kmh": 76.03196792133467,
+          "heading_deg": 268.25578275138366,
+          "yaw_delta_deg": 0.6033362511807923,
+          "aspect_ratio": 1.04545501084464,
+          "aspect_ratio_ratio": 0.14522583782711046,
+          "kinematic_plausibility": {
+            "track_id": 7,
+            "frame_idx": 52,
+            "timestamp_s": 3.456,
+            "decel_onset_frame": 52,
+            "v_entry_kmh": 76.03,
+            "v_curr_kmh": 8.53,
+            "accel_mps2": -60.0,
+            "tau_rest_s": 0.352,
+            "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+            "rejection_reason": null
+          },
+          "v_entry_kmh": 76.03,
+          "decel_onset_frame": 52,
+          "tau_rest_s": 0.352,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+        }
+      },
+      "raw_candidate_frames": [
+        52
+      ],
+      "raw_candidate_types": [
+        "single_vehicle_anomaly"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep23_f53",
+      "peak_frame": 53,
+      "peak_score": 8.5,
+      "start_frame": 53,
+      "end_frame": 53,
+      "involved_track_ids": [
+        12,
+        22
+      ],
+      "peak_candidate": {
+        "frame": 53,
+        "timestamp_s": 3.522,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          12,
+          22
+        ],
+        "confidence": 0.85,
+        "description": "Distant trajectory conflict between tracks 12 (vehicle) and 22 (candidate_vehicle_recovered): TCA=0.15s, DCA=1.2m, rel_spd=217.1km/h",
+        "signals": {
+          "trajectory_conflict": true,
+          "tca_sec": 0.15055588114983995,
+          "dca_m": 1.1798377213530165,
+          "distance_m": 9.15570519814147,
+          "norm_distance": 0.8495036686182982,
+          "relative_speed_kmh": 217.10028213067554,
+          "metric_accel_1": 0.12696023540666448,
+          "metric_accel_2": -1.094838147414643
+        }
+      },
+      "raw_candidate_frames": [
+        53
+      ],
+      "raw_candidate_types": [
+        "distant_trajectory_conflict"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep24_f55",
+      "peak_frame": 56,
+      "peak_score": 100.91636703287523,
+      "start_frame": 55,
+      "end_frame": 56,
+      "involved_track_ids": [
+        13,
+        32
+      ],
+      "peak_candidate": {
+        "frame": 56,
+        "timestamp_s": 3.721,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          13,
+          32
+        ],
+        "confidence": 0.85,
+        "description": "Collision candidate between tracks 13 (vehicle) and 32 (candidate_vehicle_recovered): dist=13.8m, iou=0.44, active_signals=3/4 (persistence=2f)",
+        "signals": {
+          "decreasing_distance": false,
+          "distance_delta_m": -1.4574045783622225,
+          "trajectory_convergence": true,
+          "tca_sec": 0.6302263281675896,
+          "dca_m": 0.11282785434771397,
+          "sudden_deceleration": true,
+          "accel_1_ms2": 26.546749962272116,
+          "accel_2_ms2": -24.168443917909425,
+          "post_event_proximity": true,
+          "ground_distance_m": 13.822175342532883,
+          "distance_m": 13.822175342532883,
+          "heading_delta_deg": 104.95226610634964,
+          "is_crossing_trajectory": true,
+          "selected_max_dist_m": 3.2,
+          "ignore_flow_coherence": true,
+          "bbox_iou": 0.43540917582188055,
+          "persistence_frames": 2,
+          "angular_approach": true,
+          "closing_velocity_mps": 21.930620369137568,
+          "proj1": 0.367121121227509,
+          "proj2": 0.99340099563733,
+          "is_tbone": true,
+          "cos_align": -0.2580142294241152,
+          "post_event_rest": true,
+          "S_dissip": 0.7,
+          "S_v_drop": 1.0,
+          "S_deflect": 1.0,
+          "S_dwell": 0.0,
+          "S_rest": 0.0,
+          "dist_m": 13.822175342532883,
+          "heading_delta": 104.95226610634964,
+          "norm_pixel_dist": 0.341,
+          "is_kinematic_closure_corridor": false,
+          "is_tentative_rescued": true,
+          "pixel_centroid": [
+            904.6954169290731,
+            374.6688819448427
+          ],
+          "char_dim": 56.05072100196469
+        }
+      },
+      "raw_candidate_frames": [
+        55,
+        56
+      ],
+      "raw_candidate_types": [
+        "single_vehicle_anomaly",
+        "collision_candidate"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep25_f57",
+      "peak_frame": 57,
+      "peak_score": 76.67694049521049,
+      "start_frame": 57,
+      "end_frame": 57,
+      "involved_track_ids": [
+        17
+      ],
+      "peak_candidate": {
+        "frame": 57,
+        "timestamp_s": 3.788,
+        "event_type": "single_vehicle_anomaly",
+        "track_ids": [
+          17
+        ],
+        "confidence": 0.9,
+        "description": "Single-vehicle anomaly on track 17 (vehicle): type=yaw, S_single=0.70, accel=-15.6m/s^2, spd=10.5km/h",
+        "signals": {
+          "anomaly_type": "yaw",
+          "composite_score": 0.7,
+          "s_theta": 1.0,
+          "s_decel": 1.0,
+          "s_bound": 0.0,
+          "s_ar": 0.0,
+          "theta_deg": 60.02,
+          "decel_mag": 55.27,
+          "d_edge_m": 14.21,
+          "delta_ar": 0.083,
+          "shoulder_admitted": false,
+          "v_dot_n": 0.982,
+          "metric_accel_ms2": -15.558980165070164,
+          "metric_speed_kmh": 10.500330500532517,
+          "max_recent_speed_kmh": 26.04849838568487,
+          "heading_deg": 341.39459023855517,
+          "yaw_delta_deg": 45.39407547928431,
+          "aspect_ratio": 0.9501992152972059,
+          "aspect_ratio_ratio": 0.00964434997924995,
+          "kinematic_plausibility": {
+            "track_id": 17,
+            "frame_idx": 57,
+            "timestamp_s": 3.788,
+            "decel_onset_frame": 57,
+            "v_entry_kmh": 26.05,
+            "v_curr_kmh": 10.5,
+            "accel_mps2": -15.56,
+            "tau_rest_s": 0.465,
+            "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+            "rejection_reason": null
+          },
+          "v_entry_kmh": 26.05,
+          "decel_onset_frame": 57,
+          "tau_rest_s": 0.465,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+        }
+      },
+      "raw_candidate_frames": [
+        57
+      ],
+      "raw_candidate_types": [
+        "single_vehicle_anomaly"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep26_f57",
+      "peak_frame": 57,
+      "peak_score": 8.5,
+      "start_frame": 57,
+      "end_frame": 57,
+      "involved_track_ids": [
+        17,
+        27
+      ],
+      "peak_candidate": {
+        "frame": 57,
+        "timestamp_s": 3.788,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          17,
+          27
+        ],
+        "confidence": 0.85,
+        "description": "Distant trajectory conflict between tracks 17 (vehicle) and 27 (candidate_vehicle_recovered): TCA=1.06s, DCA=1.0m, rel_spd=217.2km/h",
+        "signals": {
+          "trajectory_conflict": true,
+          "tca_sec": 1.0587895860132548,
+          "dca_m": 1.0325118388731658,
+          "distance_m": 63.89633502795227,
+          "norm_distance": 1.9777709276989521,
+          "relative_speed_kmh": 217.2261372925257,
+          "metric_accel_1": -2.477257399606492,
+          "metric_accel_2": 0.2711299239999631
+        }
+      },
+      "raw_candidate_frames": [
+        57
+      ],
+      "raw_candidate_types": [
+        "distant_trajectory_conflict"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep27_f59",
+      "peak_frame": 69,
+      "peak_score": 96.3754405179362,
+      "start_frame": 59,
+      "end_frame": 69,
+      "involved_track_ids": [
+        12,
+        22,
+        28
+      ],
+      "peak_candidate": {
+        "frame": 69,
+        "timestamp_s": 4.585,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          22,
+          28
+        ],
+        "confidence": 0.98,
+        "description": "Collision candidate between tracks 22 (candidate_vehicle_recovered) and 28 (vehicle): dist=29.9m, iou=0.29, active_signals=4/4 (persistence=2f)",
+        "signals": {
+          "decreasing_distance": true,
+          "distance_delta_m": -2.9536767640864383,
+          "trajectory_convergence": true,
+          "tca_sec": 0.6737819129461514,
+          "dca_m": 0.15884298511911477,
+          "sudden_deceleration": true,
+          "accel_1_ms2": -60.0,
+          "accel_2_ms2": -60.0,
+          "post_event_proximity": true,
+          "ground_distance_m": 29.947884237130573,
+          "distance_m": 29.947884237130573,
+          "heading_delta_deg": 0.8614893569623848,
+          "is_crossing_trajectory": false,
+          "selected_max_dist_m": 2.0,
+          "ignore_flow_coherence": false,
+          "bbox_iou": 0.28938601294840494,
+          "persistence_frames": 2,
+          "angular_approach": true,
+          "closing_velocity_mps": 44.44619417896939,
+          "proj1": 0.9999926863076307,
+          "proj2": -0.9999371546285537,
+          "is_tbone": false,
+          "cos_align": 0.9998869641015928,
+          "post_event_rest": true,
+          "S_dissip": 0.5837,
+          "S_v_drop": 1.0,
+          "S_deflect": 0.6677,
+          "S_dwell": 0.0,
+          "S_rest": 0.0,
+          "dist_m": 29.947884237130573,
+          "heading_delta": 0.8614893569623848,
+          "norm_pixel_dist": 0.477,
+          "is_kinematic_closure_corridor": true,
+          "is_tentative_rescued": false,
+          "pixel_centroid": [
+            596.9722894733336,
+            360.5544606224436
+          ],
+          "char_dim": 147.52694280594432
+        }
+      },
+      "raw_candidate_frames": [
+        59,
+        69
+      ],
+      "raw_candidate_types": [
+        "collision_candidate",
+        "collision_candidate"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep28_f63",
+      "peak_frame": 63,
+      "peak_score": 8.5,
+      "start_frame": 63,
+      "end_frame": 63,
+      "involved_track_ids": [
+        16,
+        29
+      ],
+      "peak_candidate": {
+        "frame": 63,
+        "timestamp_s": 4.187,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          16,
+          29
+        ],
+        "confidence": 0.85,
+        "description": "Distant trajectory conflict between tracks 16 (vehicle) and 29 (vehicle): TCA=0.64s, DCA=0.1m, rel_spd=158.4km/h",
+        "signals": {
+          "trajectory_conflict": true,
+          "tca_sec": 0.6394365694185812,
+          "dca_m": 0.05897968505429258,
+          "distance_m": 28.133851016695797,
+          "norm_distance": 1.162201829477882,
+          "relative_speed_kmh": 158.3920062491655,
+          "metric_accel_1": -3.581649204290456,
+          "metric_accel_2": -1.067340198097814
+        }
+      },
+      "raw_candidate_frames": [
+        63
+      ],
+      "raw_candidate_types": [
+        "distant_trajectory_conflict"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep29_f66",
+      "peak_frame": 92,
+      "peak_score": 102.22564079587171,
+      "start_frame": 66,
+      "end_frame": 93,
+      "involved_track_ids": [
+        28,
+        29,
+        39
+      ],
+      "peak_candidate": {
+        "frame": 92,
+        "timestamp_s": 6.114,
+        "event_type": "collision_candidate",
+        "track_ids": [
+          28,
+          29
+        ],
+        "confidence": 0.98,
+        "description": "Collision candidate between tracks 28 (vehicle) and 29 (vehicle): dist=6.0m, iou=0.44, active_signals=4/4 (persistence=2f)",
+        "signals": {
+          "decreasing_distance": true,
+          "distance_delta_m": -1.583915452098398,
+          "trajectory_convergence": true,
+          "tca_sec": 0.2496508172017122,
+          "dca_m": 0.1339917292996397,
+          "sudden_deceleration": true,
+          "accel_1_ms2": -60.0,
+          "accel_2_ms2": 52.71736458126873,
+          "post_event_proximity": true,
+          "ground_distance_m": 5.95297565511443,
+          "distance_m": 5.95297565511443,
+          "heading_delta_deg": 0.773933329776035,
+          "is_crossing_trajectory": false,
+          "selected_max_dist_m": 2.0,
+          "ignore_flow_coherence": false,
+          "bbox_iou": 0.4356410198967929,
+          "persistence_frames": 2,
+          "angular_approach": true,
+          "closing_velocity_mps": 23.833127355628452,
+          "proj1": 0.9997989037174715,
+          "proj2": -0.9999785659152967,
+          "is_tbone": false,
+          "cos_align": 0.999908772612839,
+          "post_event_rest": true,
+          "S_dissip": 0.5168,
+          "S_v_drop": 1.0,
+          "S_deflect": 0.4765,
+          "S_dwell": 0.0,
+          "S_rest": 0.0,
+          "dist_m": 5.95297565511443,
+          "heading_delta": 0.773933329776035,
+          "norm_pixel_dist": 0.136,
+          "is_kinematic_closure_corridor": true,
+          "is_tentative_rescued": false,
+          "pixel_centroid": [
+            598.7687785313311,
+            380.0959439659697
+          ],
+          "char_dim": 136.74626256423153
+        }
+      },
+      "raw_candidate_frames": [
+        66,
+        92,
+        93
+      ],
+      "raw_candidate_types": [
+        "single_vehicle_anomaly",
+        "collision_candidate",
+        "collision_candidate"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep30_f66",
+      "peak_frame": 66,
+      "peak_score": 8.5,
+      "start_frame": 66,
+      "end_frame": 66,
+      "involved_track_ids": [
+        17,
+        6
+      ],
+      "peak_candidate": {
+        "frame": 66,
+        "timestamp_s": 4.386,
+        "event_type": "distant_trajectory_conflict",
+        "track_ids": [
+          6,
+          17
+        ],
+        "confidence": 0.85,
+        "description": "Distant trajectory conflict between tracks 6 (vehicle) and 17 (vehicle): TCA=1.14s, DCA=1.0m, rel_spd=54.1km/h",
+        "signals": {
+          "trajectory_conflict": true,
+          "tca_sec": 1.1396625362164647,
+          "dca_m": 0.968618944952421,
+          "distance_m": 17.13845692795477,
+          "norm_distance": 1.9850847088538526,
+          "relative_speed_kmh": 54.050936568388735,
+          "metric_accel_1": -1.0645813957204457,
+          "metric_accel_2": -2.42152466367713
+        }
+      },
+      "raw_candidate_frames": [
+        66
+      ],
+      "raw_candidate_types": [
+        "distant_trajectory_conflict"
+      ]
+    },
+    {
+      "episode_id": "F0NHENn-HS4_00_ep31_f72",
+      "peak_frame": 72,
+      "peak_score": 93.5,
+      "start_frame": 72,
+      "end_frame": 73,
+      "involved_track_ids": [
+        8,
+        15
+      ],
+      "peak_candidate": {
+        "frame": 72,
+        "timestamp_s": 4.785,
+        "event_type": "barrier_strike",
+        "track_ids": [
+          8
+        ],
+        "confidence": 0.95,
+        "description": "Single-vehicle anomaly on track 8 (vehicle): type=severe_barrier_impact, S_single=0.30, accel=-32.6m/s^2, spd=5.9km/h",
+        "signals": {
+          "anomaly_type": "severe_barrier_impact",
+          "composite_score": 0.3,
+          "s_theta": 0.0,
+          "s_decel": 0.0,
+          "s_bound": 1.0,
+          "s_ar": 1.0,
+          "theta_deg": 3.64,
+          "decel_mag": 32.59,
+          "d_edge_m": 0.0,
+          "delta_ar": 0.4931,
+          "shoulder_admitted": false,
+          "v_dot_n": 0.045,
+          "metric_accel_ms2": -32.58933260984373,
+          "metric_speed_kmh": 5.9436889780061515,
+          "max_recent_speed_kmh": 38.94160287711154,
+          "heading_deg": 357.4490493743475,
+          "yaw_delta_deg": 1.575973724680864,
+          "aspect_ratio": 1.5571990768886284,
+          "aspect_ratio_ratio": 0.03691149713276783,
+          "kinematic_plausibility": {
+            "track_id": 8,
+            "frame_idx": 72,
+            "timestamp_s": 4.785,
+            "decel_onset_frame": 71,
+            "v_entry_kmh": 34.86,
+            "v_curr_kmh": 5.94,
+            "accel_mps2": -32.59,
+            "tau_rest_s": 0.297,
+            "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT",
+            "rejection_reason": null
+          },
+          "v_entry_kmh": 34.86,
+          "decel_onset_frame": 71,
+          "tau_rest_s": 0.297,
+          "plausibility_verdict": "ACCEPTED_PHYSICAL_IMPACT"
+        }
+      },
+      "raw_candidate_frames": [
+        72,
+        73
+      ],
+      "raw_candidate_types": [
+        "barrier_strike",
+        "distant_trajectory_conflict"
+      ]
+    }
+  ]
+}

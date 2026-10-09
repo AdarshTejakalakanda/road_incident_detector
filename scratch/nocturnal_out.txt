@@ -1,0 +1,11 @@
+Z4kg2Ev3vhk_00     | split_in_distribution  | TP: False | FP:  2
+unS0-TLF1ao_00     | split_in_distribution  | TP: True  | FP:  0
+nAXTthLfgtI_00     | split_in_distribution  | TP: False | FP:  0
+OXVXsdDT9QQ_00     | split_in_distribution  | TP: False | FP:  0
+ftk_fSc4haM_00     | split_in_distribution  | TP: True  | FP:  7
+Z4kg2Ev3vhk_00     | split_geo_aware        | TP: False | FP:  2
+UarP8qU1S-c_00     | split_geo_aware        | TP: True  | FP:  1
+UarP8qU1S-c_01     | split_geo_aware        | TP: True  | FP:  0
+nAXTthLfgtI_00     | split_geo_aware        | TP: False | FP:  0
+bJMc3sNP2AU_00     | split_geo_aware        | TP: False | FP:  0
+Total Nocturnal FP count: 12

@@ -1,0 +1,453 @@
+{
+  "true_positives": [
+    {
+      "id": "TP-01",
+      "name": "High-Speed Rear-End",
+      "video_id": "5uh8-3q51uI_00",
+      "frame": 182,
+      "tracks": [
+        6,
+        49
+      ],
+      "type": "Type 1",
+      "v_entry": 108.2,
+      "v_post_sust": 13.5,
+      "dv_sust": 94.7,
+      "tau_rest": 0.4,
+      "delta_theta": 244.1,
+      "tau_overlap": 0.2,
+      "delta_d_lat": 1.27,
+      "push_disp": 2.77,
+      "upstream_react": 20,
+      "topology": "Multi-lane highway rear-end compression into pileup",
+      "score": 0.7653
+    },
+    {
+      "id": "TP-02",
+      "name": "Single-Vehicle Barrier Rollover",
+      "video_id": "UarP8qU1S-c_01",
+      "frame": 27,
+      "tracks": [
+        3
+      ],
+      "type": "Type 5",
+      "v_entry": 43.4,
+      "v_post_sust": 2.1,
+      "dv_sust": 41.3,
+      "tau_rest": 1.0,
+      "delta_theta": 78.4,
+      "tau_overlap": 0.0,
+      "delta_d_lat": 0.0,
+      "push_disp": 0.0,
+      "upstream_react": 1,
+      "topology": "Severe barrier impact with rollover kinetic arrest",
+      "score": 1.0
+    },
+    {
+      "id": "TP-03",
+      "name": "T-Bone / Broadside Collision",
+      "video_id": "unS0-TLF1ao_00",
+      "frame": 47,
+      "tracks": [
+        2,
+        4
+      ],
+      "type": "Type 3",
+      "v_entry": 38.0,
+      "v_post_sust": 0.0,
+      "dv_sust": 38.0,
+      "tau_rest": 1.0,
+      "delta_theta": 92.5,
+      "tau_overlap": 0.5,
+      "delta_d_lat": 3.4,
+      "push_disp": 2.2,
+      "upstream_react": 4,
+      "topology": "Right-angle urban intersection broadside with lateral vehicle arrest",
+      "score": 1.0
+    },
+    {
+      "id": "TP-04",
+      "name": "Bridge Deck Multi-Vehicle Impact",
+      "video_id": "F0NHENn-HS4_00",
+      "frame": 39,
+      "tracks": [
+        9,
+        14
+      ],
+      "type": "Type 1",
+      "v_entry": 52.3,
+      "v_post_sust": 0.0,
+      "dv_sust": 52.3,
+      "tau_rest": 1.0,
+      "delta_theta": 68.2,
+      "tau_overlap": 0.5,
+      "delta_d_lat": 2.1,
+      "push_disp": 1.85,
+      "upstream_react": 6,
+      "topology": "Bridge deck secondary rear-end collision chain with persistent arrest",
+      "score": 0.9962
+    },
+    {
+      "id": "TP-05",
+      "name": "Urban Intersection Angle Collision",
+      "video_id": "kABWTDKgc9U_00",
+      "frame": 242,
+      "tracks": [
+        33,
+        63
+      ],
+      "type": "Type 3",
+      "v_entry": 42.1,
+      "v_post_sust": 4.5,
+      "dv_sust": 37.6,
+      "tau_rest": 0.85,
+      "delta_theta": 84.6,
+      "tau_overlap": 0.45,
+      "delta_d_lat": 1.85,
+      "push_disp": 2.1,
+      "upstream_react": 5,
+      "topology": "Arterial cross-traffic angle collision with mutual deflection",
+      "score": 0.96
+    },
+    {
+      "id": "TP-06",
+      "name": "Low-Speed Rear-End Collision",
+      "video_id": "iA_u73BG4ZM_00",
+      "frame": 88,
+      "tracks": [
+        1,
+        10
+      ],
+      "type": "Type 2",
+      "v_entry": 24.5,
+      "v_post_sust": 0.5,
+      "dv_sust": 24.0,
+      "tau_rest": 1.0,
+      "delta_theta": 18.5,
+      "tau_overlap": 0.65,
+      "delta_d_lat": 0.43,
+      "push_disp": 1.1,
+      "upstream_react": 3,
+      "topology": "Urban queue compression resulting in physical contact and sustained stop",
+      "score": 0.8192
+    },
+    {
+      "id": "TP-07",
+      "name": "Single-Vehicle Spin-Out / Loss of Control",
+      "video_id": "vxZ47DoPNY8_00",
+      "frame": 50,
+      "tracks": [
+        2
+      ],
+      "type": "Type 5",
+      "v_entry": 58.2,
+      "v_post_sust": 3.4,
+      "dv_sust": 54.8,
+      "tau_rest": 0.8,
+      "delta_theta": 164.2,
+      "tau_overlap": 0.0,
+      "delta_d_lat": 0.0,
+      "push_disp": 0.0,
+      "upstream_react": 2,
+      "topology": "Highway loss-of-control severe angular yaw rotation with vehicle arrest",
+      "score": 0.94
+    },
+    {
+      "id": "TP-08",
+      "name": "Cut-In / Sideswipe Collision",
+      "video_id": "maJGw3hQs_s_00",
+      "frame": 13,
+      "tracks": [
+        7,
+        11
+      ],
+      "type": "Type 4",
+      "v_entry": 36.5,
+      "v_post_sust": 1.8,
+      "dv_sust": 34.7,
+      "tau_rest": 0.9,
+      "delta_theta": 51.5,
+      "tau_overlap": 0.44,
+      "delta_d_lat": 1.54,
+      "push_disp": 1.4,
+      "upstream_react": 4,
+      "topology": "Aggressive lane intrusion sideswipe leading to sustained physical stoppage",
+      "score": 0.8608
+    },
+    {
+      "id": "TP-09",
+      "name": "Highway Chain Multi-Vehicle Collision",
+      "video_id": "BgdKGnFqz0I_00",
+      "frame": 126,
+      "tracks": [
+        17,
+        65
+      ],
+      "type": "Type 1",
+      "v_entry": 48.0,
+      "v_post_sust": 2.2,
+      "dv_sust": 45.8,
+      "tau_rest": 0.95,
+      "delta_theta": 52.8,
+      "tau_overlap": 0.35,
+      "delta_d_lat": 1.46,
+      "push_disp": 1.9,
+      "upstream_react": 7,
+      "topology": "Multi-vehicle shockwave accordion impact with multi-track arrest",
+      "score": 0.8925
+    },
+    {
+      "id": "TP-10",
+      "name": "Nocturnal Confirmed Impact (Control)",
+      "video_id": "ftk_fSc4haM_00",
+      "frame": 121,
+      "tracks": [
+        79,
+        90
+      ],
+      "type": "Type 3",
+      "v_entry": 45.2,
+      "v_post_sust": 3.8,
+      "dv_sust": 41.4,
+      "tau_rest": 0.85,
+      "delta_theta": 81.1,
+      "tau_overlap": 0.45,
+      "delta_d_lat": 1.94,
+      "push_disp": 1.75,
+      "upstream_react": 4,
+      "topology": "Nocturnal intersection broadside collision under heavy glare",
+      "score": 0.952
+    }
+  ],
+  "false_positives": [
+    {
+      "id": "FP-01",
+      "name": "Highway Queue Decel (High Speed)",
+      "video_id": "5uh8-3q51uI_00",
+      "frame": 44,
+      "tracks": [
+        4,
+        5
+      ],
+      "type": "Type 1",
+      "v_entry": 38.5,
+      "v_post_sust": 22.2,
+      "dv_sust": 16.3,
+      "tau_rest": 0.07,
+      "delta_theta": 8.2,
+      "tau_overlap": 0.0,
+      "delta_d_lat": 0.43,
+      "push_disp": 0.0,
+      "upstream_react": 0,
+      "topology": "Coordinated multi-vehicle deceleration maintaining headway without impact",
+      "score": 0.252
+    },
+    {
+      "id": "FP-02",
+      "name": "Highway Queue Compression (Firm Braking)",
+      "video_id": "5uh8-3q51uI_00",
+      "frame": 48,
+      "tracks": [
+        25,
+        26
+      ],
+      "type": "Type 1",
+      "v_entry": 29.5,
+      "v_post_sust": 28.3,
+      "dv_sust": 6.7,
+      "tau_rest": 0.0,
+      "delta_theta": 6.5,
+      "tau_overlap": 0.0,
+      "delta_d_lat": 0.35,
+      "push_disp": 0.0,
+      "upstream_react": 0,
+      "topology": "Firm braking in adjacent lanes; quick recovery without rest or deflection",
+      "score": 0.1175
+    },
+    {
+      "id": "FP-03",
+      "name": "Moderate Queue Following",
+      "video_id": "5uh8-3q51uI_00",
+      "frame": 401,
+      "tracks": [
+        100,
+        109
+      ],
+      "type": "Type 1",
+      "v_entry": 32.3,
+      "v_post_sust": 32.3,
+      "dv_sust": 0.0,
+      "tau_rest": 0.0,
+      "delta_theta": 4.1,
+      "tau_overlap": 0.0,
+      "delta_d_lat": 0.22,
+      "push_disp": 0.0,
+      "upstream_react": 0,
+      "topology": "Stable car-following behavior at highway speed with zero velocity loss",
+      "score": 0.0233
+    },
+    {
+      "id": "FP-04",
+      "name": "Stop-and-Go Queue Creep",
+      "video_id": "5uh8-3q51uI_00",
+      "frame": 711,
+      "tracks": [
+        157,
+        228
+      ],
+      "type": "Type 2",
+      "v_entry": 20.4,
+      "v_post_sust": 12.1,
+      "dv_sust": 8.3,
+      "tau_rest": 0.07,
+      "delta_theta": 5.2,
+      "tau_overlap": 0.0,
+      "delta_d_lat": 0.3,
+      "push_disp": 0.0,
+      "upstream_react": 0,
+      "topology": "Routine stop-and-go queue crawling with gradual speed modulation",
+      "score": 0.0976
+    },
+    {
+      "id": "FP-05",
+      "name": "Slow Queue Drift",
+      "video_id": "5uh8-3q51uI_00",
+      "frame": 712,
+      "tracks": [
+        213,
+        228
+      ],
+      "type": "Type 2",
+      "v_entry": 16.5,
+      "v_post_sust": 12.1,
+      "dv_sust": 4.4,
+      "tau_rest": 0.03,
+      "delta_theta": 3.8,
+      "tau_overlap": 0.0,
+      "delta_d_lat": 0.18,
+      "push_disp": 0.0,
+      "upstream_react": 0,
+      "topology": "Low-speed lane positioning drift without sudden kinematic onset",
+      "score": 0.0521
+    },
+    {
+      "id": "FP-06",
+      "name": "Lane Centering Modulation",
+      "video_id": "5uh8-3q51uI_00",
+      "frame": 720,
+      "tracks": [
+        196,
+        201
+      ],
+      "type": "Type 4",
+      "v_entry": 30.8,
+      "v_post_sust": 30.8,
+      "dv_sust": 0.0,
+      "tau_rest": 0.0,
+      "delta_theta": 3.5,
+      "tau_overlap": 0.0,
+      "delta_d_lat": 0.17,
+      "push_disp": 0.0,
+      "upstream_react": 0,
+      "topology": "Driver lane micro-correction within lane boundaries",
+      "score": 0.0343
+    },
+    {
+      "id": "FP-07",
+      "name": "Bounding-Box Fragmentation Split",
+      "video_id": "5uh8-3q51uI_00",
+      "frame": 446,
+      "tracks": [
+        113,
+        127
+      ],
+      "type": "Type 4",
+      "v_entry": 34.9,
+      "v_post_sust": 23.3,
+      "dv_sust": 11.6,
+      "tau_rest": 0.0,
+      "delta_theta": 4.2,
+      "tau_overlap": 0.0,
+      "delta_d_lat": 0.15,
+      "push_disp": 0.0,
+      "upstream_react": 0,
+      "topology": "Single vehicle tracked under dual bounding boxes due to detector split",
+      "score": 0.1026
+    },
+    {
+      "id": "FP-08",
+      "name": "Curve Homography Heading Divergence",
+      "video_id": "5uh8-3q51uI_00",
+      "frame": 70,
+      "tracks": [
+        3,
+        4
+      ],
+      "type": "Type 4",
+      "v_entry": 56.7,
+      "v_post_sust": 46.9,
+      "dv_sust": 9.8,
+      "tau_rest": 0.0,
+      "delta_theta": 8.5,
+      "tau_overlap": 0.0,
+      "delta_d_lat": 0.45,
+      "push_disp": 0.0,
+      "upstream_react": 0,
+      "topology": "Vehicles negotiating roadway curve causing apparent heading misalignment",
+      "score": 0.1476
+    },
+    {
+      "id": "FP-09",
+      "name": "Daytime Perspective Visual Overlap",
+      "video_id": "kABWTDKgc9U_00",
+      "frame": 15,
+      "tracks": [
+        9,
+        21
+      ],
+      "type": "Type 3",
+      "v_entry": 35.0,
+      "v_post_sust": 32.5,
+      "dv_sust": 2.5,
+      "tau_rest": 0.0,
+      "delta_theta": 5.0,
+      "tau_overlap": 0.1,
+      "delta_d_lat": 0.3,
+      "push_disp": 0.0,
+      "upstream_react": 0,
+      "topology": "Monocular line-of-sight visual bounding box overlap with no ground interaction",
+      "score": 0.08
+    },
+    {
+      "id": "FP-10",
+      "name": "Nocturnal Headlight Glare Fluctuation",
+      "video_id": "Z4kg2Ev3vhk_00",
+      "frame": 113,
+      "tracks": [
+        8,
+        9
+      ],
+      "type": "Type 1",
+      "v_entry": 42.0,
+      "v_post_sust": 39.5,
+      "dv_sust": 2.5,
+      "tau_rest": 0.0,
+      "delta_theta": 3.0,
+      "tau_overlap": 0.05,
+      "delta_d_lat": 0.25,
+      "push_disp": 0.0,
+      "upstream_react": 0,
+      "topology": "Nocturnal bloom causing momentary track centroid distortion; normal flow",
+      "score": 0.0688
+    }
+  ],
+  "distribution": {
+    "tp_min": 0.7653,
+    "tp_median": 0.946,
+    "tp_max": 1.0,
+    "fp_min": 0.0233,
+    "fp_median": 0.0888,
+    "fp_max": 0.252,
+    "decision_margin": 0.5133
+  }
+}

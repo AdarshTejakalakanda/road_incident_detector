@@ -1,0 +1,622 @@
+{
+  "benchmark_summary": {
+    "total_videos": 30,
+    "phase1_tp": 12,
+    "phase1_fp": 22,
+    "tp_confirmed": 12,
+    "tp_rejected": 0,
+    "tp_uncertain": 0,
+    "fp_rejected": 0,
+    "fp_confirmed": 22,
+    "fp_uncertain": 0,
+    "policy_a": {
+      "precision": 0.35294117647058826,
+      "recall": 0.4,
+      "f1": 0.37500000000000006,
+      "fp_per_video": 0.7333333333333333
+    },
+    "policy_b": {
+      "precision": 0.35294117647058826,
+      "recall": 0.4,
+      "f1": 0.37500000000000006,
+      "fp_per_video": 0.7333333333333333
+    }
+  },
+  "all_episodes": [
+    {
+      "video_id": "unS0-TLF1ao_00",
+      "split": "split_in_distribution",
+      "gt_frame": 64,
+      "candidate_frame": 40,
+      "diff_frames": -24,
+      "phase1_status": "TP",
+      "detector": "single_vehicle",
+      "track_ids": [
+        2
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "fzWY0vLAXzI_00",
+      "split": "split_in_distribution",
+      "gt_frame": 88,
+      "candidate_frame": 24,
+      "diff_frames": -64,
+      "phase1_status": "FP",
+      "detector": "pairwise_collision",
+      "track_ids": [
+        2,
+        1
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "vxZ47DoPNY8_00",
+      "split": "split_in_distribution",
+      "gt_frame": 50,
+      "candidate_frame": 55,
+      "diff_frames": 5,
+      "phase1_status": "TP",
+      "detector": "single_vehicle",
+      "track_ids": [
+        6
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "OXVXsdDT9QQ_00",
+      "split": "split_in_distribution",
+      "gt_frame": 17,
+      "candidate_frame": 20,
+      "diff_frames": 3,
+      "phase1_status": "TP",
+      "detector": "single_vehicle",
+      "track_ids": [
+        2
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "kABWTDKgc9U_00",
+      "split": "split_in_distribution",
+      "gt_frame": 197,
+      "candidate_frame": 18,
+      "diff_frames": -179,
+      "phase1_status": "FP",
+      "detector": "pairwise_collision",
+      "track_ids": [
+        6,
+        11
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "kABWTDKgc9U_00",
+      "split": "split_in_distribution",
+      "gt_frame": 197,
+      "candidate_frame": 129,
+      "diff_frames": -68,
+      "phase1_status": "FP",
+      "detector": "pairwise_collision",
+      "track_ids": [
+        18,
+        19
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "kABWTDKgc9U_00",
+      "split": "split_in_distribution",
+      "gt_frame": 197,
+      "candidate_frame": 238,
+      "diff_frames": 41,
+      "phase1_status": "FP",
+      "detector": "pairwise_collision",
+      "track_ids": [
+        31,
+        24
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "ftk_fSc4haM_00",
+      "split": "split_in_distribution",
+      "gt_frame": 130,
+      "candidate_frame": 17,
+      "diff_frames": -113,
+      "phase1_status": "FP",
+      "detector": "distant_conflict",
+      "track_ids": [
+        5,
+        12
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "BgdKGnFqz0I_00",
+      "split": "split_in_distribution",
+      "gt_frame": 125,
+      "candidate_frame": 16,
+      "diff_frames": -109,
+      "phase1_status": "FP",
+      "detector": "pairwise_collision",
+      "track_ids": [
+        3,
+        6
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "BgdKGnFqz0I_00",
+      "split": "split_in_distribution",
+      "gt_frame": 125,
+      "candidate_frame": 209,
+      "diff_frames": 84,
+      "phase1_status": "FP",
+      "detector": "pairwise_collision",
+      "track_ids": [
+        26,
+        21
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "LiM5LPSZoow_00",
+      "split": "split_in_distribution",
+      "gt_frame": 53,
+      "candidate_frame": 19,
+      "diff_frames": -34,
+      "phase1_status": "TP",
+      "detector": "single_vehicle",
+      "track_ids": [
+        3
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "iA_u73BG4ZM_00",
+      "split": "split_in_distribution",
+      "gt_frame": 116,
+      "candidate_frame": 19,
+      "diff_frames": -97,
+      "phase1_status": "FP",
+      "detector": "single_vehicle",
+      "track_ids": [
+        2
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "maJGw3hQs_s_00",
+      "split": "split_in_distribution",
+      "gt_frame": 31,
+      "candidate_frame": 36,
+      "diff_frames": 5,
+      "phase1_status": "TP",
+      "detector": "single_vehicle",
+      "track_ids": [
+        8
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "aPsS_HaokoU_00",
+      "split": "split_in_distribution",
+      "gt_frame": 80,
+      "candidate_frame": 18,
+      "diff_frames": -62,
+      "phase1_status": "FP",
+      "detector": "single_vehicle",
+      "track_ids": [
+        2
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "aF2Hbp8C23A_00",
+      "split": "split_in_distribution",
+      "gt_frame": 45,
+      "candidate_frame": 25,
+      "diff_frames": -20,
+      "phase1_status": "TP",
+      "detector": "single_vehicle",
+      "track_ids": [
+        13
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "UarP8qU1S-c_00",
+      "split": "split_geo_aware",
+      "gt_frame": 130,
+      "candidate_frame": 107,
+      "diff_frames": -23,
+      "phase1_status": "TP",
+      "detector": "single_vehicle",
+      "track_ids": [
+        2
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "kABWTDKgc9U_00",
+      "split": "split_geo_aware",
+      "gt_frame": 197,
+      "candidate_frame": 18,
+      "diff_frames": -179,
+      "phase1_status": "FP",
+      "detector": "pairwise_collision",
+      "track_ids": [
+        6,
+        11
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "kABWTDKgc9U_00",
+      "split": "split_geo_aware",
+      "gt_frame": 197,
+      "candidate_frame": 129,
+      "diff_frames": -68,
+      "phase1_status": "FP",
+      "detector": "pairwise_collision",
+      "track_ids": [
+        18,
+        19
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "kABWTDKgc9U_00",
+      "split": "split_geo_aware",
+      "gt_frame": 197,
+      "candidate_frame": 238,
+      "diff_frames": 41,
+      "phase1_status": "FP",
+      "detector": "pairwise_collision",
+      "track_ids": [
+        31,
+        24
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "LiM5LPSZoow_00",
+      "split": "split_geo_aware",
+      "gt_frame": 53,
+      "candidate_frame": 19,
+      "diff_frames": -34,
+      "phase1_status": "TP",
+      "detector": "single_vehicle",
+      "track_ids": [
+        3
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "F0NHENn-HS4_00",
+      "split": "split_geo_aware",
+      "gt_frame": 39,
+      "candidate_frame": 16,
+      "diff_frames": -23,
+      "phase1_status": "TP",
+      "detector": "pairwise_collision",
+      "track_ids": [
+        7,
+        9
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "F0NHENn-HS4_00",
+      "split": "split_geo_aware",
+      "gt_frame": 39,
+      "candidate_frame": 124,
+      "diff_frames": 85,
+      "phase1_status": "FP",
+      "detector": "pairwise_collision",
+      "track_ids": [
+        19,
+        21
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "F0NHENn-HS4_00",
+      "split": "split_geo_aware",
+      "gt_frame": 39,
+      "candidate_frame": 164,
+      "diff_frames": 125,
+      "phase1_status": "FP",
+      "detector": "pairwise_collision",
+      "track_ids": [
+        22,
+        26
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "F0NHENn-HS4_00",
+      "split": "split_geo_aware",
+      "gt_frame": 39,
+      "candidate_frame": 233,
+      "diff_frames": 194,
+      "phase1_status": "FP",
+      "detector": "pairwise_collision",
+      "track_ids": [
+        34,
+        33
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "maJsgJsapH4_00",
+      "split": "split_geo_aware",
+      "gt_frame": 69,
+      "candidate_frame": 28,
+      "diff_frames": -41,
+      "phase1_status": "FP",
+      "detector": "single_vehicle",
+      "track_ids": [
+        2
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "maJsgJsapH4_00",
+      "split": "split_geo_aware",
+      "gt_frame": 69,
+      "candidate_frame": 66,
+      "diff_frames": -3,
+      "phase1_status": "TP",
+      "detector": "pairwise_collision",
+      "track_ids": [
+        11,
+        8
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "maJsgJsapH4_00",
+      "split": "split_geo_aware",
+      "gt_frame": 69,
+      "candidate_frame": 121,
+      "diff_frames": 52,
+      "phase1_status": "FP",
+      "detector": "pairwise_collision",
+      "track_ids": [
+        19,
+        16
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "maJsgJsapH4_00",
+      "split": "split_geo_aware",
+      "gt_frame": 69,
+      "candidate_frame": 229,
+      "diff_frames": 160,
+      "phase1_status": "FP",
+      "detector": "pairwise_collision",
+      "track_ids": [
+        30,
+        29
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "iA_u73BG4ZM_00",
+      "split": "split_geo_aware",
+      "gt_frame": 116,
+      "candidate_frame": 19,
+      "diff_frames": -97,
+      "phase1_status": "FP",
+      "detector": "single_vehicle",
+      "track_ids": [
+        2
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "maJGw3hQs_s_00",
+      "split": "split_geo_aware",
+      "gt_frame": 31,
+      "candidate_frame": 36,
+      "diff_frames": 5,
+      "phase1_status": "TP",
+      "detector": "single_vehicle",
+      "track_ids": [
+        8
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "aPsS_HaokoU_00",
+      "split": "split_geo_aware",
+      "gt_frame": 80,
+      "candidate_frame": 18,
+      "diff_frames": -62,
+      "phase1_status": "FP",
+      "detector": "single_vehicle",
+      "track_ids": [
+        2
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "aF2Hbp8C23A_00",
+      "split": "split_geo_aware",
+      "gt_frame": 45,
+      "candidate_frame": 25,
+      "diff_frames": -20,
+      "phase1_status": "TP",
+      "detector": "single_vehicle",
+      "track_ids": [
+        13
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "82sQ7N-aHOw_00",
+      "split": "split_geo_aware",
+      "gt_frame": 15,
+      "candidate_frame": 130,
+      "diff_frames": 115,
+      "phase1_status": "FP",
+      "detector": "single_vehicle",
+      "track_ids": [
+        6
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    },
+    {
+      "video_id": "82sQ7N-aHOw_00",
+      "split": "split_geo_aware",
+      "gt_frame": 15,
+      "candidate_frame": 165,
+      "diff_frames": 150,
+      "phase1_status": "FP",
+      "detector": "single_vehicle",
+      "track_ids": [
+        12
+      ],
+      "verdict": "CONFIRMED_INCIDENT",
+      "confidence": 0.95,
+      "crash_type": "mock_incident",
+      "rationale": "Mock verification verdict for testing",
+      "latency_sec": 0.0
+    }
+  ]
+}

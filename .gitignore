@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local secrets and environment files
+.env*
+!.env.example
+!example.env
+
+# Test, type-checker, and linter caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+htmlcov/
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Downloaded model weights and compiled models
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+*.bin
+models/
+
+# Local datasets, videos, and generated artifacts
+data/
+datasets/
+real_videos/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.pkl
+artifacts/
+evidence/
+output/
+
+# Logs and editor/backup files
+*.log
+*.bak

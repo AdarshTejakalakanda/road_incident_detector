@@ -1,0 +1,112 @@
+[
+  {
+    "candidate_id": "SURV-TIER1-01",
+    "video_id": "kABWTDKgc9U_00",
+    "frame": 105,
+    "event_type": "barrier_strike",
+    "telemetry": {
+      "d_edge_m": 0.25,
+      "v_dot_n": 0.77,
+      "accel_ms2": -60.0,
+      "delta_v_drop": 17.0
+    },
+    "vlm_semantic_checklist": {
+      "physical_contact_observed": false,
+      "structural_damage_or_deformation": false,
+      "post_impact_displacement_or_rest": false
+    },
+    "benign_alternative": "normal_turn",
+    "final_verdict": "REJECTED_FALSE_ALARM",
+    "source": "mock_vlm",
+    "suppressed": true,
+    "promoted_to_incident": false
+  },
+  {
+    "candidate_id": "SURV-TIER1-02",
+    "video_id": "BgdKGnFqz0I_00",
+    "frame": 32,
+    "event_type": "barrier_strike",
+    "telemetry": {
+      "d_edge_m": 0.5,
+      "v_dot_n": 0.68,
+      "accel_ms2": -26.69,
+      "delta_v_drop": 11.3
+    },
+    "vlm_semantic_checklist": {
+      "physical_contact_observed": false,
+      "structural_damage_or_deformation": false,
+      "post_impact_displacement_or_rest": false
+    },
+    "benign_alternative": "normal_turn",
+    "final_verdict": "REJECTED_FALSE_ALARM",
+    "source": "mock_vlm",
+    "suppressed": true,
+    "promoted_to_incident": false
+  },
+  {
+    "candidate_id": "SURV-TIER1-03",
+    "video_id": "aF2Hbp8C23A_00",
+    "frame": 86,
+    "event_type": "barrier_strike",
+    "telemetry": {
+      "d_edge_m": 0.37,
+      "v_dot_n": 0.983,
+      "accel_ms2": -14.88,
+      "delta_v_drop": 37.4
+    },
+    "vlm_semantic_checklist": {
+      "physical_contact_observed": false,
+      "structural_damage_or_deformation": false,
+      "post_impact_displacement_or_rest": false
+    },
+    "benign_alternative": "normal_turn",
+    "final_verdict": "REJECTED_FALSE_ALARM",
+    "source": "mock_vlm",
+    "suppressed": true,
+    "promoted_to_incident": false
+  },
+  {
+    "candidate_id": "SURV-TIER1-04",
+    "video_id": "F0NHENn-HS4_00",
+    "frame": 97,
+    "event_type": "barrier_strike",
+    "telemetry": {
+      "d_edge_m": 0.5,
+      "v_dot_n": 1.0,
+      "accel_ms2": -14.57,
+      "delta_v_drop": 8.3
+    },
+    "vlm_semantic_checklist": {
+      "physical_contact_observed": false,
+      "structural_damage_or_deformation": false,
+      "post_impact_displacement_or_rest": false
+    },
+    "benign_alternative": "normal_turn",
+    "final_verdict": "REJECTED_FALSE_ALARM",
+    "source": "mock_vlm",
+    "suppressed": true,
+    "promoted_to_incident": false
+  },
+  {
+    "candidate_id": "SURV-TIER1-05",
+    "video_id": "maJsgJsapH4_00",
+    "frame": 43,
+    "event_type": "barrier_strike",
+    "telemetry": {
+      "d_edge_m": 0.11,
+      "v_dot_n": 0.454,
+      "accel_ms2": -10.35,
+      "delta_v_drop": 5.6
+    },
+    "vlm_semantic_checklist": {
+      "physical_contact_observed": false,
+      "structural_damage_or_deformation": false,
+      "post_impact_displacement_or_rest": false
+    },
+    "benign_alternative": "normal_turn",
+    "final_verdict": "REJECTED_FALSE_ALARM",
+    "source": "mock_vlm",
+    "suppressed": true,
+    "promoted_to_incident": false
+  }
+]
