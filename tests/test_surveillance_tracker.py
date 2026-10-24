@@ -201,6 +201,8 @@ def test_safety_invariant_blocks_collision_on_purely_predicted_tracks():
 
     tr1 = Track(1, 2, "car")
     tr2 = Track(2, 2, "car")
+    tr1.track_age = 10
+    tr2.track_age = 10
     tr1.current_bbox_xywh = (100, 100, 50, 40)
     tr2.current_bbox_xywh = (102, 102, 50, 40)
 

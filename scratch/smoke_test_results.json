@@ -1,0 +1,364 @@
+{
+  "metadata": {
+    "experiment": "30-video exploratory detector-parameter optimization experiment",
+    "timestamp": "2026-10-15T05:14:18Z",
+    "smoke_test": true,
+    "videos_count": 1,
+    "arms": [
+      "Control",
+      "Cand_A",
+      "Cand_B",
+      "Cand_C",
+      "Cand_D"
+    ],
+    "conf_thresholds": [
+      0.1,
+      0.25
+    ],
+    "tau_esc": 0.5
+  },
+  "per_arm_results": {
+    "Control": {
+      "arm_key": "Control",
+      "model_name": "YOLO26n (Control)",
+      "per_video": [
+        {
+          "clip_id": "651RQwxB3WA_12_00",
+          "cohort": "verified-night",
+          "frames_processed": 30,
+          "duration_s": 6.0,
+          "fps": 5.0,
+          "accident_frame": 18,
+          "conf_0_25": {
+            "total_detections": 52,
+            "dets_per_second": 8.67,
+            "max_score": 0.7986,
+            "mean_score": 0.4797,
+            "median_score": 0.3928,
+            "class_counts": {
+              "car": 39,
+              "truck": 12,
+              "cell phone": 1
+            },
+            "alerts": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "alert_count": 1,
+              "fa_per_hour": 0.0
+            }
+          },
+          "conf_0_10": {
+            "total_detections": 125,
+            "dets_per_second": 20.83,
+            "max_score": 0.7986,
+            "mean_score": 0.294,
+            "median_score": 0.2205,
+            "class_counts": {
+              "car": 65,
+              "person": 32,
+              "truck": 25,
+              "tv": 1,
+              "cell phone": 1,
+              "bus": 1
+            },
+            "alerts": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "alert_count": 1,
+              "fa_per_hour": 0.0
+            }
+          },
+          "latency_ms": {
+            "decode_mean": 0.99,
+            "infer_mean": 63.38,
+            "infer_p50": 60.86,
+            "infer_p95": 79.47,
+            "track_mean": 1.66,
+            "event_mean": 0.85
+          },
+          "resources": {
+            "mean_cpu_pct": 392.6,
+            "peak_ram_mb": 468.1
+          }
+        }
+      ]
+    },
+    "Cand_A": {
+      "arm_key": "Cand_A",
+      "model_name": "UVH-26 YOLO11-S",
+      "per_video": [
+        {
+          "clip_id": "651RQwxB3WA_12_00",
+          "cohort": "verified-night",
+          "frames_processed": 30,
+          "duration_s": 6.0,
+          "fps": 5.0,
+          "accident_frame": 18,
+          "conf_0_25": {
+            "total_detections": 24,
+            "dets_per_second": 4.0,
+            "max_score": 0.7747,
+            "mean_score": 0.4967,
+            "median_score": 0.5037,
+            "class_counts": {
+              "Hatchback": 17,
+              "Sedan": 4,
+              "Three-wheeler": 2,
+              "Van": 1
+            },
+            "alerts": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "alert_count": 0,
+              "fa_per_hour": 0.0
+            }
+          },
+          "conf_0_10": {
+            "total_detections": 36,
+            "dets_per_second": 6.0,
+            "max_score": 0.7747,
+            "mean_score": 0.3835,
+            "median_score": 0.3335,
+            "class_counts": {
+              "Hatchback": 23,
+              "Sedan": 7,
+              "Three-wheeler": 4,
+              "Bus": 1,
+              "Van": 1
+            },
+            "alerts": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "alert_count": 0,
+              "fa_per_hour": 0.0
+            }
+          },
+          "latency_ms": {
+            "decode_mean": 0.98,
+            "infer_mean": 111.11,
+            "infer_p50": 108.76,
+            "infer_p95": 125.89,
+            "track_mean": 1.21,
+            "event_mean": 0.49
+          },
+          "resources": {
+            "mean_cpu_pct": 769.0,
+            "peak_ram_mb": 597.3
+          }
+        }
+      ]
+    },
+    "Cand_B": {
+      "arm_key": "Cand_B",
+      "model_name": "UVH-26 RT-DETRv2-S",
+      "per_video": [
+        {
+          "clip_id": "651RQwxB3WA_12_00",
+          "cohort": "verified-night",
+          "frames_processed": 30,
+          "duration_s": 6.0,
+          "fps": 5.0,
+          "accident_frame": 18,
+          "conf_0_25": {
+            "total_detections": 184,
+            "dets_per_second": 30.67,
+            "max_score": 0.8444,
+            "mean_score": 0.3925,
+            "median_score": 0.3333,
+            "class_counts": {
+              "Sedan": 35,
+              "Two-wheeler": 33,
+              "Truck": 33,
+              "SUV": 22,
+              "LCV": 17,
+              "Others": 17,
+              "Bus": 15,
+              "Mini-bus": 9,
+              "MUV": 3
+            },
+            "alerts": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "alert_count": 0,
+              "fa_per_hour": 0.0
+            }
+          },
+          "conf_0_10": {
+            "total_detections": 1698,
+            "dets_per_second": 283.0,
+            "max_score": 0.8444,
+            "mean_score": 0.17,
+            "median_score": 0.1386,
+            "class_counts": {
+              "Truck": 741,
+              "Three-wheeler": 383,
+              "Two-wheeler": 122,
+              "Mini-bus": 89,
+              "LCV": 74,
+              "Sedan": 73,
+              "SUV": 50,
+              "MUV": 47,
+              "Others": 44,
+              "Bus": 40,
+              "Bicycle": 21,
+              "Tempo-traveller": 10,
+              "Van": 3,
+              "class_14": 1
+            },
+            "alerts": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "alert_count": 1,
+              "fa_per_hour": 0.0
+            }
+          },
+          "latency_ms": {
+            "decode_mean": 0.94,
+            "infer_mean": 650.04,
+            "infer_p50": 648.32,
+            "infer_p95": 667.49,
+            "track_mean": 3.19,
+            "event_mean": 1.94
+          },
+          "resources": {
+            "mean_cpu_pct": 738.0,
+            "peak_ram_mb": 655.8
+          }
+        }
+      ]
+    },
+    "Cand_C": {
+      "arm_key": "Cand_C",
+      "model_name": "vietnguyen Highway YOLOv8m",
+      "per_video": [
+        {
+          "clip_id": "651RQwxB3WA_12_00",
+          "cohort": "verified-night",
+          "frames_processed": 30,
+          "duration_s": 6.0,
+          "fps": 5.0,
+          "accident_frame": 18,
+          "conf_0_25": {
+            "total_detections": 18,
+            "dets_per_second": 3.0,
+            "max_score": 0.6587,
+            "mean_score": 0.3693,
+            "median_score": 0.3596,
+            "class_counts": {
+              "lcv": 8,
+              "car": 6,
+              "bus": 4
+            },
+            "alerts": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "alert_count": 0,
+              "fa_per_hour": 0.0
+            }
+          },
+          "conf_0_10": {
+            "total_detections": 61,
+            "dets_per_second": 10.17,
+            "max_score": 0.6587,
+            "mean_score": 0.2177,
+            "median_score": 0.1777,
+            "class_counts": {
+              "bus": 24,
+              "car": 20,
+              "lcv": 17
+            },
+            "alerts": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "alert_count": 0,
+              "fa_per_hour": 0.0
+            }
+          },
+          "latency_ms": {
+            "decode_mean": 0.94,
+            "infer_mean": 262.88,
+            "infer_p50": 260.68,
+            "infer_p95": 290.4,
+            "track_mean": 0.99,
+            "event_mean": 0.48
+          },
+          "resources": {
+            "mean_cpu_pct": 788.9,
+            "peak_ram_mb": 748.9
+          }
+        }
+      ]
+    },
+    "Cand_D": {
+      "arm_key": "Cand_D",
+      "model_name": "G2mus Night YOLOv8s",
+      "per_video": [
+        {
+          "clip_id": "651RQwxB3WA_12_00",
+          "cohort": "verified-night",
+          "frames_processed": 30,
+          "duration_s": 6.0,
+          "fps": 5.0,
+          "accident_frame": 18,
+          "conf_0_25": {
+            "total_detections": 24,
+            "dets_per_second": 4.0,
+            "max_score": 0.8656,
+            "mean_score": 0.6037,
+            "median_score": 0.5803,
+            "class_counts": {
+              "car": 23,
+              "bus": 1
+            },
+            "alerts": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "alert_count": 0,
+              "fa_per_hour": 0.0
+            }
+          },
+          "conf_0_10": {
+            "total_detections": 45,
+            "dets_per_second": 7.5,
+            "max_score": 0.8656,
+            "mean_score": 0.3936,
+            "median_score": 0.294,
+            "class_counts": {
+              "car": 31,
+              "bus": 14
+            },
+            "alerts": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "alert_count": 0,
+              "fa_per_hour": 0.0
+            }
+          },
+          "latency_ms": {
+            "decode_mean": 0.98,
+            "infer_mean": 113.36,
+            "infer_p50": 113.31,
+            "infer_p95": 119.18,
+            "track_mean": 1.01,
+            "event_mean": 0.61
+          },
+          "resources": {
+            "mean_cpu_pct": 791.5,
+            "peak_ram_mb": 747.3
+          }
+        }
+      ]
+    }
+  },
+  "system_telemetry": {}
+}

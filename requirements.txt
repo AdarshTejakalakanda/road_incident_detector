@@ -1,0 +1,21 @@
+# Core Computer Vision, YOLO Detection & ByteTrack Tracking
+opencv-python>=4.8.0
+ultralytics>=8.0.0
+supervision>=0.18.0
+
+# Scientific Computing & Geometry
+numpy>=1.24.0
+scipy>=1.10.0
+shapely>=2.0.0
+
+# Data Validation, Parsing & Data Analysis
+pydantic>=2.0.0
+pyyaml>=6.0
+pandas>=2.0.0
+
+# Network & VLM Multimodal Verification APIs
+httpx>=0.25.0
+requests>=2.28.0
+
+# Testing & Development
+pytest>=7.0.0

@@ -49,7 +49,7 @@ class SingleVehicleAnomalyDetector(CandidateDetector):
         yaw_rate_threshold_deg: float = 30.0,
         aspect_ratio_change_threshold: float = 0.35,
         sudden_stop_speed_drop_kmh: float = 15.0,
-        edge_margin_px: float = 20.0,
+        edge_margin_px: float = 30.0,
         min_persistence_frames: int = 2,
         tau_single: float = 0.50,
         roadway_polygon: Optional[List[Tuple[float, float]]] = None,
@@ -149,8 +149,12 @@ class SingleVehicleAnomalyDetector(CandidateDetector):
             if 0.0 <= dt <= window_s:
                 pre_speeds.append(float(e.get("speed_kmh", 0.0)))
 
-        if pre_speeds:
-            v_entry = float(max(pre_speeds))
+        if len(pre_speeds) >= 3:
+            # Multi-frame consistency filter: require at least 3 consistent frames (filters 1-2 frame flicker spikes)
+            rolling_mins = [min(pre_speeds[i:i + 3]) for i in range(len(pre_speeds) - 2)]
+            v_entry = float(max(rolling_mins))
+        elif pre_speeds:
+            v_entry = float(np.median(pre_speeds))
         else:
             track_spd = getattr(track, "max_recent_speed_kmh", 0.0)
             v_entry = float(max(track_spd, onset_entry.get("speed_kmh", 0.0)))
@@ -170,10 +174,10 @@ class SingleVehicleAnomalyDetector(CandidateDetector):
         ts_s = pts_ns * 1e-9 if pts_ns > 0 else frame_idx / 30.0
         abs_accel = abs(clamped_a)
 
-        if abs_accel >= 12.0:
+        if abs_accel >= 12.0 and clamped_a < 0.0:
             v_entry_kmh, decel_onset_frame = self.compute_pre_impulse_velocity(hist, track, window_s=1.0)
 
-            if v_entry_kmh >= 20.0:
+            if v_entry_kmh >= 15.0:
                 # Significant kinetic energy prior to deceleration onset:
                 # Rapid velocity collapse is physically consistent with a high-energy crash.
                 is_plausible = True
@@ -181,16 +185,12 @@ class SingleVehicleAnomalyDetector(CandidateDetector):
                 verdict = "ACCEPTED_PHYSICAL_IMPACT"
                 tau_rest = (v_entry_kmh / 3.6) / (abs_accel + 1e-6)
             else:
-                # Low pre-impulse speed: evaluate tau_rest against v_entry to reject stationary/Kalman jitter
+                # Low pre-impulse speed: reject stationary/Kalman jitter (< 15.0 km/h cannot have high-speed crash)
                 v_entry_mps = v_entry_kmh / 3.6
                 tau_rest = v_entry_mps / (abs_accel + 1e-6)
-                is_plausible = (tau_rest >= 0.25)
-                if not is_plausible:
-                    verdict = "REJECTED_JITTER"
-                    rejection_reason = f"low_ventry_jitter (v_entry={v_entry_kmh:.1f}km/h, tau_rest={tau_rest:.3f}s < 0.25s)"
-                else:
-                    verdict = "ACCEPTED_PHYSICAL_IMPACT"
-                    rejection_reason = None
+                is_plausible = False
+                verdict = "REJECTED_JITTER"
+                rejection_reason = f"low_ventry_jitter (v_entry={v_entry_kmh:.1f}km/h < 15.0km/h)"
         else:
             v_entry_kmh = max(curr_spd, getattr(track, "max_recent_speed_kmh", 0.0))
             decel_onset_frame = frame_idx
@@ -260,8 +260,7 @@ class SingleVehicleAnomalyDetector(CandidateDetector):
         if by < margin:
             return True
         if self.frame_height and (by + bh) >= (self.frame_height - margin):
-            if bh < 40.0:
-                return True
+            return True
         return False
 
     def evaluate(
@@ -355,11 +354,22 @@ class SingleVehicleAnomalyDetector(CandidateDetector):
 
             prev_entry = hist[-2]
 
-            # 3. Physically plausible bounds: clamp extreme sensor jitter rather than discarding frame
-            clamped_a = float(np.clip(metric_a, -self.max_physical_decel, self.max_physical_decel))
+            # 3. Physically plausible bounds: positive forward acceleration is traction-bounded (<= 5.0 m/s^2),
+            # while severe collision impact deceleration can reach -45.0 m/s^2.
+            # Abnormal positive acceleration spikes across 1-2 frames are treated as detector flickers.
+            MAX_FORWARD_ACCEL = 5.0
+            clamped_a = float(np.clip(metric_a, -self.max_physical_decel, MAX_FORWARD_ACCEL))
 
             # Signal 1: Severe barrier impact deceleration
-            max_recent_spd = max(h_entry["speed_kmh"] for h_entry in hist[:-1])
+            hist_speeds = [h_entry["speed_kmh"] for h_entry in hist[:-1]]
+            if len(hist_speeds) >= 3:
+                # Multi-frame consistency filter: require >= 3-4 consecutive frames of consistent motion
+                rolling_mins = [min(hist_speeds[i:i + 3]) for i in range(len(hist_speeds) - 2)]
+                max_recent_spd = float(max(rolling_mins))
+            elif hist_speeds:
+                max_recent_spd = float(np.median(hist_speeds))
+            else:
+                max_recent_spd = 0.0
             signal_severe_impact = bool(-self.max_physical_decel <= clamped_a <= self.severe_impact_decel and max_recent_spd >= 12.0)
 
             # Signal 2: Moderate Deceleration
@@ -408,16 +418,28 @@ class SingleVehicleAnomalyDetector(CandidateDetector):
             # - OR evidence-gated shoulder strike (Task R.2)
             is_shoulder_strike = bool(
                 detail.get("shoulder_admitted", False)
-                and (signal_severe_impact or signal_moderate_decel or signal_sudden_stop or clamped_a <= -3.0 or dh >= 20.0)
+                and (signal_severe_impact or signal_moderate_decel or signal_sudden_stop or clamped_a <= -4.0)
+                and clamped_a < 0.0
+                and (curr_spd <= 15.0 or signal_sudden_stop or spd_drop >= 8.0)
             )
+            # Pre-existing stationary vehicle guard:
+            # If track was already stationary (speed <= 5.0 km/h) over recent history,
+            # it is a parked vehicle or static obstacle; it cannot crash into a barrier from rest.
+            recent_speeds = [h_entry["speed_kmh"] for h_entry in hist]
+            is_pre_stationary = bool(len(recent_speeds) >= 8 and float(np.median(recent_speeds[:-1])) <= 5.0)
+
             is_barrier_strike = bool(
-                (
-                    (clamped_a <= self.severe_impact_decel or abs(clamped_a) >= abs(self.severe_impact_decel))
-                    and (curr_spd <= 6.0 or signal_sudden_stop)
-                    and (spd_drop >= 10.0 or max_recent_spd >= 12.0)
-                    and is_near_boundary
+                not is_pre_stationary
+                and (
+                    (
+                        (clamped_a <= self.severe_impact_decel)
+                        and (curr_spd <= 6.0 or signal_sudden_stop)
+                        and (spd_drop >= 10.0 and max_recent_spd >= 15.0)
+                        and is_near_boundary
+                        and (s_single >= 0.35 or (s_single >= 0.25 and signal_sudden_stop))
+                    )
+                    or is_shoulder_strike
                 )
-                or is_shoulder_strike
             )
 
             is_anomaly = False
@@ -442,7 +464,14 @@ class SingleVehicleAnomalyDetector(CandidateDetector):
                 is_anomaly = True
                 immediate_trigger = True
                 active_signals.append("severe_barrier_impact")
-            elif s_single >= 0.55:
+            elif s_single >= 0.55 or (
+                s_single >= 0.30
+                and signal_sudden_stop
+                and not has_lead
+                and (signal_severe_impact or clamped_a <= -10.0)
+                and max_recent_spd >= 15.0
+                and not is_pre_stationary
+            ):
                 # For non-barrier single-vehicle incidents, require post-event kinetic dissipation
                 is_dissipating = (curr_spd <= 20.0 or signal_sudden_stop or getattr(k, "stationary_duration_sec", 0.0) >= 0.25)
                 if not is_dissipating:

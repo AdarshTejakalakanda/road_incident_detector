@@ -173,8 +173,9 @@ class SceneEscalator:
         'Type 5': 'Single-Vehicle Barrier / Spin',
     }
 
-    def __init__(self, tau_aftermath: float = 0.50):
+    def __init__(self, tau_aftermath: float = 0.50, k_upstream: float = 3.0):
         self.tau = tau_aftermath
+        self.k_up = k_upstream
 
     @staticmethod
     def _compute_bbox_iou(boxA: Tuple[float, float, float, float], boxB: Tuple[float, float, float, float]) -> float:
@@ -236,13 +237,14 @@ class SceneEscalator:
         self,
         candidate: Union[CandidateProposal, Dict[str, Any]],
         track_history: Dict[int, List[TrackState]],
-        fps: float = 30.0
+        fps: float = 30.0,
+        horizon_seconds: float = 1.5,
     ) -> SceneEscalationResult:
         if isinstance(candidate, dict):
             candidate = CandidateProposal.from_dict(candidate)
         f0 = candidate.frame_idx
         tids = candidate.track_ids
-        horizon_frames = int(round(1.5 * fps))
+        horizon_frames = int(round(horizon_seconds * fps))
         f_end = f0 + horizon_frames
 
         t_hist_by_tid: Dict[int, Dict[int, TrackState]] = {}
@@ -361,7 +363,7 @@ class SceneEscalator:
         phi_ovl = min(1.0, max(0.0, tau_overlap) / 0.50)
         phi_lat = min(1.0, max(0.0, delta_d_lat) / 2.00)
         phi_push = min(1.0, max(0.0, push_disp) / 2.00)
-        phi_up = min(1.0, max(0.0, float(upstream_react)) / 1.00)
+        phi_up = min(1.0, max(0.0, float(upstream_react)) / getattr(self, "k_up", 3.0))
 
         e_aftermath = (
             weights['w_v'] * phi_dv +
@@ -401,6 +403,21 @@ class SceneEscalator:
             'crawl_guard_active': crawl_guard_active,
             'crawl_override_passed': crawl_override_passed,
         }
+
+        # Physical Consequence Safeguard: Rear-end collisions (Type 1 & Type 2) require real kinetic impact
+        # (either sustained velocity drop dv_sust >= 4.0 km/h or kinetic arrest tau_rest >= 0.25 s).
+        # Cruising vehicles with dv_sust < 4.0 and tau_rest < 0.25 are passing/adjacent-lane flow.
+        if ctype in ('Type 1', 'Type 2') and dv_sust < 4.0 and tau_rest < 0.25:
+            escalated = False
+
+        # Kinetic Aftermath Rest Safeguard:
+        # In physics, severe crashes lead to kinetic energy dissipation and sustained vehicle rest
+        # (speed <= 5.0 km/h for >= 0.25s). Passing / cruising traffic where vehicles maintain continuous
+        # speed without any rest (tau_rest < 0.25 s) is suppressed as benign roadway flow, unless an explicit
+        # post_event_rest signal is asserted.
+        has_post_rest_signal = bool(candidate.signals.get('post_event_rest', False))
+        if tau_rest < 0.25 and not has_post_rest_signal:
+            escalated = False
 
         disp = (
             SceneEscalatorDisposition.ESCALATED_PHYSICAL_INCIDENT

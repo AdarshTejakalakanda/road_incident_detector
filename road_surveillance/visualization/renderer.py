@@ -1,4 +1,4 @@
-﻿"""Playback and Video Export Renderer."""
+"""Playback and Video Export Renderer."""
 
 import os
 import logging
@@ -29,9 +29,17 @@ class PlaybackRenderer:
 
         self.writer: Optional[cv2.VideoWriter] = None
         self.current_video_id: Optional[str] = None
+        self.last_output_path: Optional[str] = None
         self.window_name = "Road Surveillance Incident Detection"
 
-    def setup_video_writer(self, video_id: str, fps: float, width: int, height: int) -> None:
+    def setup_video_writer(
+        self,
+        video_id: str,
+        fps: float,
+        width: int,
+        height: int,
+        custom_path: Optional[str] = None,
+    ) -> None:
         """Initialize video writer for a new video stream."""
         if not self.save_processed_video:
             return
@@ -40,7 +48,12 @@ class PlaybackRenderer:
             self.writer.release()
 
         self.current_video_id = video_id
-        out_path = os.path.join(self.output_dir, f"{video_id}_annotated.mp4")
+        if custom_path:
+            out_path = os.path.abspath(custom_path)
+            os.makedirs(os.path.dirname(out_path), exist_ok=True)
+        else:
+            out_path = os.path.join(self.output_dir, f"{video_id}_annotated.mp4")
+        self.last_output_path = out_path
         fourcc = cv2.VideoWriter_fourcc(*"mp4v")
         effective_fps = fps if fps > 0 else 30.0
         self.writer = cv2.VideoWriter(out_path, fourcc, float(effective_fps), (width, height))

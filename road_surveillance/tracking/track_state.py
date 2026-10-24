@@ -75,23 +75,41 @@ class Track:
         
         Calculates moving speed over a multi-frame step (step=3) ignoring initial
         unmatured warm-up frames to filter out single-frame coordinate jitter.
+        Prefers metric ground plane history when available, falling back to pixel scaling.
         """
-        if len(self.position_history) < 4 or len(self.timestamps) < 4:
+        if len(self.timestamps) < 4:
             return 0.0
-        w, h = self.current_bbox_xywh[2], self.current_bbox_xywh[3]
-        char_dim = max(15.0, max(w, h))
-        scale = 4.5 / char_dim
+
+        use_ground = len(self.ground_history) >= 4 and len(self.ground_history) == len(self.timestamps)
         speeds = []
-        start_idx = max(3, len(self.position_history) - 10)
-        step = min(3, len(self.position_history) - 1)
-        for i in range(start_idx, len(self.position_history)):
-            dt = (self.timestamps[i] - self.timestamps[i - step]) * 1e-9
-            if dt > 1e-4:
-                p1 = self.position_history[i]
-                p0 = self.position_history[i - step]
-                disp = float(np.hypot(p1[0] - p0[0], p1[1] - p0[1]))
-                speeds.append((disp / dt) * scale * 3.6)
-        return float(max(speeds, default=0.0))
+        n = len(self.timestamps)
+        start_idx = max(3, n - 12)
+        step = min(3, n - 1)
+
+        if use_ground:
+            for i in range(start_idx, n):
+                dt = (self.timestamps[i] - self.timestamps[i - step]) * 1e-9
+                if dt > 1e-4:
+                    p1 = self.ground_history[i]
+                    p0 = self.ground_history[i - step]
+                    disp = float(np.hypot(p1[0] - p0[0], p1[1] - p0[1]))
+                    speeds.append((disp / dt) * 3.6)
+        elif len(self.position_history) >= 4:
+            w, h = self.current_bbox_xywh[2], self.current_bbox_xywh[3]
+            char_dim = max(15.0, max(w, h))
+            scale = 4.5 / char_dim
+            for i in range(start_idx, len(self.position_history)):
+                dt = (self.timestamps[i] - self.timestamps[i - step]) * 1e-9
+                if dt > 1e-4:
+                    p1 = self.position_history[i]
+                    p0 = self.position_history[i - step]
+                    disp = float(np.hypot(p1[0] - p0[0], p1[1] - p0[1]))
+                    speeds.append((disp / dt) * scale * 3.6)
+
+        if len(speeds) >= 3:
+            rolling_mins = [min(speeds[i:i + 3]) for i in range(len(speeds) - 2)]
+            return float(max(rolling_mins, default=0.0))
+        return float(np.median(speeds)) if speeds else 0.0
 
     def get_pre_impulse_speed(self, window_s: float = 1.0) -> float:
         """Calculate maximum velocity over a pre-impulse history window."""

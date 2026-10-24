@@ -16,16 +16,19 @@ class TrackKinematics:
     speed_mps: float
     speed_kmh: float                         # speed_mps * 3.6
     acceleration_vector: Tuple[float, float]  # (ax, ay) in m/s^2
-    acceleration_mag: float                  # Signed longitudinal/tangential or total
+    acceleration_mag: float                  # Signed longitudinal deceleration/acceleration
     heading_deg: float                       # 0 to 360 degrees
     heading_vector: Tuple[float, float]      # Unit direction vector (ux, uy)
     stationary_duration_sec: float
     lane_id: Optional[str]
     is_in_active_lane: bool
     is_ground_valid: bool = True
-    pixel_speed: float = 0.0             # Speed in pixels per second
-    pixel_acceleration: float = 0.0      # Signed acceleration in px/sec^2
-    is_calibrated: bool = False          # Whether based on surveyed metric calibration
+    pixel_speed: float = 0.0                 # Speed in pixels per second
+    pixel_acceleration: float = 0.0          # Signed acceleration in px/sec^2
+    is_calibrated: bool = False              # Whether based on surveyed metric calibration
+    acceleration_longitudinal: float = 0.0   # Signed tangential acceleration (dv/dt in m/s^2, <0 = braking)
+    acceleration_lateral: float = 0.0        # Normal centripetal acceleration (swerving in m/s^2)
+    yaw_rate_deg_s: float = 0.0              # Heading rotation rate (dtheta/dt in deg/s)
 
 
 @dataclass
@@ -105,7 +108,7 @@ def calculate_directional_cosine(
 
 
 def compute_pixel_kinematics(tr: Any, pts_ns: int) -> Tuple[float, float]:
-    """Compute pixel speed (px/s) and signed pixel acceleration (px/s^2) directly from track history."""
+    """Compute smoothed pixel speed (px/s) and signed pixel acceleration (px/s^2) from track history."""
     if hasattr(tr, "timestamps") and hasattr(tr, "position_history"):
         if pts_ns in tr.timestamps:
             idx = tr.timestamps.index(pts_ns)
@@ -114,18 +117,50 @@ def compute_pixel_kinematics(tr: Any, pts_ns: int) -> Tuple[float, float]:
         else:
             pos_hist = tr.position_history
             time_hist = tr.timestamps
-        if len(pos_hist) >= 2 and len(time_hist) >= 2:
+
+        n_pts = len(pos_hist)
+        if n_pts >= 2 and len(time_hist) >= 2:
             dt = (time_hist[-1] - time_hist[-2]) * 1e-9
-            if dt > 1e-5:
+            if dt < 1e-5:
+                dt = 1.0 / 30.0
+
+            # Windowed linear regression for velocity over up to 4 recent points
+            k = min(4, n_pts)
+            w_pos = pos_hist[-k:]
+            w_time = [(t - time_hist[-1]) * 1e-9 for t in time_hist[-k:]]
+
+            if k >= 3 and (w_time[-1] - w_time[0]) > 1e-4:
+                t_arr = np.array(w_time, dtype=np.float64)
+                x_arr = np.array([p[0] for p in w_pos], dtype=np.float64)
+                y_arr = np.array([p[1] for p in w_pos], dtype=np.float64)
+                t_mean = np.mean(t_arr)
+                t_var = np.sum((t_arr - t_mean) ** 2)
+                if t_var > 1e-6:
+                    vx_px = float(np.sum((t_arr - t_mean) * (x_arr - np.mean(x_arr))) / t_var)
+                    vy_px = float(np.sum((t_arr - t_mean) * (y_arr - np.mean(y_arr))) / t_var)
+                    px_spd = float(np.hypot(vx_px, vy_px))
+                else:
+                    dp = float(np.hypot(pos_hist[-1][0] - pos_hist[-2][0], pos_hist[-1][1] - pos_hist[-2][1]))
+                    px_spd = dp / dt
+            else:
                 dp = float(np.hypot(pos_hist[-1][0] - pos_hist[-2][0], pos_hist[-1][1] - pos_hist[-2][1]))
                 px_spd = dp / dt
-                px_acc = 0.0
-                if len(pos_hist) >= 3 and len(time_hist) >= 3:
-                    dt_prev = (time_hist[-2] - time_hist[-3]) * 1e-9
-                    if dt_prev > 1e-5:
-                        dp_prev = float(np.hypot(pos_hist[-2][0] - pos_hist[-3][0], pos_hist[-2][1] - pos_hist[-3][1]))
-                        px_spd_prev = dp_prev / dt_prev
-                        px_acc = (px_spd - px_spd_prev) / dt
-                return px_spd, px_acc
+
+            # Compute acceleration from prior speed history if available
+            px_acc = 0.0
+            if n_pts >= 3 and len(time_hist) >= 3:
+                dt_prev = (time_hist[-2] - time_hist[-3]) * 1e-9
+                if dt_prev < 1e-5:
+                    dt_prev = 1.0 / 30.0
+                dp_prev = float(np.hypot(pos_hist[-2][0] - pos_hist[-3][0], pos_hist[-2][1] - pos_hist[-3][1]))
+                px_spd_prev = dp_prev / dt_prev
+                # Signed acceleration: negative if slowing down
+                raw_px_acc = (px_spd - px_spd_prev) / dt
+                # Clamp physically: impact decel up to -500 px/s^2, but positive acceleration
+                # is traction-bounded (max ~80 px/s^2 for vehicles) to eliminate forward flicker spikes
+                px_acc = float(np.clip(raw_px_acc, -500.0, 80.0))
+                if px_spd < 2.0 and px_spd_prev < 2.0:
+                    px_acc = 0.0  # Stationary noise deadband
+            return px_spd, px_acc
     return 0.0, 0.0
 

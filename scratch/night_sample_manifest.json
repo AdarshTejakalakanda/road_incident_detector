@@ -1,0 +1,215 @@
+[
+  {
+    "clip_id": "Z4kg2Ev3vhk_00",
+    "path": "real_videos/Z4kg2Ev3vhk_00.mp4",
+    "region": "Georgia",
+    "scene_layout": "highway",
+    "weather": "normal",
+    "accident_frame": 170,
+    "metadata_frames": 424,
+    "actual_frames": 425,
+    "metadata_duration_s": 29.967,
+    "actual_duration_s": 30.0,
+    "duration_match": true,
+    "frames_match": true,
+    "frames": [
+      {
+        "frame_index": 150,
+        "offset_from_accident": -20,
+        "shape": [
+          1080,
+          1584,
+          3
+        ],
+        "mean_luminance": 130.344,
+        "sha256": "79333b7c14b417acf67b7b2834f33c5871031c324a2446e674f62e89e785ef6d"
+      },
+      {
+        "frame_index": 160,
+        "offset_from_accident": -10,
+        "shape": [
+          1080,
+          1584,
+          3
+        ],
+        "mean_luminance": 85.263,
+        "sha256": "92a774701ec372db47df5fcf8cd74462c9be5190d13174fdc9c4d84a5bc6d620"
+      },
+      {
+        "frame_index": 170,
+        "offset_from_accident": 0,
+        "shape": [
+          1080,
+          1584,
+          3
+        ],
+        "mean_luminance": 75.447,
+        "sha256": "cba3a30b7691b0c6e3ce4a8c78fd195a46b9fa98be78a7af719f8d42b482a893"
+      },
+      {
+        "frame_index": 180,
+        "offset_from_accident": 10,
+        "shape": [
+          1080,
+          1584,
+          3
+        ],
+        "mean_luminance": 70.737,
+        "sha256": "a00ca20e70783e2578ba0219ba0135c7a2b33ef897dd11164825654912e8e1c9"
+      },
+      {
+        "frame_index": 190,
+        "offset_from_accident": 20,
+        "shape": [
+          1080,
+          1584,
+          3
+        ],
+        "mean_luminance": 69.512,
+        "sha256": "763e493139cbf6d5de5b8538fd9a90bacf474efcde32a2ed39ab3057f25404e4"
+      }
+    ]
+  },
+  {
+    "clip_id": "unS0-TLF1ao_00",
+    "path": "real_videos/unS0-TLF1ao_00.mp4",
+    "region": "World",
+    "scene_layout": "signalized_intersection",
+    "weather": "normal",
+    "accident_frame": 64,
+    "metadata_frames": 148,
+    "actual_frames": 149,
+    "metadata_duration_s": 5.92,
+    "actual_duration_s": 5.96,
+    "duration_match": true,
+    "frames_match": true,
+    "frames": [
+      {
+        "frame_index": 44,
+        "offset_from_accident": -20,
+        "shape": [
+          1080,
+          1920,
+          3
+        ],
+        "mean_luminance": 121.84,
+        "sha256": "b752838a7cf5a1a1b47d59d69d3da3736e4a5bb0252228c830bd652646411eaa"
+      },
+      {
+        "frame_index": 54,
+        "offset_from_accident": -10,
+        "shape": [
+          1080,
+          1920,
+          3
+        ],
+        "mean_luminance": 109.425,
+        "sha256": "b5b418d6bd21a1268ee6013f201dc964f54504cc59947cf6f48b6ed1442edd8c"
+      },
+      {
+        "frame_index": 64,
+        "offset_from_accident": 0,
+        "shape": [
+          1080,
+          1920,
+          3
+        ],
+        "mean_luminance": 111.414,
+        "sha256": "a64a14ee7d82e1e668f9ced28033bb043e1e182fd8ee6ad62ffe9da388739d28"
+      },
+      {
+        "frame_index": 74,
+        "offset_from_accident": 10,
+        "shape": [
+          1080,
+          1920,
+          3
+        ],
+        "mean_luminance": 109.095,
+        "sha256": "97e96cbb5b3270ba60c094145a4a25eb1e8d7e30058de810c7d73420cfb5709c"
+      },
+      {
+        "frame_index": 84,
+        "offset_from_accident": 20,
+        "shape": [
+          1080,
+          1920,
+          3
+        ],
+        "mean_luminance": 112.683,
+        "sha256": "067d2fa98b60872421364fc566458118084ccab3aec0a3e51b5fd1bfb8881cab"
+      }
+    ]
+  },
+  {
+    "clip_id": "UarP8qU1S-c_00",
+    "path": "real_videos/UarP8qU1S-c_00.mp4",
+    "region": "Virginia",
+    "scene_layout": "highway",
+    "weather": "normal",
+    "accident_frame": 130,
+    "metadata_frames": 222,
+    "actual_frames": 223,
+    "metadata_duration_s": 15.333,
+    "actual_duration_s": 15.233,
+    "duration_match": true,
+    "frames_match": true,
+    "frames": [
+      {
+        "frame_index": 110,
+        "offset_from_accident": -20,
+        "shape": [
+          2160,
+          3840,
+          3
+        ],
+        "mean_luminance": 79.518,
+        "sha256": "cf4a5940b61163bb33c4ddc7e6b31c95ad18a79afbc1ef887ba6c35d16849e0f"
+      },
+      {
+        "frame_index": 120,
+        "offset_from_accident": -10,
+        "shape": [
+          2160,
+          3840,
+          3
+        ],
+        "mean_luminance": 78.92,
+        "sha256": "63bfbcf8fa68035f082d7225fd6d9f8c386910b565cd2f524372824a48caf9ff"
+      },
+      {
+        "frame_index": 130,
+        "offset_from_accident": 0,
+        "shape": [
+          2160,
+          3840,
+          3
+        ],
+        "mean_luminance": 78.949,
+        "sha256": "88383d06210861b2764fe6a19327f598f2f10336f79a77074ae5d2d1a8f69c8d"
+      },
+      {
+        "frame_index": 140,
+        "offset_from_accident": 10,
+        "shape": [
+          2160,
+          3840,
+          3
+        ],
+        "mean_luminance": 79.004,
+        "sha256": "c68eef2a23df353e9441be50acbaaeea6151a903b884803f0962718542017a66"
+      },
+      {
+        "frame_index": 150,
+        "offset_from_accident": 20,
+        "shape": [
+          2160,
+          3840,
+          3
+        ],
+        "mean_luminance": 79.308,
+        "sha256": "05e853ffc30dace647f3d4503978de9166cad4836d594306759fe6b2ab0b2955"
+      }
+    ]
+  }
+]

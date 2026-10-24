@@ -1,7 +1,7 @@
 """Configuration Loader and Dataclasses for Road Surveillance Incident Detection."""
 
 from dataclasses import dataclass, field
-from typing import Dict, List, Optional, Tuple, Any
+from typing import Dict, List, Optional, Tuple, Any, Union
 import yaml
 import os
 
@@ -25,7 +25,7 @@ class PlaybackConfig:
 class DetectionConfig:
     model_path: str = "yolo26n.pt"
     confidence_threshold: float = 0.25
-    input_resolution: int = 640
+    input_resolution: Union[int, str] = "native"
     device: str = "cpu"
     frame_sampling_rate: int = 1
 

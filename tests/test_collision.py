@@ -18,6 +18,8 @@ def test_collision_candidate_triggers_on_multi_signals():
 
     tr1 = Track(1, 2, "car")
     tr2 = Track(2, 2, "car")
+    tr1.track_age = 10
+    tr2.track_age = 10
     tr1.current_bbox_xywh = (100, 100, 50, 40)
     tr2.current_bbox_xywh = (105, 105, 50, 40)  # Close overlap
 

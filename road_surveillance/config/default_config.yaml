@@ -15,7 +15,7 @@ playback:
 detection:
   model_path: "yolo26n.pt"
   confidence_threshold: 0.25
-  input_resolution: 640
+  input_resolution: "native"
   device: "cpu"
   frame_sampling_rate: 1
 

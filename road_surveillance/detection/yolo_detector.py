@@ -1,7 +1,7 @@
-﻿"""YOLO26 Detection Module."""
+"""YOLO26 Detection Module."""
 
 import logging
-from typing import Dict, List, Optional, Any, Tuple
+from typing import Dict, List, Optional, Any, Tuple, Union
 import numpy as np
 from ultralytics import YOLO
 
@@ -23,7 +23,7 @@ class YOLO26Detector:
         conf_threshold: float = 0.25,
         nocturnal_conf_threshold: float = 0.10,
         enable_nocturnal_headlight_remap: bool = True,
-        input_resolution: int = 640,
+        input_resolution: Union[int, str] = "native",
         device: str = "cpu",
         frame_sampling_rate: int = 1,
         enable_adaptive_contrast: bool = False,
@@ -86,11 +86,19 @@ class YOLO26Detector:
         # Dynamic confidence threshold: lower only in low light for recovery
         active_conf = min(self.conf_threshold, self.nocturnal_conf_threshold) if is_low_light else self.conf_threshold
 
+        # Native resolution handling
+        det_imgsz = self.input_resolution
+        if det_imgsz is None or str(det_imgsz).lower() in ("native", "none", "0"):
+            ih, iw = img.shape[:2]
+            det_imgsz = (int(np.ceil(ih / 32.0) * 32), int(np.ceil(iw / 32.0) * 32))
+        elif isinstance(det_imgsz, str) and det_imgsz.isdigit():
+            det_imgsz = int(det_imgsz)
+
         # Run inference
         results = self.model.predict(
             source=img,
             conf=active_conf,
-            imgsz=self.input_resolution,
+            imgsz=det_imgsz,
             device=self.device,
             verbose=False,
         )

@@ -147,7 +147,9 @@ class CollisionCandidateDetector(CandidateDetector):
                 continue
 
             # Strict vehicle class enforcement
-            if tr1.class_label.lower() not in self.VEHICLE_LABELS or tr2.class_label.lower() not in self.VEHICLE_LABELS:
+            lbl1 = getattr(tr1, "get_effective_label", lambda: tr1.class_label)().lower()
+            lbl2 = getattr(tr2, "get_effective_label", lambda: tr2.class_label)().lower()
+            if (lbl1 not in self.VEHICLE_LABELS and tr1.class_label.lower() not in self.VEHICLE_LABELS) or (lbl2 not in self.VEHICLE_LABELS and tr2.class_label.lower() not in self.VEHICLE_LABELS):
                 continue
 
             # Track Maturity Gate: min(track_age) >= 8 frames
@@ -237,19 +239,6 @@ class CollisionCandidateDetector(CandidateDetector):
                 or (self.closure_persist_counts.get(pair_key, 0) >= 2 and (frame_idx - self.last_closure_frame.get(pair_key, -999)) <= 4)
             )
 
-            # Proposal A: Terminal Physical-Contact Condition
-            has_bbox_contact = bool(iou >= 0.15 or (iou >= 0.10 and iou_x >= 0.50))
-            has_calibrated_ground_contact = bool(self.is_camera_calibrated and dist <= 2.0)
-            has_uncalibrated_pixel_proximity = bool(not self.is_camera_calibrated and (norm_pixel_dist <= 0.50 or (norm_pixel_dist <= 0.85 and iou > 0.0)))
-
-            has_terminal_physical_contact = bool(
-                has_bbox_contact or has_calibrated_ground_contact or has_uncalibrated_pixel_proximity
-            )
-
-            has_contact_distance_sanity = bool(
-                (dist <= 3.5) if self.is_camera_calibrated else (norm_pixel_dist <= 1.0 or dist <= 4.0)
-            )
-
             # Mandatory Safeguard 1: Signed longitudinal deceleration, never unsigned magnitude
             a1_long = k1.acceleration_mag
             a2_long = k2.acceleration_mag
@@ -258,6 +247,29 @@ class CollisionCandidateDetector(CandidateDetector):
                 or a2_long <= -6.0
                 or a1_long <= -12.0
                 or a2_long <= -12.0
+            )
+
+            # Proposal A: Terminal Physical-Contact Condition
+            b1_bottom = b1[1] + b1[3]
+            b2_bottom = b2[1] + b2[3]
+            dy_bottom = abs(b1_bottom - b2_bottom)
+            min_h = min(b1[3], b2[3])
+            norm_bottom_dy = dy_bottom / max(1.0, min_h)
+
+            # In same-direction traffic, perspective vertical overlap between a car and a car far ahead in the queue is NOT a crash.
+            # If the car behind is separated down the roadway (dist > 4.5m or norm_bottom_dy > 0.40), it is normal queue following.
+            is_queue_following = is_parallel_heading and (dist > 4.5 or norm_bottom_dy > 0.40) and not (iou >= 0.35 and has_compressive_deceleration)
+
+            has_bbox_contact = bool((iou >= 0.15 or (iou >= 0.10 and iou_x >= 0.50)) and not is_queue_following)
+            has_calibrated_ground_contact = bool(self.is_camera_calibrated and dist <= 2.0)
+            has_uncalibrated_pixel_proximity = bool(not self.is_camera_calibrated and (norm_pixel_dist <= 0.50 or (norm_pixel_dist <= 0.85 and iou > 0.0)) and not is_queue_following)
+
+            has_terminal_physical_contact = bool(
+                has_bbox_contact or has_calibrated_ground_contact or has_uncalibrated_pixel_proximity
+            )
+
+            has_contact_distance_sanity = bool(
+                (dist <= 3.5) if self.is_camera_calibrated else (norm_pixel_dist <= 1.0 and dist <= 4.5)
             )
 
             is_kinematic_closure_corridor = bool(
@@ -323,7 +335,8 @@ class CollisionCandidateDetector(CandidateDetector):
 
             # Max collision distance sanity check:
             if not is_kinematic_closure_corridor:
-                if dist > selected_max_dist_m and iou < 0.10:
+                has_prox_sanity = bool(dist <= selected_max_dist_m) or (not self.is_camera_calibrated and dist <= 6.0 and (norm_pixel_dist <= 0.85 or iou >= 0.15))
+                if not has_prox_sanity and iou < 0.10:
                     self.persistence_counts[pair_key] = 0
                     self.log_suppressed(frame_idx, [t1_id, t2_id], "collision_distance_exceeded", dist)
                     continue
@@ -338,12 +351,25 @@ class CollisionCandidateDetector(CandidateDetector):
                     continue
 
             # Multi-vehicle collision requires standard vehicle tracks or mature interaction-rescued tracks
+            is_cand1 = (getattr(tr1, "fused_class", "") == "candidate_vehicle_recovered" or tr1.class_label == "candidate_vehicle_recovered")
+            is_cand2 = (getattr(tr2, "fused_class", "") == "candidate_vehicle_recovered" or tr2.class_label == "candidate_vehicle_recovered")
+            if is_cand1 and is_cand2:
+                # Two recovered micro-crops cannot collide with each other
+                self.persistence_counts[pair_key] = 0
+                continue
+            if (is_cand1 or is_cand2) and (iou >= 0.15 or dist <= 0.8 or norm_pixel_dist <= 0.40):
+                # A recovered candidate overlapping an existing vehicle track without persistent closure
+                if not (signal_decreasing_dist and (signal_convergence or severe_decel)):
+                    self.persistence_counts[pair_key] = 0
+                    self.log_suppressed(frame_idx, [t1_id, t2_id], "recovered_detector_split_duplicate", dist)
+                    continue
+
             is_immature_cand = False
             for tr_chk in (tr1, tr2):
                 if getattr(tr_chk, "is_tentative_rescued", False) and tr_chk.track_age < 3:
                     is_immature_cand = True
                     break
-                if (getattr(tr_chk, "fused_class", "") == "candidate_vehicle_recovered" or tr_chk.class_label == "candidate_vehicle_recovered") and tr_chk.track_age < 2:
+                if (getattr(tr_chk, "fused_class", "") == "candidate_vehicle_recovered" or tr_chk.class_label == "candidate_vehicle_recovered") and tr_chk.track_age < 5:
                     is_immature_cand = True
                     break
             if is_immature_cand:
@@ -470,19 +496,21 @@ class CollisionCandidateDetector(CandidateDetector):
             closing_velocity_mps = float(np.dot(v1 - v2, u_r12))
             has_angular_approach = (proj1 > 0.10 or proj2 > 0.10) and (closing_velocity_mps > 0.3 or distance_delta < -self.distance_decay_threshold_m)
 
-            # Safeguard 2: Duplicate tracks on same vehicle
-            # Two tracks on the same physical vehicle travel in the same direction, have high overlap,
-            # and their distance is not closing from far away.
-            is_duplicate = (iou >= 0.25 or (dist < 1.2 and norm_pixel_dist <= 0.35)) and heading_aligned and not signal_decreasing_dist
-            if is_duplicate:
-                self.persistence_counts[pair_key] = 0
-                continue
-
             # Signal 3: Deceleration anomaly
             decel_1 = k1.acceleration_mag < self.deceleration_threshold_ms2
             decel_2 = k2.acceleration_mag < self.deceleration_threshold_ms2
             signal_sudden_decel = bool(decel_1 or decel_2)
             severe_decel = bool(k1.acceleration_mag < -6.0 or k2.acceleration_mag < -6.0)
+
+            # Safeguard 2: Duplicate tracks on same vehicle
+            # Two tracks on the same physical vehicle travel in the same direction, have high overlap,
+            # and their distance is not closing from far away.
+            is_duplicate = (iou >= 0.25 or (dist < 1.2 and norm_pixel_dist <= 0.35)) and heading_aligned and not signal_decreasing_dist
+            if is_duplicate:
+                # Genuine physical collision exhibits severe decel or kinetic speed collapse; do not suppress as duplicate box
+                if not (severe_decel or s_v_drop >= 0.50 or signal_sudden_decel):
+                    self.persistence_counts[pair_key] = 0
+                    continue
 
             # Signal 2: Trajectory convergence (TCA and DCA)
             has_motion = (k1.speed_kmh >= 2.5 or k2.speed_kmh >= 2.5)
@@ -527,7 +555,9 @@ class CollisionCandidateDetector(CandidateDetector):
 
             # Multi-vehicle collision ground distance gate (d_ground <= selected_max_dist_m or physical impact or kinematic closure corridor)
             if not is_kinematic_closure_corridor:
-                if dist > selected_max_dist_m and not (iou >= 0.20 and severe_decel and (signal_decreasing_dist or signal_convergence)):
+                is_physical_impact = bool(iou >= 0.20 and (severe_decel or s_v_drop >= 0.50) and dist <= 6.0)
+                has_valid_proximity = bool(dist <= selected_max_dist_m) or (not self.is_camera_calibrated and dist <= 6.0 and (norm_pixel_dist <= 0.85 or iou >= 0.15))
+                if not (has_valid_proximity or is_physical_impact):
                     self.persistence_counts[pair_key] = 0
                     self.log_suppressed(frame_idx, [t1_id, t2_id], "collision_distance_exceeded", dist)
                     continue
@@ -535,7 +565,7 @@ class CollisionCandidateDetector(CandidateDetector):
             # Multi-signal triggering rule
             # In aligned/parallel flow, require genuine physical approach rather than 2D perspective box overlap
             if heading_aligned:
-                has_physical_approach = bool(signal_decreasing_dist or signal_convergence or has_angular_approach)
+                has_physical_approach = bool(signal_decreasing_dist or signal_convergence or has_angular_approach or (iou >= 0.20 and (severe_decel or s_v_drop >= 0.50)))
             else:
                 has_physical_approach = bool(signal_decreasing_dist or signal_convergence or has_angular_approach or (iou >= 0.20))
 

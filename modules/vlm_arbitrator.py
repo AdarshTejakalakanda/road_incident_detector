@@ -43,15 +43,14 @@ def create_evidence_strip(
     return np.hstack(strip_elements)
 
 SINGLE_VEHICLE_PROMPT = """You are an expert Traffic Incident Verification Specialist in an Intelligent Transportation System.
-You are evaluating a potential single-vehicle incident (barrier impact, loss of control, run-off-road) from video surveillance.
+You are evaluating a potential single-vehicle incident (barrier impact, loss of control, spin-out, rollover) from video surveillance.
 
-Input Filmstrip Description:
-- Panel 1 (APPROACH): Pre-event vehicle approach.
-- Panel 2 (CANDIDATE IMPACT): Point of maximum kinematic disruption or proximity to boundary.
-- Panel 3 (POST-EVENT): Immediate post-incident position, demonstrating recovery, rest, or trajectory arrest.
+Input Evidence Triptych Description (Fixed Collision Zone across 3 Panels):
+- Panel 1 (PRE-EVENT: T-5s): Pre-event vehicle approach 5.0 seconds before trigger. Normal roadway cruising flow.
+- Panel 2 (TRIGGER / IMPACT: T): Physical collision or acute kinematic disruption against barrier / roadway boundary.
+- Panel 3 (POST-EVENT AFTERMATH: T+5s): 5.0 seconds after impact. Inspect whether the vehicle came to a complete kinetic rest / vehicle immobilization, hazard lights, traffic avoidance, or if it safely continued driving normally.
 
-Telemetry: Vehicle exhibited a heading shift and sharp velocity dissipation near the roadway boundary.
-Determine if the vehicle experienced an actual incident (spin-out, barrier/curb strike, rollover, or acute roadway loss of control) OR if this is benign behavior (controlled lane departure, safe shoulder pull-off, routine exit ramp curve).
+Determine if the vehicle experienced an actual physical incident (spin-out, barrier/curb strike, rollover, or acute roadway loss of control leading to vehicle immobilization or damage) OR if this is benign behavior (controlled lane departure, safe shoulder pull-off, routine exit ramp curve).
 
 Return ONLY valid JSON:
 {
@@ -66,9 +65,12 @@ Return ONLY valid JSON:
 """
 
 MULTI_VEHICLE_PROMPT = """You are an expert Traffic Incident Verification Specialist in an Intelligent Transportation System.
-Analyze the attached single-image composite filmstrip showing 3 sequential temporal stages:
-1) APPROACH, 2) CANDIDATE IMPACT, 3) POST-EVENT.
-Determine if a collision occurred between the vehicles.
+Analyze the attached 3-panel fixed-spatial evidence card showing 3 sequential temporal stages across a fixed collision zone:
+- Panel 1 (PRE-EVENT: T-5s): Vehicles entering and approaching the collision zone under normal roadway traffic flow (5.0s before impact).
+- Panel 2 (TRIGGER / IMPACT: T): Physical contact, impact, or acute collision trajectory convergence.
+- Panel 3 (POST-EVENT AFTERMATH: T+5s): 5.0 seconds post-impact. Answers the critical kinetic question: Did the vehicle(s) come to a complete kinetic rest / remain immobilized in the lane while adjacent traffic swerves around them, OR did they continue driving normally?
+
+Determine if an actual physical collision occurred between the vehicles.
 
 Return ONLY a strict JSON object with fields:
 - physical_contact_observed (bool)
@@ -417,7 +419,7 @@ class GroqArbitrator:
         iou = float(telemetry.get('bbox_iou', telemetry.get('iou', 0.0)))
         max_spd = float(telemetry.get('max_recent_speed_kmh', telemetry.get('speed_kmh', telemetry.get('metric_speed_kmh', 0.0))))
         curr_spd = float(telemetry.get('speed_kmh', telemetry.get('metric_speed_kmh', 0.0)))
-        speed_drop = float(telemetry.get('delta_v_drop', max(0.0, max_spd - curr_spd)))
+        speed_drop = float(telemetry.get('delta_v_drop', telemetry.get('speed_drop_kmh', max(0.0, max_spd - curr_spd))))
         post_rest = bool(telemetry.get('post_event_rest', False))
         is_crossing = bool(telemetry.get('is_crossing_trajectory', False))
         s_dissip = float(telemetry.get('S_dissip', 0.0))
@@ -430,7 +432,7 @@ class GroqArbitrator:
         tau_rest_real = float(telemetry.get('stationary_duration_sec', telemetry.get('rest_duration_s', telemetry.get('tau_rest', 0.0))))
         norm_px = float(telemetry.get('norm_pixel_dist', 0.0 if ('bbox_iou' in telemetry or 'iou' in telemetry) and 'norm_pixel_dist' not in telemetry and 'distance_m' not in telemetry else 99.0))
         is_closure_corridor = bool(telemetry.get('is_kinematic_closure_corridor', False))
-        is_calibrated = bool(telemetry.get('homography_calibrated', telemetry.get('is_calibrated', 'distance_m' in telemetry or 'ground_distance_m' in telemetry)))
+        is_calibrated = bool(telemetry.get('homography_calibrated', telemetry.get('is_calibrated', False)))
         min_track_age = int(telemetry.get('track_age', 10))
 
         bypass_tel = {
@@ -485,10 +487,11 @@ class GroqArbitrator:
             # Canonical Multi-Vehicle Deterministic Bypass Gate
             has_spatial_contact = bool(
                 (is_calibrated and dist <= 2.0 and iou >= 0.15)
-                or (not is_calibrated and norm_px <= 0.50 and iou >= 0.30)
+                or (not is_calibrated and (norm_px <= 0.60 or iou >= 0.25) and iou >= 0.15)
+                or (iou >= 0.35)
             )
             has_signed_decel = bool(accel <= -12.0)
-            has_finite_dissipation = bool(speed_drop >= 15.0)
+            has_finite_dissipation = bool(speed_drop >= 15.0 or s_dissip >= 0.50)
             has_unimputed_rest = bool(tau_rest_real >= 0.25)
             has_track_maturity = bool(min_track_age >= 5)
 
@@ -595,6 +598,17 @@ class GroqArbitrator:
             and has_single_rest
             and has_single_maturity
         )
+        has_lead_veh = bool(telemetry.get('has_lead_vehicle', False))
+        is_solitary_crash_arrest = (
+            curr_spd <= 5.0
+            and has_severe_crash_impulse
+            and speed_drop >= 20.0
+            and v_entry >= 20.0
+            and not has_lead_veh
+            and (s_single >= 0.30 or telemetry.get('metric_accel_ms2', 0.0) <= -12.0)
+            and has_single_rest
+            and has_single_maturity
+        )
         is_impact_rest = (
             curr_spd <= 5.0
             and has_severe_crash_impulse
@@ -605,10 +619,11 @@ class GroqArbitrator:
             and has_single_rest
             and has_single_maturity
         )
-        if is_arrested_spinout or is_impact_rest:
+        if is_arrested_spinout or is_impact_rest or is_solitary_crash_arrest:
             bypass_tel['bypass_passed'] = True
             bypass_tel['bypass_reason'] = f'post_event_rest (spd={curr_spd:.1f}, yaw={yaw_delta:.1f}, drop={speed_drop:.1f}, tau_rest={tau_rest_real:.2f})'
-            return True, 'spin_out', bypass_tel, f'Post-event vehicle arrest: curr_spd={curr_spd:.1f} km/h, yaw_delta={yaw_delta:.1f}deg, tau_rest={tau_rest_real:.2f}s'
+            c_type = 'single_vehicle_collision' if (is_impact_rest or is_solitary_crash_arrest) else 'spin_out'
+            return True, c_type, bypass_tel, f'Post-event vehicle arrest: curr_spd={curr_spd:.1f} km/h, yaw_delta={yaw_delta:.1f}deg, tau_rest={tau_rest_real:.2f}s'
 
         bypass_tel['bypass_reason'] = 'single_vehicle_insufficient_impact_evidence'
         return False, 'none', bypass_tel, 'Single-vehicle candidate lacks high-confidence physical impact evidence'
